@@ -59,7 +59,7 @@ class Tours extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
+			'name' => 'Tour name',
             'preview'=>'Preview',
 			'description' => 'Description',
 			'time_create' => 'Time Create',

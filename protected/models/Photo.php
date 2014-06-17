@@ -7,6 +7,7 @@
  * @property integer $id
  * @property string $name
  * @property string $direction
+ * @property string $principal
  * @property string $description
  * @property string $time_create
  * @property string $time_update
@@ -15,7 +16,14 @@
  */
 class Photo extends CActiveRecord
 {
-	/**
+
+    /***
+    Constant for type of picture
+     ***/
+    const TYPE_0='no';
+    const TYPE_1='yes';
+
+    /**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
@@ -34,10 +42,11 @@ class Photo extends CActiveRecord
 			array('name, direction, description, tours_id, place_id', 'required'),
 			array('tours_id, place_id', 'numerical', 'integerOnly'=>true),
 			array('name, direction', 'length', 'max'=>100),
+			array('principal', 'length', 'max'=>11),
 			array('time_create, time_update', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, direction, description, time_create, time_update, tours_id, place_id', 'safe', 'on'=>'search'),
+			array('id, name, direction, principal, description, time_create, time_update, tours_id, place_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,6 +71,7 @@ class Photo extends CActiveRecord
 			'id' => 'ID',
 			'name' => 'Name',
 			'direction' => 'Direction',
+			'principal' => 'Principal',
 			'description' => 'Description',
 			'time_create' => 'Time Create',
 			'time_update' => 'Time Update',
@@ -91,6 +101,7 @@ class Photo extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('direction',$this->direction,true);
+		$criteria->compare('principal',$this->principal,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('time_create',$this->time_create,true);
 		$criteria->compare('time_update',$this->time_update,true);
@@ -113,18 +124,35 @@ class Photo extends CActiveRecord
 		return parent::model($className);
 	}
     /**
-    * This Method will return pictures of one tour
+     * This Method will return pictures of one tour
      **/
     public function getPhotosTours($id){
         $criteria=new CDbCriteria();
-        $criteria->compare('tours_id',$id,true);
+        $criteria->compare('tours_id',$id);
         $result=Photo::model()->findAll($criteria);
+        return $result;
+    }
+    public function getPhotosToursPrincipal($id){
+        $criteria=new CDbCriteria();
+        $criteria->compare('tours_id',$id);
+        $criteria->compare('principal',"yes",true);
+        $result=Photo::model()->findAll($criteria);
+        $dataprovider= new CActiveDataProvider($this,array('criteria'=>$criteria));
+
         return $result;
     }
     public function getPhotosPlace($id){
         $criteria=new CDbCriteria();
-        $criteria->compare('place_id',$id,true);
+        $criteria->compare('place_id',$id);
         $result=Photo::model()->findAll($criteria);
         return $result;
     }
+    public function getTypePicture()
+    {
+        return array(
+            self::TYPE_0=>'no',
+            self::TYPE_1=>'yes',
+        );
+    }
+
 }

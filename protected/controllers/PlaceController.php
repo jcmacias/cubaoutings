@@ -71,7 +71,8 @@ class PlaceController extends Controller
 		{
 			$model->attributes=$_POST['Place'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                $this->redirect(array('photo/create'));
+//				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(

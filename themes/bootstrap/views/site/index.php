@@ -281,7 +281,6 @@ $this->pageTitle=Yii::app()->name;
         Las mejores imagenes de Cuba.
     </h6>
 </div>
-<?php //$this->widget('application.extensions.fbgallery.fbgallery');?>
 <div class="tour-list">
     <div class="row">
         <div class="col-lg-4">
@@ -321,10 +320,46 @@ $this->pageTitle=Yii::app()->name;
 </div>
 
 </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style=" padding-top: 50px;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+             </div>
+            <div class="modal-body">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <?php
 //Yii::app()->clientScript->registerScript('barra', "
 //$('.navbar .navbar-default .navbar-fixed-top').hide;
 //");
 ?>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.thumbnail img').on('click',function(){
+            var src = $(this).attr('src');
+            var img = '<img src="' + src + '" class="img-responsive"/>';
+//            //Start of new code
+//            var index = $(this).parent('div').index();
+//            var html = '';
+//            html += img;
+//            html += '<div style="height:25px;clear:both;display:block;">';
+//            html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
+//            html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
+//            html += '</div>';
+//            //End of new code
+            $('#myModal').modal();
+            $('#myModal').on('shown.bs.modal', function(){
+                $('#myModal .modal-body').html(img);
+            });
+            $('#myModal').on('hidden.bs.modal', function(){
+                $('#myModal .modal-body').html('');
+            });
+        });
+    })
+
+</script>
 
 

@@ -22,10 +22,15 @@
                         <div class="client-company">
                             CEO, AbcD Network
                         </div>
-                    </div>
+                    </div><?php if($data->photo_owner!=$data->name_owner."-"){echo $data->name_owner." " ;?>
                     <div class="client-image hidden-xs">
                         <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/'.$data->photo_owner, 'client',array("class"=>"img-circle","style"=>"height: 66px; width: 66px;"));?>
                     </div>
+                    <?php }else{ ?>
+                    <div class="client-image hidden-xs green-text" style="font-size: 4em; padding-left: 10px;">
+                        <i class="icon-user"></i>
+                    </div>
+                    <?php }?>
                 </div>
             </div>
         </div>

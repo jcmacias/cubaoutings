@@ -91,7 +91,7 @@ class ScrollTop extends CWidget
 			opacity();
 			', CClientScript::POS_LOAD
 		);
-		echo '<div id="' .$this->id. '"><div id="' .$this->id. '-arrow" style="font-size:3em;padding-top:0px;padding-left:7px;"><i class="icon-circle-arrow-up"></i></div></div>';
+		echo '<div id="' .$this->id. '"><div id="' .$this->id. '-arrow" style="font-size:3em;padding-top:0px;padding-left:7px;cursor: pointer;"><i class="icon-circle-arrow-up"></i></div></div>';
         //echo '<div id="' .$this->id. '"><div id="' .$this->id. '-arrow">'.CHtml::image($this->getImgUrl().'arrow.png').'</div></div>';
 	}
 }

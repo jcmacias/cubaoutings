@@ -26,13 +26,19 @@ $this->menu=array(
 <!--        Mantente en contacto.Dinos lo que piensas.-->
 <!--    </h6>-->
 <!--</div>-->
-    <?php $photos=Photo::model()->getPhotosTours($model->id);?>
-<?php if($photos){?>
+    <?php $photos=Photo::model()->getPhotosToursPrincipal($model->id);?>
+
+<?php
+//echo '<pre>';
+//print_r(count($photos));
+//echo '</pre>';
+//die;
+if($photos){?>
 <div id="carousel-top">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
         <!-- Carousel indicators -->
-
+        <?php if(count($photos)>1){?>
         <ol class="carousel-indicators">
 
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -42,53 +48,32 @@ $this->menu=array(
             <li data-target="#myCarousel" data-slide-to="2"></li>
 
         </ol>
-
+        <?php }?>
         <!-- Carousel items -->
 
         <div class="carousel-inner" style="height:300px;">
 
+<?php for($i=0;$i< count($photos);$i++){?>
+    <?php if($i==0){?>
             <div class="active item">
 
-                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[0]->direction, 'alt 1',array('class'=>'img-rounded'));?>
-
-<!--                <div class="carousel-caption">-->
-
-<!--                    <h3>First slide label</h3>-->
-<!---->
-<!--                    <p>Lorem ipsum dolor sit amet consectetur…</p>-->
-<!---->
-<!--                </div>-->
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded'));?>
 
             </div>
-
+<?php }else {?>
             <div class="item">
 
-                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[0]->direction, 'alt 1',array('class'=>'img-rounded'));?>
-
-<!--                <div class="carousel-caption">-->
-<!---->
-<!--                    <h3>Second slide label</h3>-->
-<!---->
-<!--                    <p>Aliquam sit amet gravida nibh, facilisis gravida…</p>-->
-<!---->
-<!--                </div>-->
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded'));?>
 
             </div>
+            <?php }?>
 
-            <div class="item">
-
-                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[0]->direction, 'alt 1',array('class'=>'img-rounded'));?>
-
-<!--                <div class="carousel-caption">-->
+<!--            <div class="item">-->
 <!---->
-<!--                    <h3>Third slide label</h3>-->
+<!--                --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded'));?>
 <!---->
-<!--                    <p>Praesent commodo cursus magna vel…</p>-->
-<!---->
-<!--                </div>-->
-
-            </div>
-
+<!--            </div>-->
+<?php }?>
         </div>
 
     </div>
@@ -146,9 +131,6 @@ $('#myCarousel').carousel({
   pause: 'hover',
   wrap: true,
 })
-//$('#comments').click(
-//$.fn.yiiListView.update('id-of-your-listview');
-//)
 
 ");
 ?>

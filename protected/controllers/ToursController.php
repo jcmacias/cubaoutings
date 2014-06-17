@@ -98,7 +98,7 @@ class ToursController extends Controller
 		{
 			$model->attributes=$_POST['Tours'];
 			if($model->save())
-				$this->redirect(array('photo/create'));
+				$this->redirect(array('place/create'));
 		}
 
 		$this->render('create',array(

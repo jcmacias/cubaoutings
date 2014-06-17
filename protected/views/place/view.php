@@ -15,8 +15,21 @@ $this->menu=array(
 	array('label'=>'Manage Place', 'url'=>array('admin')),
 );
 ?>
+<!--SECTION PLACE -->
+<div class="section-header" id="contact">
+    <!-- SECTION TITLE -->
+    <h2 class="dark-text">View Place #<?php echo $model->id; ?></h2>
 
-<h1>View Place #<?php echo $model->id; ?></h1>
+    <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+    <h6>
+        Mantente en contacto.Dinos lo que piensas.
+    </h6>
+</div>
+
+<div class="alert alert-dismissable alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+</div>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -26,4 +39,7 @@ $this->menu=array(
 		'description',
 		'tours_id',
 	),
+    'htmlOptions'=>array(
+        'class'=>'table table-striped table-hover '
+    )
 )); ?>

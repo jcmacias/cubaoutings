@@ -15,9 +15,21 @@ $this->menu=array(
 	array('label'=>'Manage Book', 'url'=>array('admin')),
 );
 ?>
+<!--SECTION BOOK -->
+<div class="section-header" id="contact">
+<!-- SECTION TITLE -->
+<h2 class="dark-text">View Book #<?php echo $model->id; ?></h2>
 
-<h1>View Book #<?php echo $model->id; ?></h1>
+<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+    <h6>
+        Mantente en contacto.Dinos lo que piensas.
+    </h6>
+</div>
 
+<div class="alert alert-dismissable alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+</div>
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
@@ -26,6 +38,11 @@ $this->menu=array(
 		'question',
 		'time_create',
 		'time_update',
-		'tours_id',
+        'pax',
+        'toursb.name'
+
 	),
+    'htmlOptions'=>array(
+        'class'=>'table table-striped table-hover '
+    )
 )); ?>

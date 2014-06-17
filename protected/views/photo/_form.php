@@ -23,12 +23,20 @@
 	<?php //echo $form->errorSummary($model); ?>
 
 	<div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-4">
             <?php echo $form->labelEx($model,'name'); ?>
             <?php echo $form->textField($model,'name',array('class'=>'photo_name form-control')); ?>
             <?php echo $form->error($model,'name',array('class'=>'label label-danger')); ?>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-4">
+            <?php echo $form->labelEx($model,'principal'); ?>
+            <?php echo $form->dropDownList($model,'principal',$model->getTypePicture(),array('class'=>'principal form-control')); ?>
+            <?php echo $form->error($model,'principal',array('class'=>'label label-danger')); ?>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-lg-4">
             <?php echo $form->labelEx($model,'tours_id'); ?>
             <?php // echo $form->dropDownList($model,'tours_id',CHtml::ListData(Tours::model()->findAll(),'id','name'),array('class'=>'photo_tours_id form-control','id'=>'combo1')); ?>
             <?php echo $form->dropDownList($model,'tours_id',CHtml::ListData(Tours::model()->findAll(),'id','name'),array(
@@ -46,13 +54,13 @@
             <?php echo $form->error($model,'tours_id',array('class'=>'label label-danger')); ?>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-4">
             <?php echo $form->labelEx($model,'place_id'); ?>
             <?php echo $form->dropDownList($model,'place_id',array(),array('class'=>'photo_place_id form-control')); ?>
             <?php echo $form->error($model,'place_id',array('class'=>'label label-danger')); ?>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-4">
             <?php echo $form->labelEx($model,'direction'); ?><br>
             <div class="fileUpload btn btn-warning" style="margin-top:0px;margin-left:0px;">
                 <span>Upload</span>

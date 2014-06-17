@@ -4,6 +4,7 @@ Yii::app()->clientscript
 ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap.js', CClientScript::POS_END )
 ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/carousel.js', CClientScript::POS_END )
 ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootswatch.js', CClientScript::POS_END )
+->registerCoreScript( 'jquery' )
 // use it when you need it!
 /*
 ->registerCssFile( Yii::app()->theme->baseUrl . '/css/bootstrap.css' )

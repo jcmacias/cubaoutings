@@ -70,7 +70,6 @@ class CommentController extends Controller
 		if(isset($_POST['Comment']))
 		{
            $model->attributes=$_POST['Comment'];
-            $model->tours_id='8';
             $namephoto = $model->name_owner;
             $uploadedFile = CUploadedFile::getInstance($model,'photo_owner');
             $fileName = "{$namephoto}-{$uploadedFile}";

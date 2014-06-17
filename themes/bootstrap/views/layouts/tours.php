@@ -38,7 +38,7 @@
                                         // controller action is handling ajax validation correctly.
                                         // There is a call to performAjaxValidation() commented in generated controller code.
                                         // See class documentation of CActiveForm for details on this.
-                                        'enableAjaxValidation'=>false,
+                                        'enableAjaxValidation'=>true,
                                         'action'=>Yii::app()->createUrl('book/create',array('id'=>$tours_id)),
                                     )); $model=new Book();?>
 
