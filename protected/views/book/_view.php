@@ -14,29 +14,45 @@
                 <h3 class="panel-title"><?php echo "Book"." "."#".$data->id;?></h3>
             </div>
             <div class="panel-body">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <?php
-                        echo $data->toursb->name;
-                        ?><br>
-                        <?php echo CHtml::encode($data->time_update);?>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="message">
-                            <?php echo '"'.CHtml::encode($data->question).'"';?>
-                        </div>
-                    </div>
-                </div>
+                <?php $this->widget('zii.widgets.CDetailView', array(
+                    'data'=>$data,
+                    'attributes'=>array(
+                       // 'id',
+                        'email_owner',
+                        'question',
+                        'time_create',
+                    //    'time_update',
+                        'pax',
+                        'toursb.name'
 
-                <div class="row">
-                    <div class="col-lg-6">
-
-                    </div>
-                    <div class="col-lg-6">
-                        <p class="pull-right"><?php echo CHtml::encode($data->email_owner);?></p>
-                    </div>
-
-                </div>
+                    ),
+                    'htmlOptions'=>array(
+                        'class'=>'table table-striped table-hover '
+                    )
+                )); ?>
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-3">-->
+<!--                        --><?php
+//                        echo $data->toursb->name;
+//                        ?><!--<br>-->
+<!--                        --><?php //echo CHtml::encode($data->time_update);?>
+<!--                    </div>-->
+<!--                    <div class="col-lg-9">-->
+<!--                        <div class="message">-->
+<!--                            --><?php //echo '"'.CHtml::encode($data->question).'"';?>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-6">-->
+<!---->
+<!--                    </div>-->
+<!--                    <div class="col-lg-6">-->
+<!--                        <p class="pull-right">--><?php //echo CHtml::encode($data->email_owner);?><!--</p>-->
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
             </div>
         </div>
     </div>
