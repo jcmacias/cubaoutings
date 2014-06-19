@@ -9328,3 +9328,12 @@ Stack trace:
 REQUEST_URI=/cubaouting/images/pic_comments/sdf
 HTTP_REFERER=http://localhost/cubaouting/comment/index
 ---
+2014/06/19 01:00:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/pic_comments/sdfdsfdsf".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('images/pic_comm...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\cubaouting\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cubaouting/images/pic_comments/sdfdsfdsf
+HTTP_REFERER=http://localhost/cubaouting/tours/8
+---

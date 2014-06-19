@@ -83,44 +83,45 @@ if($photos){?>
 
     <hr class="featurette-divider">
 
-<?php echo $model->description;?>
-<?php
-$this->widget('application.extensions.sharebox.EShareBox', array(
-    // url to share, required.
-    'url' => $this->createAbsoluteUrl('tour/view',array('id'=>$model->id)),
+<?php echo $model->description;?><br>
+<div class=" pull-right">
+    <?php
+    $this->widget('application.extensions.sharebox.EShareBox', array(
+        // url to share, required.
+        'url' => $this->createAbsoluteUrl('tour/view',array('id'=>$model->id)),
 
-    // A title to describe your link, required.
-    // Some services will ignore this value.
-    'title'=> 'Cubaoutings the best choice to explore Cuba !!',
+        // A title to describe your link, required.
+        // Some services will ignore this value.
+        'title'=> 'Cubaoutings the best choice to explore Cuba !!',
 
-    // Size of the icons to display, in pixels.
-    // Default is 24px, available sizes : 16, 24, 32, 48.
-    'iconSize' => 32,
+        // Size of the icons to display, in pixels.
+        // Default is 24px, available sizes : 16, 24, 32, 48.
+        'iconSize' => 32,
 
-    // Whether to animate the links.
-    // Default is true
-    //'animate' => false,
+        // Whether to animate the links.
+        // Default is true
+        //'animate' => false,
 
-    // Social networks to include, excluding all others.
-    // The exclude filter is still run.
-    //'include' => array('technorati', 'digg'),
+        // Social networks to include, excluding all others.
+        // The exclude filter is still run.
+        //'include' => array('technorati', 'digg'),
 
-    // Social networks to exclude from display.
-    // By default none are excluded.
-    'exclude' => array('technorati', 'digg','reddit','newsvine','stumbleupon','delicious'),
+        // Social networks to exclude from display.
+        // By default none are excluded.
+        'exclude' => array('technorati', 'digg','reddit','newsvine','stumbleupon','delicious'),
 
-    // Use your own icons! Note that you will need to have
-    // a subfolder of the appropriate icons sizes.
-    // ie: /myimages/social/16px /myimages/social/24px ...
-    //'iconPath' => '/myimages/social',
+        // Use your own icons! Note that you will need to have
+        // a subfolder of the appropriate icons sizes.
+        // ie: /myimages/social/16px /myimages/social/24px ...
+        //'iconPath' => '/myimages/social',
 
-    // HTML options for the UL element.
-    //'ulHtmlOptions' => array('class' => 'myCustomUlClass'),
+        // HTML options for the UL element.
+        //'ulHtmlOptions' => array('class' => 'myCustomUlClass'),
 
-    // HTML options for all the LI elements.
-    //'liHtmlOptions' => array('class' => 'myCustomLiClass'),
-));?>
-
+        // HTML options for all the LI elements.
+        //'liHtmlOptions' => array('class' => 'myCustomLiClass'),
+    ));?>
+</div><br>
     <hr class="featurette-divider">
 
 
