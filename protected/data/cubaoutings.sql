@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 17-06-2014 a las 21:19:25
+-- Tiempo de generación: 19-06-2014 a las 01:37:27
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.8
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `book` (
   `tours_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_book_tours1_idx` (`tours_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Volcado de datos para la tabla `book`
@@ -47,10 +47,7 @@ INSERT INTO `book` (`id`, `email_owner`, `pax`, `question`, `time_create`, `time
 (6, 'julio', 0, 'sfddsfasdf', NULL, NULL, 8),
 (7, 'julio', 0, 'Y como funciona esto', NULL, NULL, 8),
 (8, 'julio@cubava.cu', 0, ' fgh fghf g hfghf fhfgh fh fhgfh f', NULL, NULL, 8),
-(9, 'julio@cubava.cu', 0, 'assssds', NULL, NULL, 8),
-(10, 'julio@cubava.cu', 0, 'asda', NULL, NULL, 8),
-(11, 'julio@cubava.cu', 0, 'ffg', NULL, NULL, 8),
-(12, 'julio@cubava.cu', 2, 'asda', NULL, NULL, 8);
+(9, 'julio@cubava.cu', 0, 'assssds', NULL, NULL, 8);
 
 -- --------------------------------------------------------
 
@@ -71,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `comment` (
   `tours_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_comment_tours_idx` (`tours_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- Volcado de datos para la tabla `comment`
@@ -87,8 +84,7 @@ INSERT INTO `comment` (`id`, `name_owner`, `email_owner`, `photo_owner`, `text`,
 (7, 'julio', 'julio@nauta.cu', 'julio-1.png', 'que si que sique si que sique si que sique si que sique si que sique si que sique si que sique si que sique si que sique si que sique si que sique si que sique si que si', NULL, NULL, NULL, NULL, 8),
 (8, 'sdfs', 'sfd', 'sdfs-1.png', 'sfsfsdfsf sfs sdfsd sdfsdfsdf sdfsd', NULL, NULL, NULL, NULL, 8),
 (9, 'x', 'xx', 'x-', 'xcxc', NULL, NULL, NULL, '2014-06-12 00:33:41', 8),
-(10, 'ffff', 'ffffff', 'ffff-', 'sfsf sfs sdf', NULL, NULL, NULL, '2014-06-12 00:39:54', 8),
-(11, 'julio', 'julio@nauta.cu', 'julio-1.png', 'Entonces como resevo este tour.Me parece que está muy bueno.', NULL, NULL, NULL, '2014-06-17 13:41:33', 9);
+(10, 'ffff', 'ffffff', 'ffff-', 'sfsf sfs sdf', NULL, NULL, NULL, '2014-06-12 00:39:54', 8);
 
 -- --------------------------------------------------------
 
@@ -176,6 +172,27 @@ INSERT INTO `tours` (`id`, `name`, `preview`, `description`, `time_create`, `tim
 (8, 'Havana', 'Havana, the largest city in the Caribbean, is the Cuba''s political, cultural and economic center, and populated by over two million people...', '<p>\r\n	Havana, the largest city in the Caribbean, is the Cuba&#39;s political, cultural and economic center, and populated by over two million people. Havana suffered little or no damage during the wars and revolutions of the past 200 years and the old town is easily the finest surviving Spanish colonial complex in the Americas. &nbsp;A big wealth has been used on the restoration of the city, a process that began two decades before was declared world heritage site by UNESCO in December 1982. Although many of Havana&#39;s houses are run down, the heavy traffic, rampant commercialization and extensive slums that choke many other Latin-American countries are absent. Even the US embargo helps in a way by keeping out the cruise ships that clog most other Caribbean ports and by limiting US consumer tourism. Enjoy while it lasts.</p>\r\n<p>\r\n	&nbsp;&nbsp; Visiting the old Havana we can enjoy the cobble stone streets, dark limestone buildings, old churches and squares.&nbsp; In case of the new Havana, which is much bigger, has to be visited by car since places to cover are not walking distances. However, it is very exciting to stop at places like; the Revolution Square, the Capitolio, the Central Park, or just drive through Vedado or Miramar neighbourhood, or just enjoy the excellent view when driving through the promenade that goes 7 km around the Northern part of the city.</p>\r\n<p>\r\n	<u>&nbsp; <strong><em>Interesting places</em></strong></u></p>\r\n<p>\r\n	<strong><em>Old Havana</em></strong></p>\r\n<ul>\r\n	<li>\r\n		Plaza de Armas (the oldest square in Havana that originally dates from 1582, where we find the place of the foundation, the government&nbsp; buildings,&nbsp; the first fortress built in&nbsp; Cuba, and even a large second-hand book market)</li>\r\n	<li>\r\n		Plaza de la Catedral(&nbsp; the cathedral&nbsp; square is considered as the most perfectly built colonial square in the whole country with a beautiful baroque style)</li>\r\n	<li>\r\n		Plaza de San Francisco de Asis (another beautiful&nbsp; square named after the church with the highest bell tower in&nbsp; the city, white marble fountain in the center and the amazing eclectically built trade center in Havana)</li>\r\n	<li>\r\n		Plaza Vieja ( resembles the rich neighbourhood of the 18<sup>th</sup> century in Havana, where we can see big luxurious &nbsp;houses with columns, arches and stain glass windows)</li>\r\n	<li>\r\n		Ambos Mundos Hotel( The hotel where Ernest Hemingway lived for seven years, his room nowadays is a small museum)</li>\r\n	<li>\r\n		Avenida Puerto (the avenue that goes along the entrance of the bay, there is a nice view to the very harbour and a fortress across the &ldquo;canal. Nice place for a walk and a couple of pictures&rdquo;)</li>\r\n	<li>\r\n		Floridita Bar</li>\r\n	<li>\r\n		La Fuerza, El Morro, La Punta, la Caba&ntilde;a(these are&nbsp; fortresses that were built to protect the city against the attack of the pirates and empires that tried to occupy Havana several times. Nowadays they are museums that offer visits)</li>\r\n</ul>\r\n', NULL, NULL),
 (9, 'Havana lights', 'The places where everyone want to be..You will see a wonderfull places...........llllllllllllll.jjjgggbfgbb sfsf sdfsfs sdf sfs sddsd', '<p>\r\n	dfd dfde dfv dcxcde sds&nbsp; sdsc dsd</p>\r\n', NULL, NULL),
 (10, 'new', 'add ada adads adsasda rwetrr er eg dfg ddgertrew dfg dv xcxv ewrt dfds  fw fsdfsf wfsdfs sfsfs sfsfsfs ww rewerds sfwer frw', '<p>\r\n	add ada adads adsasda rwetrr er eg dfg ddgertrew dfg dv xcxv ewrt dfds&nbsp; fw fsdfsf wfsdfs sfsfs sfsfsfs ww rewerds sfwer frw</p>\r\n', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`, `create_time`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', '0000-00-00 00:00:00');
 
 --
 -- Restricciones para tablas volcadas
