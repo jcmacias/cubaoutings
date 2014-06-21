@@ -5,11 +5,12 @@
 $this->breadcrumbs=array(
 	'Comments',
 );
-
+if(!Yii::app()->user->isGuest){
 $this->menu=array(
 	array('label'=>'Create Comment', 'url'=>array('create')),
 	array('label'=>'Manage Comment', 'url'=>array('admin')),
 );
+}
 ?>
 <!--SECTION LOGIN -->
 <div class="section-header" id="contact">

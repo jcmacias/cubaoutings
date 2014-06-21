@@ -5148,7 +5148,8 @@ button.close {
   min-height: 16.42857143px;
 }
 .modal-header .close {
-  margin-top: -2px;
+  /*margin-top: -2px;*/
+    margin-top: -10px;
 }
 .modal-title {
   margin: 0;
@@ -6030,6 +6031,10 @@ input:focus {
     font-size: 13px;
     margin-top: -3px;
 }
+.client-company a{
+    /*font-family: 'Homemade Apple', serif;*/
+    color: #404040;
+}
 .client {
     margin-top: 3px;
     height: 73px;
@@ -6038,6 +6043,9 @@ input:focus {
 .message {
     font-size: 15px;
     color: #909090;
+}
+.tour-name a{
+    color: #404040;
 }
 .quote {
     float: left;

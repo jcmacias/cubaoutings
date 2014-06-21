@@ -27,12 +27,12 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row tour-name">
                     <div class="col-lg-6">
 
                     </div>
                     <div class="col-lg-6">
-                        <p class="pull-right"><?php echo $data->toursp->name;?></p>
+                        <p class="pull-right"><?php echo CHtml::link($data->toursp->name,Yii::app()->createUrl('tours/view',array('id'=>$data->tours_id)))?></p>
                     </div>
 
                 </div>

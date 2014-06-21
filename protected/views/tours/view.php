@@ -6,7 +6,7 @@ $this->breadcrumbs=array(
 	'Tours'=>array('index'),
 	$model->name,
 );
-
+if(!Yii::app()->user->isGuest){
 $this->menu=array(
 	array('label'=>'List Tours', 'url'=>array('index')),
 	array('label'=>'Create Tours', 'url'=>array('create')),
@@ -14,6 +14,7 @@ $this->menu=array(
 	array('label'=>'Delete Tours', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Tours', 'url'=>array('admin')),
 );
+}
 ?>
 <!--SECTION TOURS -->
 <!--<div class="section-header" id="contact">-->

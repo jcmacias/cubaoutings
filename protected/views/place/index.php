@@ -5,11 +5,12 @@
 $this->breadcrumbs=array(
 	'Places',
 );
-
+if(!Yii::app()->user->isGuest){
 $this->menu=array(
 	array('label'=>'Create Place', 'url'=>array('create')),
 	array('label'=>'Manage Place', 'url'=>array('admin')),
 );
+}
 ?>
 <!--SECTION PLACES -->
 <div class="section-header" id="contact">

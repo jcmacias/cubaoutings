@@ -3,6 +3,7 @@ ul.way2blogging-social {
 	list-style: none;
 	margin: 5px 0;
 	display: inline-block;
+    padding-left: 2px;
 }
 ul.way2blogging-social li {
 	display:inline;

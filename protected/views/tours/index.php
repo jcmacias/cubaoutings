@@ -5,11 +5,12 @@
 $this->breadcrumbs=array(
 	'Tours',
 );
-
+if(!Yii::app()->user->isGuest){
 $this->menu=array(
     array('label'=>'Create Tours', 'url'=>array('create')),
 	array('label'=>'Manage Tours', 'url'=>array('admin')),
 );
+}
 ?>
 
 <!--SECTION TOURS -->

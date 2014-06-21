@@ -20,7 +20,7 @@
                     <div class="client-info">
                         <a href="" class="client-name"><?php echo $data->name_owner?></a>
                         <div class="client-company">
-                            CEO, AbcD Network
+                            <?php echo  CHtml::link($data->toursc->name,Yii::app()->createUrl('tours/view',array('id'=>$data->tours_id))) ;?>
                         </div>
                     </div><?php if($data->photo_owner!=$data->name_owner."-"){?>
                     <div class="client-image hidden-xs">

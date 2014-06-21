@@ -6,7 +6,7 @@ $this->breadcrumbs=array(
 	'Photos'=>array('index'),
 	$model->name,
 );
-
+if(!Yii::app()->user->isGuest){
 $this->menu=array(
 	array('label'=>'List Photo', 'url'=>array('index')),
 	array('label'=>'Create Photo', 'url'=>array('create')),
@@ -14,6 +14,7 @@ $this->menu=array(
 	array('label'=>'Delete Photo', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Photo', 'url'=>array('admin')),
 );
+}
 ?>
 
 <h1>View Photo #<?php echo $model->id; ?></h1>

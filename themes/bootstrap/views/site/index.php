@@ -21,17 +21,8 @@ $this->pageTitle=Yii::app()->name;
 
         <div class="row">
             <div class="col-lg-12">
-                <h1>"Por una experiencia diferente."</h1>
-                <!--<div id="social">
-              <span>
-                <iframe width="53" scrolling="0" height="20" frameborder="0" allowtransparency="true" src="http://ghbtns.com/github-btn.html?user=thomaspark&amp;repo=bootswatch&amp;type=fork" id="gh-fork"></iframe>
-                <iframe width="110" scrolling="0" height="20" frameborder="0" allowtransparency="true" src="http://ghbtns.com/github-btn.html?user=thomaspark&amp;repo=bootswatch&amp;type=watch&amp;count=true" id="gh-star"></iframe>
-              </span>
-              <span>
-                <iframe scrolling="no" frameborder="0" id="twitter-widget-1" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.1399599786.html#_=1399901565779&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=thomashpark&amp;show_count=false&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 148px; height: 20px;"></iframe>
-                <iframe scrolling="no" frameborder="0" id="twitter-widget-0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1399599786.html#_=1399901565777&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fbootswatch.com%2F&amp;size=m&amp;text=Bootswatch%3A%20Free%20themes%20for%20Bootstrap&amp;url=http%3A%2F%2Fbootswatch.com&amp;via=thomashpark" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 109px; height: 20px;"></iframe>
-              </span>
-                </div>-->
+                <h1>"The best way to explore Cuba."</h1>
+
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <div style="background-color: rgba(0, 0, 0, 0.4);" class="well sponsor">
@@ -44,9 +35,45 @@ $this->pageTitle=Yii::app()->name;
                                 <h4 style="margin-bottom: 0.4em;">Treehouse</h4>
                                 <div class="clearfix">
                                     <p>Learn Web Design, Coding, Mobile App Development &amp; More.</p>
-                                    <p>Start Learning for Free!</p>
-                                </div>
                             </a>
+                                    <p><?php
+                                        $this->widget('application.extensions.sharebox.EShareBox', array(
+                                            // url to share, required.
+                                            'url' => $this->createAbsoluteUrl('site/index'),
+
+                                            // A title to describe your link, required.
+                                            // Some services will ignore this value.
+                                            'title'=> 'Cubaoutings the best choice to explore Cuba !!',
+
+                                            // Size of the icons to display, in pixels.
+                                            // Default is 24px, available sizes : 16, 24, 32, 48.
+                                            'iconSize' => 32,
+
+                                            // Whether to animate the links.
+                                            // Default is true
+                                            //'animate' => false,
+
+                                            // Social networks to include, excluding all others.
+                                            // The exclude filter is still run.
+                                            //'include' => array('technorati', 'digg'),
+
+                                            // Social networks to exclude from display.
+                                            // By default none are excluded.
+                                            'exclude' => array('technorati', 'digg','reddit','newsvine','stumbleupon','delicious'),
+
+                                            // Use your own icons! Note that you will need to have
+                                            // a subfolder of the appropriate icons sizes.
+                                            // ie: /myimages/social/16px /myimages/social/24px ...
+                                            //'iconPath' => '/myimages/social',
+
+                                            // HTML options for the UL element.
+                                            //'ulHtmlOptions' => array('class' => 'myCustomUlClass'),
+
+                                            // HTML options for all the LI elements.
+                                            //'liHtmlOptions' => array('class' => 'myCustomLiClass'),
+                                        ));?></p>
+                                </div>
+
                             <div class="splash-down">
                                 <a href="#trabajos"><i class="icon-download"></i></a>
                             </div>
@@ -320,7 +347,7 @@ $this->pageTitle=Yii::app()->name;
 </div>
 
 </div>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style=" padding-top: 50px;">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -338,9 +365,11 @@ $this->pageTitle=Yii::app()->name;
 ?>
 <script type="text/javascript">
     $(document).ready(function(){
+
         $('.thumbnail img').on('click',function(){
             var src = $(this).attr('src');
             var img = '<img src="' + src + '" class="img-responsive"/>';
+            $('#myModal .modal-body').html(img);
 //            //Start of new code
 //            var index = $(this).parent('div').index();
 //            var html = '';
@@ -351,13 +380,17 @@ $this->pageTitle=Yii::app()->name;
 //            html += '</div>';
 //            //End of new code
             $('#myModal').modal();
-            $('#myModal').on('shown.bs.modal', function(){
-                $('#myModal .modal-body').html(img);
-            });
-            $('#myModal').on('hidden.bs.modal', function(){
-                $('#myModal .modal-body').html('');
-            });
         });
+
+//        $('#myModal').on('shown.bs.modal', function(){
+////                $('#myModal .modal-body').html(img);
+//        });
+
+        $('#myModal').on('hidden.bs.modal', function(){
+            $('#myModal .modal-body').html('');
+        });
+
+
     })
 
 </script>
