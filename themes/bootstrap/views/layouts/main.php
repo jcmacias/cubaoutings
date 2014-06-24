@@ -73,9 +73,9 @@ Yii::app()->clientscript
                         array('label'=>Yii::t('app','Tours'), 'url'=>array('/tours/index')),
                         array('label'=>Yii::t('app','Photos'), 'url'=>array('/photo/index')),
                         array('label'=>Yii::t('app','Places'), 'url'=>array('/place/index')),
-                        array('label'=>Yii::t('app','Books'), 'url'=>array('/book/index'), 'visible'=>!Yii::app()->user->isGuest),
+                        array('label'=>Yii::t('app','Bookings'), 'url'=>array('/book/index'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Testimonials'), 'url'=>array('/comment/index')),
-                        array('label'=>Yii::t('app','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                        //array('label'=>Yii::t('app','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Logout ('.Yii::app()->user->name.')'), 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                     ),
                    )); ?>
@@ -108,7 +108,7 @@ Yii::app()->clientscript
     <div class="row">
         <div class="col-lg-3">
             <!--<div id="footer">-->
-                Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+                Copyright &copy; <?php echo date('Y'); ?> by Cubaoutings.<br/>
                 All Rights Reserved.<br/>
                 <?php echo Yii::powered(); ?>
             <!--</div><!-- footer -->

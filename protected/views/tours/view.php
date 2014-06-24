@@ -15,6 +15,15 @@ $this->menu=array(
 	array('label'=>'Manage Tours', 'url'=>array('admin')),
 );
 }
+else{
+    $this->menu=array(
+        array('label'=>'Havana tour','url'=>array('view','id'=>8)),
+        array('label'=>'Trinidad and Cienfuegos tour ','url'=>array('view','id'=>11)),
+        array('label'=>'Matanzas, Cárdenas, and Varadero tour','url'=>array('view','id'=>7)),
+        array('label'=>'Transfers','url'=>array('transfer')),
+
+    );
+}
 ?>
 <!--SECTION TOURS -->
 <!--<div class="section-header" id="contact">-->
@@ -58,13 +67,13 @@ if($photos){?>
     <?php if($i==0){?>
             <div class="active item">
 
-                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded','style'=>'width:843px;height:300px;'));?>
 
             </div>
 <?php }else {?>
             <div class="item">
 
-                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded','style'=>'width:843px;height:300px;'));?>
 
             </div>
             <?php }?>

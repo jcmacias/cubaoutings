@@ -10,6 +10,14 @@ $this->menu=array(
     array('label'=>'Create Tours', 'url'=>array('create')),
 	array('label'=>'Manage Tours', 'url'=>array('admin')),
 );
+}else{
+    $this->menu=array(
+        array('label'=>'Havana tour','url'=>array('view','id'=>8)),
+        array('label'=>'Trinidad and Cienfuegos tour ','url'=>array('view','id'=>11)),
+        array('label'=>'Matanzas, Cárdenas, and Varadero tour','url'=>array('view','id'=>7)),
+        array('label'=>'Transfers','url'=>array('transfer')),
+
+    );
 }
 ?>
 
@@ -28,4 +36,12 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
+    //'summaryText'=>"",
+    'template'=>'{summary}{items} {pager}',
+    //'enablePagination'=>true,
+    'pagerCssClass'=>'CLinkPager pull-right',
+    'pager'=>array(
+        'header' => '',
+        'htmlOptions'=>array('class'=>'pagination pagination-sm',),
+    ),
 )); ?>

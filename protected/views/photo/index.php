@@ -27,6 +27,14 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
+    //'summaryText'=>"",
+    'template'=>'{summary}{items} {pager}',
+    //'enablePagination'=>true,
+    'pagerCssClass'=>'CLinkPager pull-right',
+    'pager'=>array(
+        'header' => '',
+        'htmlOptions'=>array('class'=>'pagination pagination-sm',),
+    ),
 )); ?>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
     <div class="modal-dialog">

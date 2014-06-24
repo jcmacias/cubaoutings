@@ -22,61 +22,63 @@
             Mantente en contacto.Dinos lo que piensas.
         </h6>
     </div>
-    <?php if(Yii::app()->user->hasFlash('contact')): ?>
+    <div class="row">
+        <div class="col-lg-10">
+            <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
-    <div class="flash-success">
-        <?php echo Yii::app()->user->getFlash('contact'); ?>
-    </div>
+                <div class="flash-success">
+                    <?php echo Yii::app()->user->getFlash('contact'); ?>
+                </div>
 
-    <?php else: ?>
+            <?php else: ?>
 
-    <!--<p>
-    If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-    </p>-->
+            <!--<p>
+            If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+            </p>-->
 
-    <div class="form">
+            <div class="form">
 
-    <?php $form=$this->beginWidget('CActiveForm', array(
-        'id'=>'contact-form',
-        'enableClientValidation'=>true,
-        'clientOptions'=>array(
-            'validateOnSubmit'=>true,
-        ),
-        'htmlOptions'=>array(
-            'class'=>'form-horizontal',
-        ),
-    )); ?>
+                <?php $form=$this->beginWidget('CActiveForm', array(
+                    'id'=>'contact-form',
+                    'enableClientValidation'=>true,
+                    'clientOptions'=>array(
+                        'validateOnSubmit'=>true,
+                    ),
+                    'htmlOptions'=>array(
+                        'class'=>'form-horizontal',
+                    ),
+                )); ?>
 
-        <!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
-        <!--<div class="alert alert-dismissable alert-danger">
+                <!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
+                <!--<div class="alert alert-dismissable alert-danger">
         <?php echo $form->errorSummary($model); ?>
         </div>-->
-        <div class="row">
-            <div class="col-lg-4 col-sm-4">
-                <?php echo $form->labelEx($model,'name'); ?>
-                <?php echo $form->textField($model,'name',array('class'=>'contact-name form-control')); ?>
-                <?php echo $form->error($model,'name',array('class'=>'label label-danger')); ?>
-            </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                        <?php echo $form->labelEx($model,'name'); ?>
+                        <?php echo $form->textField($model,'name',array('class'=>'contact-name form-control')); ?>
+                        <?php echo $form->error($model,'name',array('class'=>'label label-danger')); ?>
+                    </div>
 
-            <div class="col-lg-4 col-sm-4">
-                <?php echo $form->labelEx($model,'email'); ?>
-                <?php echo $form->textField($model,'email',array('class'=>'contact-email form-control')); ?>
-                <?php echo $form->error($model,'email',array('class'=>'label label-danger')); ?>
-            </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <?php echo $form->labelEx($model,'email'); ?>
+                        <?php echo $form->textField($model,'email',array('class'=>'contact-email form-control')); ?>
+                        <?php echo $form->error($model,'email',array('class'=>'label label-danger')); ?>
+                    </div>
 
-            <div class="col-lg-4 col-sm-4">
-                <?php echo $form->labelEx($model,'subject'); ?>
-                <?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128,'class'=>'contact-subject form-control')); ?>
-                <?php echo $form->error($model,'subject',array('class'=>'label label-danger')); ?>
-            </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <?php echo $form->labelEx($model,'subject'); ?>
+                        <?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128,'class'=>'contact-subject form-control')); ?>
+                        <?php echo $form->error($model,'subject',array('class'=>'label label-danger')); ?>
+                    </div>
 
-            <div class="col-md-12">
-                <?php echo $form->labelEx($model,'body'); ?>
-                <?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50,'class'=>'contact-body form-control')); ?>
-                <?php echo $form->error($model,'body',array('class'=>'label label-danger')); ?>
-            </div>
+                    <div class="col-md-12">
+                        <?php echo $form->labelEx($model,'body'); ?>
+                        <?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50,'class'=>'contact-body form-control')); ?>
+                        <?php echo $form->error($model,'body',array('class'=>'label label-danger')); ?>
+                    </div>
 
-            <?php /*if(CCaptcha::checkRequirements()): ?>
+                    <?php /*if(CCaptcha::checkRequirements()): ?>
             <!--<div class="col-lg-4 col-sm-4">
                 <?php echo $form->labelEx($model,'verifyCode'); ?>
                 <div>
@@ -89,14 +91,62 @@
             </div>-->
             <?php endif; */?>
 
-            <div class="contact-buttons">
-                <?php echo CHtml::submitButton('Submit',array('class'=>'btn btn-success btn-lg pull-right')); ?>
+                        <div class="contact-buttons">
+                            <?php echo CHtml::submitButton('Submit',array('class'=>'btn btn-success btn-lg pull-right')); ?>
+                        </div>
+
+                    <?php $this->endWidget(); ?>
+
+                </div><!-- form -->
+
+                <?php endif; ?>
+
             </div>
         </div>
-    <?php $this->endWidget(); ?>
+        <div class="col-lg-2" style="padding-left: 25px;">
+            <div class="row">
+                <label class="pull-left">Emails</label><br>
+                <ul class="pull-left">
+                    <li>cubaoutings@gmail.com</li>
+                    <li>cubaoutings@gmail.com</li>
+                </ul>
+            </div>
+            <div class="row">
+                <label class="pull-left">Facebook contacts</label><br>
+                <ul class="pull-left">
+                    <li>Gloria@facebook.com</li>
+                    <li>Gloria@facebook.com</li>
+                </ul>
+            </div>
+            <div class="row">
+                <label class="pull-left">Telephones</label><br/>
+                <ul class="pull-left">
+                 <li>Office:888-8888</li>
+                 <li>Office:888-8888</li>
+                </ul>
+             </div>
 
-    </div><!-- form -->
 
-    <?php endif; ?>
-    <hr class="featurette-divider">
-</div>
+         </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
