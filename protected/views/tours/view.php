@@ -61,19 +61,19 @@ if($photos){?>
         <?php }?>
         <!-- Carousel items -->
 
-        <div class="carousel-inner" style="height:300px;">
+        <div class="carousel-inner" style="height:500px;">
 
 <?php for($i=0;$i< count($photos);$i++){?>
     <?php if($i==0){?>
             <div class="active item">
 
-                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded','style'=>'width:843px;height:300px;'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded','style'=>'width:843px;padding-top:-102px;'));?>
 
             </div>
 <?php }else {?>
             <div class="item">
 
-                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded','style'=>'width:843px;height:300px;'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[$i]->direction, 'alt 1',array('class'=>'img-rounded','style'=>'width:843px;-102px;'));?>
 
             </div>
             <?php }?>

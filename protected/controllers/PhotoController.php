@@ -117,9 +117,23 @@ class PhotoController extends Controller
 
 		if(isset($_POST['Photo']))
 		{
-			$model->attributes=$_POST['Photo'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            $_POST['Photo']['direction'] = $model->direction;
+            $model->attributes=$_POST['Photo'];
+            $namephoto = $model->tours_id;
+            $uploadedFile = CUploadedFile::getInstance($model,'direction');
+            if(empty($uploadedFile)){
+                $fileName = $model->direction;
+            }else{
+                $fileName = "{$namephoto}-{$uploadedFile}";
+            }
+            $model->direction = $fileName;
+            if($model->save()){
+                if(!empty($uploadedFile))  // checkeamos si el archivo subido esta seteado o no
+                {
+                    $uploadedFile->saveAs(Yii::app()->basePath.'/../images/'.$fileName);
+                }
+                $this->redirect(array('view','id'=>$model->id));
+            }
 		}
 
 		$this->render('update',array(
