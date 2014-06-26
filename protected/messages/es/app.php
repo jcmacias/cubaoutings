@@ -40,6 +40,12 @@ return array (
   '{class} must specify "model" and "{attribute}" or "{name}" property values.' => '{class} debe especificar valores para las propiedades "model" y "{attribute}" o para "{name}".',
   'About'=>'Quienes somos',
   'Contact'=>'Contacto',
+  'Read More'=>'Ver mas',
   'Login'=>'Entrar',
   'Logout ('.Yii::app()->user->name.')'=>'Salir ('.Yii::app()->user->name.')',
+  'Bookings'=>'Reservas',
+  'Testimonials'=>'Testimonios',
+  'Photos'=>'Fotos',
+  'Places'=>'Sitios de Interes',
+
 );
