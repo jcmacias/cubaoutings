@@ -27,7 +27,7 @@
         </div>
         <div class="col-lg-6">
             <?php echo $form->labelEx($model,'preview'); ?>
-            <?php echo $form->textArea($model,'preview',array('class'=>'preview-name form-control')); ?>
+            <?php echo $form->textArea($model,'preview',array('class'=>'preview-name form-control','maxlength' => 150)); ?>
             <?php echo $form->error($model,'preview',array('class'=>'label label-danger')); ?>
         </div>
 	</div>

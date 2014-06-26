@@ -64,6 +64,27 @@
 
                                     <div class="row">
                                         <div class="col-lg-12">
+                                            <?php echo $form->labelEx($model,'date_book'); ?>
+<!--                                            --><?php //echo $form->textField($model,'date_book',array('class'=>'book_email_owner form-control')); ?>
+                                            <?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                                                'model' => $model,
+                                                'attribute' => 'date_book',
+                                                'htmlOptions' => array(
+                                                    'size' => '10',         // textField size
+                                                    'maxlength' => '10',    // textField maxlength
+                                                    'class'=>'book_email_owner form-control'
+                                                ),
+                                                'options'=>array(
+                                                    'dateFormat' => 'yy-mm-dd',
+                                                ),
+                                            ));
+                                            ?>
+                                            <?php echo $form->error($model,'date_book',array('class'=>'label label-danger')); ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
                                             <?php echo $form->labelEx($model,'question'); ?>
                                             <?php echo $form->textArea($model,'question',array('class'=>'book_question form-control')); ?>
                                             <?php echo $form->error($model,'question',array('class'=>'label label-danger')); ?>

@@ -18,8 +18,8 @@ $this->menu=array(
 else{
     $this->menu=array(
         array('label'=>'Havana tour','url'=>array('view','id'=>8)),
-        array('label'=>'Trinidad and Cienfuegos tour ','url'=>array('view','id'=>11)),
-        array('label'=>'Matanzas, Cárdenas, and Varadero tour','url'=>array('view','id'=>7)),
+        array('label'=>'Trinidad & Cienfuegos tour ','url'=>array('view','id'=>11)),
+        array('label'=>'Matanzas, Cárdenas, & Varadero tour','url'=>array('view','id'=>7)),
         array('label'=>'Transfers','url'=>array('transfer')),
 
     );

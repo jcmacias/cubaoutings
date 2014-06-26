@@ -103,10 +103,10 @@ $this->pageTitle=Yii::app()->name;
     <div class="row">
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/banner1.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/trinidad.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
-                    <h3>Cayo Largo</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h3>Trinidad & Cienfuegos tour </h3>
+                    <p>Trinidad is a city that should be on every traveler’s list. It was the third village founded by our first governor in 1514. It is considered as the jewel of Cuba’s colonial cities..</p>
                     <p>
                         <a class="btn btn-primary" href="#"><?php echo Yii::t('app','Read More');?></a>
                     </p>
@@ -115,10 +115,10 @@ $this->pageTitle=Yii::app()->name;
         </div>
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/capitolio-habana-5.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/nacional.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
                     <h3>Havana Day tour</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>Havana, the largest city in the Caribbean, is the Cuba's political, cultural and economic center, and populated by over two million people. Havana suffered little or no damage during the wars...</p>
                     <p>
                         <a class="btn btn-primary" href="#"><?php echo Yii::t('app','Read More');?></a>
                     </p>
@@ -127,10 +127,10 @@ $this->pageTitle=Yii::app()->name;
         </div>
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/banner2.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/guama4.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
                     <h3>Guama</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>The most primitive of Cuban fish is easily seen in the Laguna del Tesoro (the second biggest lake in Cuba). Get the chance to enjoy the Cuba’s most important crocodile farm.</p>
                     <p>
                         <a class="btn btn-primary" href="#"><?php echo Yii::t('app','Read More');?></a>
                     </p>

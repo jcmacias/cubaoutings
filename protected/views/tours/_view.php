@@ -11,7 +11,7 @@ $photos=Photo::model()->getPhotosToursPrincipal($data->id);
 //die;
 ?>
 <div class="col-lg-4">
-    <div class="thumbnail">
+    <div class="thumbnail" style="height: 400px;">
         <?php if(count($photos)>0){?>
         <?php
         echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[0]->direction,$photos[0]->name,array("style"=>"height: 180px; width: 100%;",'class'=>'img-rounded'));

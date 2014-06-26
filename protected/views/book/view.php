@@ -9,8 +9,8 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Book', 'url'=>array('index')),
-	array('label'=>'Create Book', 'url'=>array('create')),
-	array('label'=>'Update Book', 'url'=>array('update', 'id'=>$model->id)),
+	/*array('label'=>'Create Book', 'url'=>array('create')),
+	array('label'=>'Update Book', 'url'=>array('update', 'id'=>$model->id)),*/
 	array('label'=>'Delete Book', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Book', 'url'=>array('admin')),
 );
@@ -28,7 +28,7 @@ $this->menu=array(
 
 <div class="alert alert-dismissable alert-success">
     <button type="button" class="close" data-dismiss="alert">×</button>
-    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+    <strong>Well done!</strong>You has successfully reserved!! <a href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>$model->tours_id))?>" class="alert-link">Go back.</a>.
 </div>
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -39,6 +39,7 @@ $this->menu=array(
 		'time_create',
 		'time_update',
         'pax',
+        'date_book',
         'toursb.name'
 
 	),

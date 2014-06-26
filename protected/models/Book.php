@@ -7,6 +7,7 @@
  * @property integer $id
  * @property string $email_owner
  * @property integer $pax
+ * @property string $date_book
  * @property string $question
  * @property string $time_create
  * @property string $time_update
@@ -30,13 +31,13 @@ class Book extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('email_owner, pax, tours_id', 'required'),
+			array('email_owner, pax, date_book, tours_id', 'required'),
 			array('pax, tours_id', 'numerical', 'integerOnly'=>true),
 			array('email_owner, question', 'length', 'max'=>100),
 			array('time_create, time_update', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, email_owner, pax, question, time_create, time_update, tours_id', 'safe', 'on'=>'search'),
+			array('id, email_owner, pax, date_book, question, time_create, time_update, tours_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,7 +61,8 @@ class Book extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'email_owner' => 'Email Owner',
-			'pax' => 'PAX',
+			'pax' => 'Pax',
+			'date_book' => 'Date Book',
 			'question' => 'Question',
 			'time_create' => 'Time Create',
 			'time_update' => 'Time Update',
@@ -89,6 +91,7 @@ class Book extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('email_owner',$this->email_owner,true);
 		$criteria->compare('pax',$this->pax);
+		$criteria->compare('date_book',$this->date_book,true);
 		$criteria->compare('question',$this->question,true);
 		$criteria->compare('time_create',$this->time_create,true);
 		$criteria->compare('time_update',$this->time_update,true);
