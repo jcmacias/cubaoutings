@@ -9,4 +9,5 @@ return array(
     'Home'=>'Inicio',
     'About us'=>'Quienes somos',
     'Contact'=>'Contacto',
+    'Read more'=>'Leer mas',
 );

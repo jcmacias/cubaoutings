@@ -14,7 +14,7 @@ $photos=Photo::model()->getPhotosToursPrincipal($data->id);
     <div class="thumbnail">
         <?php if(count($photos)>0){?>
         <?php
-        echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[0]->direction, 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));
+        echo CHtml::image(Yii::app()->baseUrl . '/images/'.$photos[0]->direction,$photos[0]->name,array("style"=>"height: 180px; width: 100%;",'class'=>'img-rounded'));
         }else{
             echo "<span style='font-size: 129px;padding-left: 56px;'><i class=' icon-camera-retro'></i></span>";
         }

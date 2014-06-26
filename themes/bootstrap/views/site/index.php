@@ -103,39 +103,36 @@ $this->pageTitle=Yii::app()->name;
     <div class="row">
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/banner1.jpg', 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/banner1.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
                     <h3>Cayo Largo</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     <p>
-                        <a class="btn btn-primary" href="#">Action</a>
-                        <a class="btn" href="#">Action</a>
+                        <a class="btn btn-primary" href="#"><?php echo Yii::t('app','Read More');?></a>
                     </p>
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/capitolio-habana-5.jpg', 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/capitolio-habana-5.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
-                    <h3>La Habana</h3>
+                    <h3>Havana Day tour</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     <p>
-                        <a class="btn btn-primary" href="#">Action</a>
-                        <a class="btn" href="#">Action</a>
+                        <a class="btn btn-primary" href="#"><?php echo Yii::t('app','Read More');?></a>
                     </p>
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/banner2.jpg', 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/banner2.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
-                    <h3>Varadero</h3>
+                    <h3>Guama</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     <p>
-                        <a class="btn btn-primary" href="#">Action</a>
-                        <a class="btn" href="#">Action</a>
+                        <a class="btn btn-primary" href="#"><?php echo Yii::t('app','Read More');?></a>
                     </p>
                 </div>
             </div>
@@ -250,53 +247,6 @@ $this->pageTitle=Yii::app()->name;
 </div>
 
 <hr class="featurette-divider">
-<!--<!--SECTION ABOUT -->
-<!--<div class="section-header">-->
-<!---->
-<!--    <!-- SECTION TITLE -->
-<!--    <h2 class="dark-text">Sobre Cubaotings</h2>-->
-<!---->
-<!--    <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
-<!--    <h6>-->
-<!--        Conozca todo sobre nosotros.-->
-<!--    </h6>-->
-<!--</div>-->
-<!--<div class="row">-->
-<!--    <div class="col-lg-4">-->
-<!--        <div class="about-info ">-->
-<!--            <div class="quote-about">-->
-<!--                <i class="icon-home"></i>-->
-<!--            </div>-->
-<!--            <div class="about-text">-->
-<!--                <h6>ALOJAMIENTO</h6>-->
-<!--                <p class="text">Brindamos ofertas de alojamiento en todo el pais</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="col-lg-4">-->
-<!--        <div class="about-info ">-->
-<!--            <div class="quote-about">-->
-<!--                <i class="icon-picture green-text"></i>-->
-<!--            </div>-->
-<!--            <div class="about-text">-->
-<!--                <h6>GALERIAS</h6>-->
-<!--                <p class="text">Brindamos ofertas de alojamiento en todo el pais</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="col-lg-4">-->
-<!--        <div class="about-info ">-->
-<!--            <div class="quote-about blue-text">-->
-<!--                <i class="icon-plane"></i>-->
-<!--            </div>-->
-<!--            <div class="about-text">-->
-<!--                <h6>RECORIDOS</h6>-->
-<!--                <p class="text">Brindamos ofertas de viaje en todo el pais</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<hr class="featurette-divider">-->
 <!--SECTION PORTOFOLIO -->
 <div class="section-header">
 
@@ -312,34 +262,34 @@ $this->pageTitle=Yii::app()->name;
     <div class="row">
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/32.jpg', 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/guama.jpg', 'guama',array("style"=>"height: 180px; width: 100%;",'class'=>'img-rounded'));?>
              </div>
         </div>
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/3.jpg', 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/capitolio.jpg', 'capitolio',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
              </div>
         </div>
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/36.jpg', 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg', 'cienfuegos_parque_jose_marti',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/27.jpg', 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/plaza-revolucion.jpg', 'plaza-revolucion',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/44.jpg', 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg', 'Centro_historico_de_Trinidad',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="thumbnail">
-                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/22.jpg', 'alt 1',array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/che_plaza_revolucion.jpg', 'che_plaza_revolucion',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
             </div>
         </div>
     </div>
@@ -348,7 +298,7 @@ $this->pageTitle=Yii::app()->name;
 
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>

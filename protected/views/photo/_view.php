@@ -6,7 +6,7 @@
 <!--<div class="view" style="float: left;">-->
     <div class="col-lg-4 pull-left">
     <a data-toggle="modal" data-target="#myModal<?php echo str_replace('.','_',$data->direction)?>"><div class="thumbnail">
-        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$data->direction, $data->name,array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded'));?>
+        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$data->direction, $data->name,array("style"=>"height: 180px; width: 100%;",'class'=>'img-rounded'));?>
     </div></a>
     </div>
 

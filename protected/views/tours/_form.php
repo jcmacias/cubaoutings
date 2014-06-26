@@ -64,7 +64,7 @@
 	</div>-->
 
 	<div class="row buttons">
-        <div class="col-lg-12">
+        <div class="col-lg-12" style="margin-top: 8px;">
 		    <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-md pull-right')); ?>
         </div>
 	</div>

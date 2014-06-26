@@ -49,14 +49,14 @@ Yii::app()->clientscript
 <!--<img class="vegas-background" style="position: fixed; left: 0px; top: -167.875px; display: block; width: 1360px; height: 947.75px; bottom: auto; right: auto;" src=<?php //echo Yii::app()->baseUrl."/themes/img/bg1.jpg";?>>-->
 <div class="container" id="page">
 
-	<div id="header">
-		<div id="logo"><?php //echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/logo.png', 'logo',array("style"=>"height: 180px, width: 100%"));?></div>
-	</div><!-- header -->
+<!--	<div id="header">-->
+<!--		<div id="logo">--><?php ////echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/logo.png', 'logo',array("style"=>"height: 180px, width: 100%"));?><!--</div>-->
+<!--	</div><!-- header -->
 
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><!--<i class="icon-truck red-text icon-large"></i>--><?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/logosi.png', 'logo',array("style"=>"height:35px")); ?></a>
+                <a class="navbar-brand" href="#"><?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/logosi.png', 'cubaoutings',array("style"=>"height:35px")); ?></a>
                 <button data-target="#navbar-main" data-toggle="collapse" type="button" class="navbar-toggle">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -75,19 +75,15 @@ Yii::app()->clientscript
                         array('label'=>Yii::t('app','Places'), 'url'=>array('/place/index')),
                         array('label'=>Yii::t('app','Bookings'), 'url'=>array('/book/index'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Testimonials'), 'url'=>array('/comment/index')),
+                        array('label'=>Yii::t('app','Users'), 'url'=>array('/user/index'), 'visible'=>!Yii::app()->user->isGuest),
                         //array('label'=>Yii::t('app','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Logout ('.Yii::app()->user->name.')'), 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                     ),
                    )); ?>
 
                 <ul class="nav navbar-nav navbar-right">
-                   <!-- <li><a href="#" style="width: 60px"><?php /*echo  CHtml::image(Yii::app()->theme->baseUrl."/flags/Spain.png",'es',array("style"=>"width:30px; height:20px;"));?></a></li>
-                    <li><a  href="#" style="width: 60px"><?php echo CHtml::image(Yii::app()->theme->baseUrl."/flags/United-Kingdom.png",'en',array("style"=>"width:30px; height:20px;"));?></a></li>
-                    <li><a  href="#" style="width: 60px"><?php echo CHtml::image(Yii::app()->theme->baseUrl."/flags/Russia.png",'ru',array("style"=>"width:30px; height:20px;"));*/?></a></li>-->
                     <li><?php $this->widget('application.extensions.ELangPick.ELangPick', array('pickerType' => 'dropdown', )); ?></li>
                 </ul>
-                <?php //$this->widget('application.extensions.LanguagePicker.ELanguagePicker', array());?>
-
             </div>
         </div>
     </div>	<!-- mainmenu -->
@@ -113,37 +109,7 @@ Yii::app()->clientscript
                 <?php echo Yii::powered(); ?>
             <!--</div><!-- footer -->
         </div>
-        <!--<div class="col-lg-2 pull-right">
-            <div class="row">
-                <div class="col-lg-2 pull-right">
-                    <div class="team">
-                        <div class="team-image">
-                            <?php echo CHtml::image(Yii::app()->baseUrl . '/images/2_002.jpg', 'client',array("class"=>"img-circle","style"=>"width:50px; height:50px;"));?>
-                        </div>
-                        <div class="team-info">
-                            <a href="" class="team-name">Pedro Perez</a>
-                            <div class="team-job">
-                               Guia principal.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 pull-right">
-                    <div class="team">
-                        <div class="team-image">
-                            <?php echo CHtml::image(Yii::app()->baseUrl . '/images/2_002.jpg', 'client',array("class"=>"img-circle","style"=>"width:50px; height:50px;"));?>
-                        </div>
-                        <div class="team-info">
-                            <a href="" class="team-name">Pedro Perez</a>
-                            <div class="team-job">
-                                Guia principal.
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </div>-->
-    </div>
+     </div>
 </footer>
 </div><!-- page -->
 <?php Yii::app()->clientScript->registerScript('scrolldown',"
