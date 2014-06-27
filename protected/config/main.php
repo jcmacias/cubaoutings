@@ -96,5 +96,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'tendedera@cubava.cu',
+        'paginado_places'=>6
 	),
 );

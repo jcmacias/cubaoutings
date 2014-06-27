@@ -113,11 +113,21 @@
                                 </div>
                                 <div class="panel-body">
                                     <?php
-                                    $data=Photo::model()->getPhotosToursData($tours_id);
-//                                    echo '<pre>';
-//                                     print_r($data);
-//                                    echo '</pre>';
-//                                    die;
+                                    $dataProvider = Photo::getPhotosToursData($tours_id);
+
+                                    $this->widget('zii.widgets.CListView', array(
+                                        'dataProvider'=>$dataProvider,
+                                        'itemView'=>'//site/_view_places',
+                                        'id'=>'places',
+                                        //'summaryText'=>"",
+                                        'template'=>'{items} {pager}',
+                                        //'enablePagination'=>true,
+                                        'pagerCssClass'=>'CLinkPager pull-right',
+                                        'pager'=>array(
+                                            'header' => '',
+                                            'htmlOptions'=>array('class'=>'pagination pagination-sm',),
+                                        ),
+                                    ));
                                     ?>
                                 </div>
                             </div>

@@ -23,19 +23,62 @@ $this->menu=array(
         Galeria de imagenes.
     </h6>
 </div>
+<ul role="tablist" class="nav nav-tabs" id="myTab">
+    <?php
+    $arrayTours=Tours::model()->GetAllTours();
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-    //'summaryText'=>"",
-    'template'=>'{summary}{items} {pager}',
-    //'enablePagination'=>true,
-    'pagerCssClass'=>'CLinkPager pull-right',
-    'pager'=>array(
-        'header' => '',
-        'htmlOptions'=>array('class'=>'pagination pagination-sm',),
-    ),
-)); ?>
+    for($i=0;$i<count($arrayTours);$i++){
+        if($i==0){
+            ?>
+            <li class="active"><a data-toggle="tab" role="tab" href="#<?php echo $arrayTours[$i]->id;?>"><?php echo $arrayTours[$i]->name;?></a></li>
+        <?php
+        }else{?>
+            <li class=""><a data-toggle="tab" role="tab" href="#<?php echo $arrayTours[$i]->id;?>"><?php echo $arrayTours[$i]->name;?></a></li>
+        <?php
+        }
+    }
+    ?>
+
+
+</ul>
+<div id="myTabContent" class="tab-content">
+    <?php
+    for($i=0;$i<count($arrayTours);$i++){
+    $dataProviderPhotoTours=Photo::model()->getPhotosToursData($arrayTours[$i]->id);
+        if($i==0){
+            ?>
+            <div class="tab-pane fade active in" id="<?php echo $arrayTours[$i]->id;?>">
+               <?php $this->widget('zii.widgets.CListView', array(
+                    'dataProvider'=>$dataProviderPhotoTours,
+                    'itemView'=>'_view',
+                    'template'=>'{summary}{items} {pager}',
+                    'pagerCssClass'=>'CLinkPager pull-right',
+                    'pager'=>array(
+                        'header' => '',
+                        'htmlOptions'=>array('class'=>'pagination pagination-sm',),
+                    ),
+                )); ?></div>
+        <?php
+        }else{?>
+            <div class="tab-pane fade" id="<?php echo $arrayTours[$i]->id;?>">
+                <?php  $dataProviderPhotoTours=Photo::model()->getPhotosToursData($arrayTours[$i]->id);
+                $this->widget('zii.widgets.CListView', array(
+                    'dataProvider'=>$dataProviderPhotoTours,
+                    'itemView'=>'_view',
+                    'template'=>'{summary}{items} {pager}',
+                    'pagerCssClass'=>'CLinkPager pull-right',
+                    'pager'=>array(
+                        'header' => '',
+                        'htmlOptions'=>array('class'=>'pagination pagination-sm',),
+                    ),
+                )); ?>
+            </div>
+
+        <?php
+        }
+    }
+    ?>
+</div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
     <div class="modal-dialog">
         <div class="modal-content">
@@ -48,9 +91,12 @@ $this->menu=array(
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <?php
-//Yii::app()->clientScript->registerScript('barra', "
-//$('.navbar .navbar-default .navbar-fixed-top').hide;
-//");
+Yii::app()->clientScript->registerScript('tab', "
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+");
 ?>
 <!--<script type="text/javascript">-->
 <!--    $(document).ready(function(){-->

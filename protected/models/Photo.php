@@ -154,16 +154,16 @@ class Photo extends CActiveRecord
             self::TYPE_1=>'yes',
         );
     }
-    public function getPhotosToursData($id){
-        $criteria=new CDbCriteria;
+    public static function getPhotosToursData($id){
+       $criteria = new CDbCriteria;
        $criteria->compare('tours_id',$id);
-       $dataprovider= new  CActiveDataProvider($this, array(
+
+       $dataprovider = new CActiveDataProvider('Photo', array(
             'criteria'=>$criteria,
+           'pagination' => array(
+               'pageSize'=> Yii::app()->params['paginado_places']
+           ),
         ));
-//        echo '<pre>';
-//        print_r($dataprovider);
-//        echo '</pre>';
-//        die;
        return $dataprovider;
     }
 

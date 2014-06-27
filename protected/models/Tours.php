@@ -106,4 +106,10 @@ class Tours extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+    public function GetAllTours(){
+        $criteria=new CDbCriteria();
+        $criteria->select="*";
+        $result=$this->findAll($criteria);
+        return $result;
+    }
 }
