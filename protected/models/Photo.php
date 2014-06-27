@@ -154,5 +154,17 @@ class Photo extends CActiveRecord
             self::TYPE_1=>'yes',
         );
     }
+    public function getPhotosToursData($id){
+        $criteria=new CDbCriteria;
+       $criteria->compare('tours_id',$id);
+       $dataprovider= new  CActiveDataProvider($this, array(
+            'criteria'=>$criteria,
+        ));
+//        echo '<pre>';
+//        print_r($dataprovider);
+//        echo '</pre>';
+//        die;
+       return $dataprovider;
+    }
 
 }

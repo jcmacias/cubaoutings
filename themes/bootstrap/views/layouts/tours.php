@@ -100,14 +100,30 @@
                                     <?php $this->endWidget(); ?>
 
                                 </div><!-- form -->
-<!--                                --><?php
-//                                $model= new Book;
-//                                $this->renderPartial('/book/_form', array('model'=>$model))
-//                                ?>
                             </div>
                         </div>
                     </div>
-                 </div><?php }?>
+                 </div>
+<!--                Bloque de places con su informacion-->
+                    <div class="row" >
+                        <div class="col-sm-12">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"> places</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <?php
+                                    $data=Photo::model()->getPhotosToursData($tours_id);
+//                                    echo '<pre>';
+//                                     print_r($data);
+//                                    echo '</pre>';
+//                                    die;
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php }?>
             </div><!-- sidebar -->
         </div>
   </div>
