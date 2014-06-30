@@ -6174,6 +6174,8 @@ input:focus {
     max-height: 105px;
     overflow: hidden;
     margin-left: 1px;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
 }
 .details :hover {
     background: #000;

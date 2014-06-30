@@ -38,7 +38,8 @@ class Comment extends CActiveRecord
 			array('name_owner, email_owner, photo_owner', 'length', 'max'=>100),
 			array('text', 'length', 'max'=>500),
 			array('time_create, time_update', 'safe'),
-			// The following rule is used by search().
+            array('email_owner','email'),
+            // The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name_owner, email_owner, photo_owner, text, likes, dislike, time_create, time_update, tours_id', 'safe', 'on'=>'search'),
 		);

@@ -35,6 +35,7 @@ class Book extends CActiveRecord
 			array('pax, tours_id', 'numerical', 'integerOnly'=>true),
 			array('email_owner, question', 'length', 'max'=>100),
 			array('time_create, time_update', 'safe'),
+            array('email_owner','email'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, email_owner, pax, date_book, question, time_create, time_update, tours_id', 'safe', 'on'=>'search'),
