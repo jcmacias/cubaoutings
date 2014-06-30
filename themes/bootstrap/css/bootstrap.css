@@ -6160,69 +6160,23 @@ input:focus {
 #carousel-top{
     margin-top: 62px;
 }
-/*FOR SECTIONS DIVIDER TEST*/
-/*section::before,
-section::after {
+/*FOR MODAL DETAILS*/
+.details p{
+    top: -64px;
+    background: #333;
+    color: white;
+    opacity: 0.77;
     position: absolute;
-    content: '';
-    pointer-events: none;
+    top: 70%;
+    width: 93%;
+    padding: 2px;
+    max-width: 550px;
+    max-height: 105px;
+    overflow: hidden;
+    margin-left: 1px;
 }
-
-.ss-style-doublediagonal {
-    z-index: 1;
-    padding-top: 6em;
-    background: #2072a7;
+.details :hover {
+    background: #000;
+    opacity: 0.77;
 }
-
-.ss-style-doublediagonal::before,
-.ss-style-doublediagonal::after {
-    top: 0;
-    left: -25%;
-    z-index: -1;
-    width: 150%;
-    height: 75%;
-    background: inherit;
-    transform: rotate(-2deg);
-    transform-origin: 0 0;
-}
-
-.ss-style-doublediagonal::before {
-    height: 50%;
-    background: #116094;
-    transform: rotate(-3deg);
-    transform-origin: 3% 0;
-}
-.ss-style-inczigzag::before,
-.ss-style-inczigzag::after {
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-size: 100px 100%;
-}
-
-.ss-style-inczigzag::before {
-    top: 0;
-    background-image: linear-gradient(15deg, #3498db 50%, #2980b9 50%);
-}
-
-.ss-style-inczigzag::after {
-    bottom: 0;
-    background-image: linear-gradient(15deg, #2980b9 50%, #3498db 50%);
-}
-.ss-style-foldedcorner::before,
-.ss-style-foldedcorner::after {
-    bottom: 0;
-    width: 100px;
-    height: 100px;
-}
-
-.ss-style-foldedcorner::before {
-    right: 0;
-    background-image: linear-gradient(-45deg, #3498db 50%, #37a2ea 50%);
-}
-
-.ss-style-foldedcorner::after {
-    right: 100px;
-    background-image: linear-gradient(-45deg, #236fa1 50%, transparent 50%);
-}*/
 

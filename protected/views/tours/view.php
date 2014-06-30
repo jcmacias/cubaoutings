@@ -48,14 +48,18 @@ if($photos){?>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
         <!-- Carousel indicators -->
-        <?php if(count($photos)>1){?>
+        <?php
+        $cant_photos=count($photos);
+        if($cant_photos>1){?>
         <ol class="carousel-indicators">
-
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <?php for($i=0;$i<$cant_photos;$i++){
+                    if($i==0){
+              ?>
+            <li data-target="#myCarousel" data-slide-to="<?php echo $i; ?>" class="active"></li>
+<?php }else{ ?>
+            <li data-target="#myCarousel" data-slide-to="<?php echo $i; ?>"></li>
+<?php }}?>
+<!--           <li data-target="#myCarousel" data-slide-to="2"></li>-->
 
         </ol>
         <?php }?>

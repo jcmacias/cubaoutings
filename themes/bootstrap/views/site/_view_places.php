@@ -25,6 +25,7 @@
             </div>
             <div class="modal-body">
                 <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$data->direction, $data->name,array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded img-responsive'));?>
+                <div class="details"><?php echo $data->description;?></div>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

@@ -119,9 +119,7 @@
                                         'dataProvider'=>$dataProvider,
                                         'itemView'=>'//site/_view_places',
                                         'id'=>'places',
-                                        //'summaryText'=>"",
                                         'template'=>'{items} {pager}',
-                                        //'enablePagination'=>true,
                                         'pagerCssClass'=>'CLinkPager pull-right',
                                         'pager'=>array(
                                             'header' => '',
