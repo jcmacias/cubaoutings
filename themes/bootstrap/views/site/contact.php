@@ -5,9 +5,9 @@
 /* @var $form CActiveForm */
 
     //$this->pageTitle=Yii::app()->name . ' - Contact Us';
-    /*$this->breadcrumbs=array(
+    $this->breadcrumbs=array(
         'Contact',
-    );*/
+    );
     ?>
 
     <!--<h1>Contact Us</h1>

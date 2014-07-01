@@ -100,4 +100,16 @@ class Place extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+    public function getPlacesToursData($id){
+        $criteria = new CDbCriteria;
+        $criteria->compare('tours_id',$id);
+
+        $dataprovider = new CActiveDataProvider($this, array(
+            'criteria'=>$criteria,
+            'pagination' => array(
+                'pageSize'=> Yii::app()->params['paginado_places']
+            ),
+        ));
+        return $dataprovider;
+    }
 }
