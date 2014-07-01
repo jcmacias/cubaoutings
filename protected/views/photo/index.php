@@ -19,7 +19,7 @@ $this->menu=array(
         array('label'=>'Three cities tour','url'=>array('tours/view','id'=>13)),
         array('label'=>'Guama and the Bay of Pigs ','url'=>array('tours/view','id'=>12)),
         array('label'=>'Havana and the cannon shot','url'=>array('tours/view','id'=>15)),
-        array('label'=>'Transfers','url'=>array('transfer')),
+        array('label'=>'Transfers','url'=>array('tours/transfer')),
 
     );
 }
