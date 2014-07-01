@@ -10,6 +10,18 @@ $this->menu=array(
 	array('label'=>'Create Photo', 'url'=>array('create')),
 	array('label'=>'Manage Photo', 'url'=>array('admin')),
 );
+}else{
+    $this->menu=array(
+        array('label'=>'Havana tour','url'=>array('view','id'=>8)),
+        array('label'=>'Trinidad & Cienfuegos tour ','url'=>array('tours/view','id'=>11)),
+        array('label'=>'Matanzas, Cárdenas, & Varadero tour','url'=>array('tours/view','id'=>7)),
+        array('label'=>'Havana and Tropicana ','url'=>array('tours/view','id'=>14)),
+        array('label'=>'Three cities tour','url'=>array('tours/view','id'=>13)),
+        array('label'=>'Guama and the Bay of Pigs ','url'=>array('tours/view','id'=>12)),
+        array('label'=>'Havana and the cannon shot','url'=>array('tours/view','id'=>15)),
+        array('label'=>'Transfers','url'=>array('transfer')),
+
+    );
 }
 ?>
 <!--SECTION PHOTOS -->
@@ -79,18 +91,6 @@ $this->menu=array(
     }
     ?>
 </div>
-<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >-->
-<!--    <div class="modal-dialog">-->
-<!--        <div class="modal-content">-->
-<!--            <div class="modal-header">-->
-<!--                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
-<!--            </div>-->
-<!--            <div class="modal-body">-->
-<!--                <div class="details"><p>--><?php //echo "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae  quo aut error corrupti officiis dolore accusantium rem rerum illum  nulla sed quisquam.";?><!--</p></div>-->
-<!--            </div>-->
-<!--        </div><!-- /.modal-content -->
-<!--    </div><!-- /.modal-dialog -->
-<!--</div><!-- /.modal -->
 <?php
 Yii::app()->clientScript->registerScript('tab', "
 $('#myTab a').click(function (e) {
