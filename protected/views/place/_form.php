@@ -17,18 +17,18 @@
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+<!--	--><?php //echo $form->errorSummary($model); ?>
 
 	<div class="row">
         <div class="col-lg-6">
             <?php echo $form->labelEx($model,'name'); ?>
             <?php echo $form->textField($model,'name',array('class'=>'place_name form-control')); ?>
-            <?php echo $form->error($model,'name'); ?>
+            <?php echo $form->error($model,'name',array('class'=>'label label-danger')); ?>
         </div>
         <div class="col-lg-6">
             <?php echo $form->labelEx($model,'tours_id'); ?>
             <?php echo $form->dropDownList($model,'tours_id',CHtml::ListData(Tours::model()->findAll(),'id','name'),array('class'=>'photo_tours_id form-control')); ?>
-            <?php echo $form->error($model,'tours_id'); ?>
+            <?php echo $form->error($model,'tours_id',array('class'=>'label label-danger')); ?>
         </div>
     </div>
 
@@ -46,7 +46,7 @@
                     ),
                 ),
             )); ?>
-            <?php echo $form->error($model,'description'); ?>
+            <?php echo $form->error($model,'description',array('class'=>'label label-danger')); ?>
         </div>
 	</div>
 

@@ -17,28 +17,33 @@
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+<!--	--><?php //echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'photo'); ?>
-		<?php echo $form->textField($model,'photo',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'photo'); ?>
+        <div class="col-lg-4">
+            <?php echo $form->labelEx($model,'photo'); ?>
+            <?php echo $form->textField($model,'photo',array('class'=>'place_name form-control')); ?>
+            <?php echo $form->error($model,'photo',array('class'=>'label label-danger')); ?>
+        </div>
+        <div class="col-lg-4">
+            <?php echo $form->labelEx($model,'tours_id'); ?>
+            <?php echo $form->dropDownList($model,'tours_id',CHtml::ListData(Tours::model()->findAll(),'id','name'),array('class'=>'photo_tours_id form-control')); ?>
+            <?php echo $form->error($model,'tours_id',array('class'=>'label label-danger')); ?>
+        </div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textField($model,'description',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'description'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'tours_id'); ?>
-		<?php echo $form->textField($model,'tours_id'); ?>
-		<?php echo $form->error($model,'tours_id'); ?>
+        <div class="col-lg-8">
+            <?php echo $form->labelEx($model,'description'); ?>
+            <?php echo $form->textField($model,'description',array('class'=>'place_name form-control')); ?>
+            <?php echo $form->error($model,'description',array('class'=>'label label-danger')); ?>
+        </div>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+        <div class="col-lg-8">
+	    	<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-md pull-right','style'=>'margin-top:2px;')); ?>
+        </div>
 	</div>
 
 <?php $this->endWidget(); ?>
