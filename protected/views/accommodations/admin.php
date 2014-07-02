@@ -25,8 +25,18 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
+<!--SECTION ACCOMMODATIONS -->
+<div class="section-header" id="contact">
 
-<h1>Manage Accommodations</h1>
+    <!-- SECTION TITLE -->
+    <h2 class="dark-text">Manage Accommodations</h2>
+
+    <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+    <h6>
+        Casas donde tener una buena estancia.
+    </h6>
+</div>
+
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

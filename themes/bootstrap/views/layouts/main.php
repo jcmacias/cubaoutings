@@ -76,6 +76,7 @@ Yii::app()->clientscript
                         array('label'=>Yii::t('app','Places'), 'url'=>array('/place/index')),
                         array('label'=>Yii::t('app','Bookings'), 'url'=>array('/book/index'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Testimonials'), 'url'=>array('/comment/index')),
+                        array('label'=>Yii::t('app','Accommodations'), 'url'=>array('/accommodations/index')),
                         array('label'=>Yii::t('app','Users'), 'url'=>array('/user/index'), 'visible'=>!Yii::app()->user->isGuest),
                         //array('label'=>Yii::t('app','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Logout ('.Yii::app()->user->name.')'), 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)

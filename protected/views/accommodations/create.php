@@ -12,7 +12,17 @@ $this->menu=array(
 	array('label'=>'Manage Accommodations', 'url'=>array('admin')),
 );
 ?>
+    <!--SECTION ACCOMMODATIONS -->
+    <div class="section-header" id="contact">
 
-<h1>Create Accommodations</h1>
+        <!-- SECTION TITLE -->
+        <h2 class="dark-text">Create Accommodations</h2>
+
+        <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+        <h6>
+            Casas donde tener una buena estancia.
+        </h6>
+    </div>
+
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
