@@ -8,6 +8,7 @@
  * @property string $photo
  * @property string $description
  * @property integer $tours_id
+ * @property string $name
  */
 class Accommodations extends CActiveRecord
 {
@@ -27,13 +28,13 @@ class Accommodations extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('photo, description, tours_id', 'required'),
+			array('photo, description, tours_id, name', 'required'),
 			array('tours_id', 'numerical', 'integerOnly'=>true),
-			array('photo', 'length', 'max'=>100),
+			array('photo, name', 'length', 'max'=>100),
 			array('description', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, photo, description, tours_id', 'safe', 'on'=>'search'),
+			array('id, photo, description, tours_id, name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,6 +60,7 @@ class Accommodations extends CActiveRecord
 			'photo' => 'Photo',
 			'description' => 'Description',
 			'tours_id' => 'Tours',
+			'name' => 'Name',
 		);
 	}
 
@@ -84,6 +86,7 @@ class Accommodations extends CActiveRecord
 		$criteria->compare('photo',$this->photo,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('tours_id',$this->tours_id);
+		$criteria->compare('name',$this->name,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

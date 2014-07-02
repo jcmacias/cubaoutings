@@ -30,7 +30,7 @@ $this->menu=array(
 
 <div class="alert alert-dismissable alert-success">
     <button type="button" class="close" data-dismiss="alert">×</button>
-    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+    <strong>Well done!</strong> You successfully add a new photo.
 </div>
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

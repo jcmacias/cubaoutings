@@ -65,13 +65,22 @@ class AccommodationsController extends Controller
 		$model=new Accommodations;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+	     $this->performAjaxValidation($model);
 
 		if(isset($_POST['Accommodations']))
 		{
-			$model->attributes=$_POST['Accommodations'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            $model->attributes=$_POST['Accommodations'];
+            $namephoto = $model->tours_id;
+            $uploadedFile = CUploadedFile::getInstance($model,'photo');
+            $fileName = "{$namephoto}-{$uploadedFile}";
+            $model->photo = $fileName;
+            if($model->save()){
+                if(!empty($uploadedFile))  // checkeamos si el archivo subido esta seteado o no
+                {
+                    $uploadedFile->saveAs(Yii::app()->basePath.'/../images/'.$fileName);
+                }
+                $this->redirect(array('view','id'=>$model->id));
+            }
 		}
 
 		$this->render('create',array(
@@ -89,13 +98,28 @@ class AccommodationsController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Accommodations']))
 		{
-			$model->attributes=$_POST['Accommodations'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            $_POST['Accommodations']['photo'] = $model->photo;
+            $model->attributes=$_POST['Accommodations'];
+            $namephoto = $model->tours_id;
+            $uploadedFile = CUploadedFile::getInstance($model,'photo');
+            if(empty($uploadedFile)){
+                $fileName = $model->photo;
+            }else{
+                $fileName = "{$namephoto}-{$uploadedFile}";
+            }
+            $model->photo = $fileName;
+            if($model->save()){
+                if(!empty($uploadedFile))  // checkeamos si el archivo subido esta seteado o no
+                {
+                    $uploadedFile->saveAs(Yii::app()->basePath.'/../images/'.$fileName);
+                }
+                $this->redirect(array('view','id'=>$model->id));
+            }
+
 		}
 
 		$this->render('update',array(

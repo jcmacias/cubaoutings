@@ -65,7 +65,7 @@ class PhotoController extends Controller
 		$model=new Photo;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Photo']))
 		{
@@ -113,7 +113,7 @@ class PhotoController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Photo']))
 		{

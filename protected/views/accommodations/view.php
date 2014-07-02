@@ -27,13 +27,20 @@ $this->menu=array(
     </h6>
 </div>
 
-
+<div class="alert alert-dismissable alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>Well done!</strong> You successfully add a new accommodations.
+</div>
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
 		'photo',
 		'description',
-		'tours_id',
+        'name',
+        'toursac.name'
 	),
+    'htmlOptions'=>array(
+        'class'=>'table table-striped table-hover '
+    )
 )); ?>
