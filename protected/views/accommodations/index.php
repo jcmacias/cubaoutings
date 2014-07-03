@@ -46,9 +46,8 @@ $this->menu=array(
         <p><i class="icon-ok"></i>  They have very good prices, which could change depending on the season(from 30.00 up to 70.00).</p>
     </div>
 
-
+    <hr class="featurette-divider">
 </div>
-<hr class="featurette-divider">
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

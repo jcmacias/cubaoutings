@@ -6,6 +6,7 @@ $this->breadcrumbs=array(
 	'Books'=>array('index'),
 	$model->id,
 );
+if(!Yii::app()->user->isGuest){
 
 $this->menu=array(
 	array('label'=>'List Book', 'url'=>array('index')),
@@ -14,6 +15,19 @@ $this->menu=array(
 	array('label'=>'Delete Book', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Book', 'url'=>array('admin')),
 );
+}else{
+    $this->menu=array(
+        array('label'=>'Havana tour','url'=>array('view','id'=>8)),
+        array('label'=>'Trinidad & Cienfuegos tour ','url'=>array('tours/view','id'=>11)),
+        array('label'=>'Matanzas, Cárdenas, & Varadero tour','url'=>array('tours/view','id'=>7)),
+        array('label'=>'Havana and Tropicana ','url'=>array('tours/view','id'=>14)),
+        array('label'=>'Three cities tour','url'=>array('tours/view','id'=>13)),
+        array('label'=>'Guama and the Bay of Pigs ','url'=>array('tours/view','id'=>12)),
+        array('label'=>'Havana and the cannon shot','url'=>array('tours/view','id'=>15)),
+        array('label'=>'Transfers','url'=>array('tours/transfer')),
+
+    );
+}
 ?>
 <!--SECTION BOOK -->
 <div class="section-header" id="contact">

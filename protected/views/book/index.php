@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'Manage Book', 'url'=>array('admin')),
 );
 ?>
-<!--SECTION CONTACT -->
+<!--SECTION BOOK -->
 <div class="section-header" id="contact">
 
     <!-- SECTION TITLE -->

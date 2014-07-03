@@ -28,7 +28,7 @@ class BookAccommodationsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','create'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -65,14 +65,16 @@ class BookAccommodationsController extends Controller
 		$model=new BookAccommodations;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['BookAccommodations']))
 		{
 			$model->attributes=$_POST['BookAccommodations'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
-		}
+		}else{
+
+        }
 
 		$this->render('create',array(
 			'model'=>$model,
