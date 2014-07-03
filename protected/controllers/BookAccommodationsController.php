@@ -73,7 +73,7 @@ class BookAccommodationsController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}else{
-
+            //$model->getErrors($model->attributes);
         }
 
 		$this->render('create',array(
@@ -91,7 +91,7 @@ class BookAccommodationsController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['BookAccommodations']))
 		{
