@@ -58,16 +58,34 @@ class SiteController extends Controller
 
 			if($model->validate())
 			{
-                $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-				$headers="From: $name <{$model->email}>\r\n".
-					"Reply-To: {$model->email}\r\n".
-					"MIME-Version: 1.0\r\n".
-					"Content-Type: text/plain; charset=UTF-8";
+                $mail = new JPhpMailer;
+                $mail->IsSMTP();
+                $mail->Host = 'smpt.gmail.com';
+                $mail->SMTPAuth = true;
+                $mail->Username = Yii::app()->params['adminEmail'];
+                $mail->Password = 'yourpassword';
+                $mail->SetFrom($model->email, $model->name);
+                $mail->Subject = $model->subject;
+                $mail->AltBody = $model->body;
+                //$mail->MsgHTML('<h1>JUST A TEST!</h1>');
+                //$mail->AddAddress('john.doe@otherdomain.com', 'John Doe');
+                $mail->Send();
 
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-				//$this->refresh();
+
+
+
+//                $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
+//				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
+//				$headers="From: $name <{$model->email}>\r\n".
+//					"Reply-To: {$model->email}\r\n".
+//					"MIME-Version: 1.0\r\n".
+//					"Content-Type: text/plain; charset=UTF-8";
+//
+//				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
+				Yii::app()->user->setFlash('contact','<div class="alert alert-dismissable alert-success">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <strong>Well done!</strong>Thank you for contacting us. We will respond to you as soon as possible.</div>');
+				$this->refresh();
 			}
 		}
 		$this->render('contact',array('model'=>$model));

@@ -21,6 +21,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        'application.extensions.phpmailer.JPhpMailer',
 	),
 
 	'modules'=>array(
@@ -95,7 +96,7 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'tendedera@cubava.cu',
+		'adminEmail'=>'cubaoutings@gmail.com',
         'paginado_places'=>6
 	),
 );
