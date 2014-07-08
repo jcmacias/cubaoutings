@@ -15,12 +15,11 @@ $this->menu=array(
         array('label'=>'Havana tour','url'=>array('view','id'=>8)),
         array('label'=>'Trinidad & Cienfuegos tour ','url'=>array('view','id'=>11)),
         array('label'=>'Matanzas, Cárdenas, & Varadero tour','url'=>array('view','id'=>7)),
-        array('label'=>'Havana and Tropicana ','url'=>array('view','id'=>14)),
+        array('label'=>'Havana & Tropicana ','url'=>array('view','id'=>14)),
         array('label'=>'Three cities tour','url'=>array('view','id'=>13)),
-        array('label'=>'Guama and the Bay of Pigs ','url'=>array('view','id'=>12)),
-        array('label'=>'Havana and the cannon shot','url'=>array('view','id'=>15)),
+        array('label'=>'Guama & the Bay of Pigs ','url'=>array('view','id'=>12)),
+        array('label'=>'Havana & the cannon shot','url'=>array('view','id'=>15)),
         array('label'=>'Transfers','url'=>array('transfer')),
-
     );
 }
 ?>

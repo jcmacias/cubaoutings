@@ -47,5 +47,6 @@ return array (
   'Testimonials'=>'Testimonios',
   'Photos'=>'Fotos',
   'Places'=>'Sitios de Interes',
+  'Accommodations'=>'Alojamientos',
 
 );
