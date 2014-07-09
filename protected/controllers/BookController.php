@@ -133,7 +133,11 @@ class BookController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Book');
+		$dataProvider=new CActiveDataProvider('Book',array(
+            'criteria'=>array(
+            'order'=>'time_update DESC',
+           ),
+        ));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

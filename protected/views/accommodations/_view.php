@@ -35,7 +35,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
-                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$data->photo, $data->name,array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded img-responsive'));?>
+                <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$data->photo, $data->name,array('class'=>'img-rounded img-responsive'));?>
                 <div class="details"><p><?php echo $data->description;?></p></div>
             </div>
         </div><!-- /.modal-content -->

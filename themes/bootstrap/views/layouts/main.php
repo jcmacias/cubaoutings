@@ -69,8 +69,8 @@ Yii::app()->clientscript
                     'htmlOptions' => array( 'class' =>'nav navbar-nav' ),
                     'items'=>array(
                         array('label'=>Yii::t('app','Home'), 'url'=>array('/site/index')),
-                        array('label'=>Yii::t('app','About'), 'url'=>array('/site/page', 'view'=>'about')),
-                        array('label'=>Yii::t('app','Contact'), 'url'=>array('/site/contact')),
+                        array('label'=>Yii::t('app','About'), 'url'=>array('/site/page', 'view'=>'about'), 'visible'=>Yii::app()->user->isGuest),
+                        array('label'=>Yii::t('app','Contact'), 'url'=>array('/site/contact'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Tours'), 'url'=>array('/tours/index')),
                         array('label'=>Yii::t('app','Photos'), 'url'=>array('/photo/index')),
                         array('label'=>Yii::t('app','Places'), 'url'=>array('/place/index')),
