@@ -114,6 +114,17 @@ Yii::app()->clientscript
      </div>
 </footer>
 </div><!-- page -->
+<?php
+$this->widget('application.extensions.PNotify.PNotify',array(
+        'options'=>array(
+            'title'=>'Noticias!!!',
+            'text'=>'Hay pollo por pescao en la carniceria!',
+            'type'=>'success',
+            'closer'=>true,
+            'sticker'=>false,
+            'hide'=>false))
+);
+?>
 <?php Yii::app()->clientScript->registerScript('scrolldown',"
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
