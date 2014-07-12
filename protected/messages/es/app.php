@@ -48,5 +48,6 @@ return array (
   'Photos'=>'Fotos',
   'Places'=>'Sitios de Interes',
   'Accommodations'=>'Alojamientos',
+  'Share this site with your friends'=>'Comparte este sitio con tus amistades.',
 
 );

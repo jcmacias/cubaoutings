@@ -32,7 +32,7 @@ $this->menu=array(
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        Diganos lo que piensa de nuestros servicios.
+       Your opinion means a lot to us.
     </h6>
 </div>
 

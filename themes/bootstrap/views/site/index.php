@@ -26,16 +26,12 @@ $this->pageTitle=Yii::app()->name;
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <div style="background-color: rgba(0, 0, 0, 0.4);" class="well sponsor">
-                            <!--<a target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'treehouse']);" href="#">
-                <span style="float: left; margin-right: 15px;">
-                  <img width="175" height="135" onload="_gaq.push(['_trackEvent', 'banner', 'impression', 'treehouse']);" src="#" class="ivbdpqnjibtcvgttxxgd">
-                </span>
-                            </a>-->
                             <a target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'treehouse']);" href="#">
-                                <h4 style="margin-bottom: 0.4em;">Treehouse</h4>
+                                <h4 style="margin-bottom: 0.4em;">Find us on Tripadvisor</h4>
                                 <div class="clearfix">
-                                    <p>Learn Web Design, Coding, Mobile App Development &amp; More.</p>
+
                             </a>
+                                 <p><? echo Yii::t('app','Share this site with your friends');?></p>
                                     <p><?php
                                         $this->widget('application.extensions.sharebox.EShareBox', array(
                                             // url to share, required.
@@ -92,11 +88,11 @@ $this->pageTitle=Yii::app()->name;
     <div class="section-header" >
 
          <!-- SECTION TITLE -->
-         <h2 class="dark-text">Excursiones</h2>
+         <h2 class="dark-text">Tours</h2>
 
          <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
         <h6>
-             Tenemos interesantes opciones,deberias echar un vistazo.
+            Just tell us your choices and we will do the rest.
         </h6>
     </div>
 <div class="tour-list">
@@ -145,11 +141,11 @@ $this->pageTitle=Yii::app()->name;
 <div class="section-header">
 
     <!-- SECTION TITLE -->
-    <h2 class="dark-text">Testimonios</h2>
+    <h2 class="dark-text">Testimonials</h2>
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        Tenemos cientos de usuarios complacidos con nuestro trabajo,puede leer algunos testimonios.
+        People are very happy with our work. Get to know their opinion.
     </h6>
 </div>
 
@@ -251,11 +247,11 @@ $this->pageTitle=Yii::app()->name;
 <div class="section-header">
 
     <!-- SECTION TITLE -->
-    <h2 class="dark-text">GALERIAS</h2>
+    <h2 class="dark-text">Pictures</h2>
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        Las mejores imagenes de Cuba.
+       Some images of Cuba.
     </h6>
 </div>
 <div class="tour-list">

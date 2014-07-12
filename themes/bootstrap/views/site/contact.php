@@ -15,11 +15,11 @@
     <div class="section-header" id="contact">
 
         <!-- SECTION TITLE -->
-        <h2 class="dark-text">Contacto</h2>
+        <h2 class="dark-text">Contact</h2>
 
         <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
         <h6>
-            Mantente en contacto.Dinos lo que piensas.
+            Keep in touch. You are our commitment.
         </h6>
     </div>
     <div class="row">
@@ -108,21 +108,19 @@
                 <label class="pull-left">Emails</label><br>
                 <ul class="pull-left">
                     <li>cubaoutings@gmail.com</li>
-                    <li>cubaoutings@gmail.com</li>
                 </ul>
             </div>
             <div class="row">
                 <label class="pull-left">Facebook contacts</label><br>
                 <ul class="pull-left">
                     <li>Gloria@facebook.com</li>
-                    <li>Gloria@facebook.com</li>
                 </ul>
             </div>
             <div class="row">
-                <label class="pull-left">Telephones</label><br/>
+                <label class="pull-left">Cellphones</label><br/>
                 <ul class="pull-left">
-                 <li>Office:888-8888</li>
-                 <li>Office:888-8888</li>
+                 <li>+53 52812117</li>
+                 <li>+53 52480858</li>
                 </ul>
              </div>
 

@@ -15,7 +15,7 @@ $this->breadcrumbs=array(
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        Conozca todo sobre nosotros.
+        Get to know who we are.
     </h6>
 
 </div>

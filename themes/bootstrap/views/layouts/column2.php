@@ -27,3 +27,16 @@
   </div>
 <?php $this->endContent(); ?>
 </div>
+<?php
+if(Yii::app()->user->isGuest){
+    $this->widget('application.extensions.PNotify.PNotify',array(
+            'options'=>array(
+                'title'=>'Special offer!!!',
+                'text'=>'Summer discount -10%.',
+                'type'=>'success',
+                'closer'=>true,
+                'sticker'=>false,
+                'hide'=>false))
+    );
+}
+?>

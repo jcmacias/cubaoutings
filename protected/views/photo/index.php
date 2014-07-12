@@ -32,7 +32,7 @@ $this->menu=array(
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        Galeria de imagenes.
+        Some images of Cuba.
     </h6>
 </div>
 <ul role="tablist" class="nav nav-tabs" id="myTab">

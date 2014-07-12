@@ -115,7 +115,7 @@
                         <div class="col-sm-12">
                             <div class="panel panel-info">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title"> places</h3>
+                                    <h3 class="panel-title">Interesting places</h3>
                                 </div>
                                 <div class="panel-body">
                                     <?php
@@ -143,3 +143,16 @@
   </div>
 <?php $this->endContent(); ?>
 </div>
+<?php
+if(Yii::app()->user->isGuest){
+    $this->widget('application.extensions.PNotify.PNotify',array(
+            'options'=>array(
+                'title'=>'Special offer!!!',
+                'text'=>'Summer discount -10%.',
+                'type'=>'success',
+                'closer'=>true,
+                'sticker'=>false,
+                'hide'=>false))
+    );
+}
+?>

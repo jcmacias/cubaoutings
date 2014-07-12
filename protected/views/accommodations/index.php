@@ -32,7 +32,7 @@ $this->menu=array(
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        Casas donde tener una buena estancia.
+       The best place to enjoy your stay.
     </h6>
 </div>
 <div class="col-lg-12">
