@@ -83,9 +83,9 @@ Yii::app()->clientscript
                     ),
                    )); ?>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><?php $this->widget('application.extensions.ELangPick.ELangPick', array('pickerType' => 'dropdown', )); ?></li>
-                </ul>
+<!--                <ul class="nav navbar-nav navbar-right">-->
+<!--                    <li>--><?php //$this->widget('application.extensions.ELangPick.ELangPick', array('pickerType' => 'dropdown', )); ?><!--</li>-->
+<!--                </ul>-->
             </div>
         </div>
     </div>	<!-- mainmenu -->
