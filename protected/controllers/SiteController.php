@@ -60,7 +60,7 @@ class SiteController extends Controller
 			{
                 $mail = new JPhpMailer;
                 $mail->IsSMTP();
-                $mail->Host = Yii::app()->params['smtp.gmail.com'];
+                $mail->Host = Yii::app()->params['host'];
                 $mail->SMTPAuth = true;
                 $mail->Username = Yii::app()->params['adminEmail'];
                 $mail->Password = Yii::app()->params['password'];

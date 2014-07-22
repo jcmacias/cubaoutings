@@ -35,7 +35,7 @@ $this->menu=array(
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        Planilla de reserva.
+        Booking details.
     </h6>
 </div>
 
@@ -52,6 +52,6 @@ $this->menu=array(
 		'pax',
 		'date',
 		//'time_create',
-		'accommodations.name',
+		'question',
 	),
 )); ?>
