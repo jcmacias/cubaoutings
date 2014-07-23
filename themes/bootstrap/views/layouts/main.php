@@ -57,7 +57,7 @@ Yii::app()->clientscript
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/logosi.png', 'cubaoutings',array("style"=>"height:35px")); ?></a>
+                <a class="navbar-brand" href="<?php echo Yii::app()->createUrl('site/index');?>"><?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/logosi.png', 'cubaoutings',array("style"=>"height:35px")); ?></a>
                 <button data-target="#navbar-main" data-toggle="collapse" type="button" class="navbar-toggle">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -73,7 +73,7 @@ Yii::app()->clientscript
                         array('label'=>Yii::t('app','Contact'), 'url'=>array('/site/contact'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Tours'), 'url'=>array('/tours/index')),
                         array('label'=>Yii::t('app','Photos'), 'url'=>array('/photo/index')),
-                        array('label'=>Yii::t('app','Places'), 'url'=>array('/place/index')),
+                        array('label'=>Yii::t('app','Places'), 'url'=>array('/place/index'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Bookings'), 'url'=>array('/book/index'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Testimonials'), 'url'=>array('/comment/index')),
                         array('label'=>Yii::t('app','Accommodations'), 'url'=>array('/accommodations/index')),

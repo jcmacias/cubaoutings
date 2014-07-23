@@ -57,7 +57,7 @@ $('.search-form form').submit(function(){
 		'id',
 		'name',
 		'direction',
-		//'description',
+        //'description',
 		//'time_create',
 		'time_update',
 		/*

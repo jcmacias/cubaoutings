@@ -12,9 +12,9 @@ $this->menu=array(
 );
 }else{
     $this->menu=array(
-        array('label'=>'Havana tour','url'=>array('tours/view','id'=>8)),
-        array('label'=>'Trinidad & Cienfuegos tour ','url'=>array('tours/view','id'=>11)),
-        array('label'=>'Matanzas, Cárdenas, & Varadero tour','url'=>array('tours/view','id'=>7)),
+        array('label'=>'Havana day tour','url'=>array('tours/view','id'=>8)),
+        array('label'=>'Trinidad & Cienfuegos','url'=>array('tours/view','id'=>11)),
+        array('label'=>'Matanzas, Cárdenas, & Varadero','url'=>array('tours/view','id'=>7)),
         array('label'=>'Havana & Tropicana ','url'=>array('tours/view','id'=>14)),
         array('label'=>'Three cities tour','url'=>array('tours/view','id'=>13)),
         array('label'=>'Guama & the Bay of Pigs ','url'=>array('tours/view','id'=>12)),
