@@ -188,7 +188,7 @@ class BookAccommodationsController extends Controller
         $mail->AltBody = $email." ".$question;
         $mail->Send();
         /**
-        Descomentariar para ver si envia el email..
+        Descomentar para ver si envia el email..
          */
 //        if($mail->Send()){
 //            echo "Email sent";
