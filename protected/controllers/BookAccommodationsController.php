@@ -70,8 +70,11 @@ class BookAccommodationsController extends Controller
 		if(isset($_POST['BookAccommodations']))
 		{
 			$model->attributes=$_POST['BookAccommodations'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if($model->save()){
+                $this->sendEmail($model->email_owner,$model->question);
+                $this->redirect(array('view','id'=>$model->id));
+            }
+
 		}else{
             //$model->getErrors($model->attributes);
         }
@@ -172,4 +175,25 @@ class BookAccommodationsController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function sendEmail($email,$question){
+        $mail = new JPhpMailer;
+        $mail->IsSMTP();
+        $mail->Host = Yii::app()->params['host'];
+        $mail->SMTPAuth = true;
+        $mail->Username = Yii::app()->params['adminEmail'];
+        $mail->Password = Yii::app()->params['password'];
+        $mail->SetFrom(Yii::app()->params['adminEmail'], 'cubaoutings');
+        $mail->Subject = "Booking";
+        $mail->AltBody = $email." ".$question;
+        $mail->Send();
+        /**
+        Descomentariar para ver si envia el email..
+         */
+//        if($mail->Send()){
+//            echo "Email sent";
+//        }else{
+//            echo "configure email";die;
+//        }
+    }
 }
