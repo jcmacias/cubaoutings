@@ -59,6 +59,7 @@ class Photo extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
             'tours'=>array(self::BELONGS_TO,'Tours','tours_id'),
+            'places'=>array(self::BELONGS_TO,'Places','place_id'),
 		);
 	}
 
