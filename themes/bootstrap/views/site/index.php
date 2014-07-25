@@ -101,7 +101,7 @@ $this->pageTitle=Yii::app()->name;
             <div class="thumbnail">
                 <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/trinidad.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
-                    <h3>Trinidad & Cienfuegos tour </h3>
+                    <h3>Trinidad & Cienfuegos</h3>
                     <p>Get a ride through the green country side to visit the best two cities of the central part of Cuba. They are so perfectly preserved that we can see the features of a Spanish colonization on its very architecture.</p>
                     <p>
                         <a class="btn btn-primary" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>11));?>"><?php echo Yii::t('app','Read More');?></a>

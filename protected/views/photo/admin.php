@@ -49,17 +49,25 @@ $('.search-form form').submit(function(){
 //)); ?>
 <!--</div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php
+$imagen='"/images/"';
+$this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'photo-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
 		'name',
-		'direction',
+		//'direction',
+        array(
+            'type'=>'html',
+            'name'=>'direction',
+            //'value'=>'CHtml::image("../images/$data->direction","",array("style"=>"width:25px;height:25px;"))'
+            'value'=>'CHtml::image(Yii::app()->baseUrl."/images/$data->direction","",array("class"=>"img-rounded","style"=>"width:100px;"))'
+
+        ),
         //'description',
-		//'time_create',
-		'time_update',
+		'time_create',
+		//'time_update',
 		/*
 		'tours_id',
 		'place_id',
