@@ -108,7 +108,7 @@ Yii::app()->clientscript
             <!--<div id="footer">-->
                 Copyright &copy; <?php echo date('Y'); ?> by Cubaoutings.<br/>
                 All Rights Reserved.<br/>
-                <?php echo Yii::powered(); ?>
+                <?php //echo Yii::powered(); ?>
             <!--</div><!-- footer -->
         </div>
      </div>

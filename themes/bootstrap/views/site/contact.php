@@ -23,7 +23,7 @@
         </h6>
     </div>
     <div class="row">
-        <div class="col-lg-10">
+        <div class="col-lg-10" style="padding: 10px;border: solid 1px #FF005A;border-radius: 1%;">
             <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
                 <div class="flash-success">
@@ -103,7 +103,7 @@
 
             </div>
         </div>
-        <div class="col-lg-2" style="padding-left: 25px;">
+        <div class="col-lg-2" style="padding-left: 50px;">
             <div class="row">
                 <label class="pull-left">Emails</label><br>
                 <ul class="pull-left">
