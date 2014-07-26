@@ -20,7 +20,7 @@ $this->breadcrumbs=array(
 
 </div>
     <div class="row" style="padding-left: 169px;">
-        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/about.jpg', 'alt 1',array('class'=>'img-rounded','style'=>'width:843px;padding-top:-102px;'));?>
+        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/about.jpg', 'Cuba',array('class'=>'img-rounded','style'=>'width:843px;padding-top:-102px;'));?>
     </div>
     <hr class="featurette-divider">
     <div class="row">

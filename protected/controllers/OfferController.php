@@ -70,12 +70,17 @@ class OfferController extends Controller
 		if(isset($_POST['Offer']))
 		{
 			$model->attributes=$_POST['Offer'];
-            $nameimagen = $model->id;
+            $nameimagen =rand(1,1000);
             $uploadedFile = CUploadedFile::getInstance($model,'imagen');
             $fileName = "{$nameimagen}-{$uploadedFile}";
-            $model->imagen = $fileName;
+            if(!empty($uploadedFile)){
+                $model->imagen = $fileName;
+            }else{
+                $model->imagen = "offer.png";
+            }
 			if($model->save()){
-                $uploadedFile->saveAs(Yii::app()->basePath.'/../images/offer_image/'.$fileName);
+                if(!empty($uploadedFile))
+                    $uploadedFile->saveAs(Yii::app()->basePath.'/../images/offer_image/'.$fileName);
                 $this->redirect(array('view','id'=>$model->id));
             }
 
