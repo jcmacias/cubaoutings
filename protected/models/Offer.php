@@ -98,4 +98,11 @@ class Offer extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+    public function GetOffer(){
+        $criteria= new CDbCriteria();
+        $criteria->select='*';
+        $criteria->order='create_time DESC';
+        $result=$this->findAll($criteria);
+        return $result;
+    }
 }
