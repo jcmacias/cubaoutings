@@ -73,6 +73,7 @@ Yii::app()->clientscript
                         array('label'=>Yii::t('app','Contact'), 'url'=>array('/site/contact'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Tours'), 'url'=>array('/tours/index')),
                         array('label'=>Yii::t('app','Photos'), 'url'=>array('/photo/index')),
+                        array('label'=>Yii::t('app','Offer'), 'url'=>array('/offer/index'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Places'), 'url'=>array('/place/index'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Bookings'), 'url'=>array('/book/index'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Testimonials'), 'url'=>array('/comment/index')),

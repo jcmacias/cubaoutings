@@ -115,16 +115,24 @@
 <?php $this->endContent(); ?>
 </div>
 <?php
-if(Yii::app()->user->isGuest){
-    $this->widget('application.extensions.PNotify.PNotify',array(
-            'options'=>array(
-                'title'=>'Special offer!!!',
-                'text'=>'Summer discount -10%.',
-                'type'=>'success',
-                'closer'=>true,
-                'sticker'=>false,
-                'hide'=>false))
-    );
+$datos=Offer::model()->GetOffer();
+if($datos!=null ){
+    $message='<table><td>'.CHtml::image(Yii::app()->baseUrl . '/images/offer_image/'.$datos[0]->imagen, 'Cuba',array('class'=>'img-circle','style'=>'width:70px;')).'</td><td><p style="padding-left:7px">'.$datos[0]->message.'</p></td></table>';
+//echo '<pre>';
+//print_r($message[0]->message);
+//echo '</pre>';die;
+    if(Yii::app()->user->isGuest  ){
+        $this->widget('application.extensions.PNotify.PNotify',array(
+                'options'=>array(
+                    // 'title'=>'Special offer!!!',
+                    'text'=>$message,
+                    'type'=>'success',
+                    'closer'=>true,
+                    'sticker'=>false,
+                    'icon'=>false,
+                    'hide'=>false))
+        );
+    }
 }
 
 ?>

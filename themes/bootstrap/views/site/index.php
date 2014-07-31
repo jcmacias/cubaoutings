@@ -157,24 +157,25 @@ $this->pageTitle=Yii::app()->name;
             </div>
             <div class="panel-body">
                 <div class="message">
-                    “Called days. Image kind beginning have. Herb set kind herb.
-                    Wherein saying third was, every land moveth also bearing hath bring had
-                    give god gathered behold open cattle after a, from third male subdue
-                    multiply divided void cattle winged. Herb set kind herb. multiply
-                    divided void cattle winged. Herb set kind herb.”
+                    “Gloria, Just wanted to let you know what a wonderful time we had in our tour to Havana.
+                    It was due to you, and your excellent planning, recommendations and knowledge. Thank you for
+                    all you did for us. The Cañonazo at 9.00pm was absolutely wonderful. What a beautiful
+                    tradition! The weather was great, and we learned a lot about Cuba. I think you have a corner
+                    on the market for what you do. I know you worked real hard on this.
+                    So give yourself a pat on the back. Thank you. ”
                 </div>
                 <div class="client">
                     <div class="quote green-text">
                         <i class="icon-comments"></i>
                     </div>
                     <div class="client-info">
-                        <a href="" class="client-name">Frank Willian</a>
+                        <a href="" class="client-name">Mary & Larry</a>
                         <div class="client-company">
-                            CEO, AbcD Network
+                            <?php echo  CHtml::link('Havana and the cannon shot',Yii::app()->createUrl('tours/view',array('id'=>15))) ;?>
                         </div>
                     </div>
                     <div class="client-image hidden-xs">
-                        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/1_002.jpg', 'client',array("class"=>"img-circle"));?>
+                        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/mary.jpg', 'client',array("class"=>"img-circle"));?>
                     </div>
                 </div>
             </div>
@@ -187,24 +188,24 @@ $this->pageTitle=Yii::app()->name;
             </div>
             <div class="panel-body">
                 <div class="message">
-                    “Called days. Image kind beginning have. Herb set kind herb.
-                    Wherein saying third was, every land moveth also bearing hath bring had
-                    give god gathered behold open cattle after a, from third male subdue
-                    multiply divided void cattle winged. Herb set kind herb. multiply
-                    divided void cattle winged. Herb set kind herb.”
+                    “Hi Felix! Well, we’re back home and getting our clocks back adjusted to this side of the world.
+                    I wanted to take a minute and THANK YOU FOR EVERYTHING! FOR SHOWING US YOUR BEAUTIFUL COUNTRY.
+                    Our Honeymoon was pretty spectacular and I know it would not have been what it was without your help. The service
+                    was first class all the way and everything we expected and more.
+                    Our Sincere Thanks and we look forward to future business with you! ”
                 </div>
                 <div class="client">
                     <div class="quote blue-text">
                         <i class=" icon-comments"></i>
                     </div>
                     <div class="client-info">
-                        <a href="" class="client-name">Frank Willian</a>
+                        <a href="" class="client-name">Ricarda & Leonard</a>
                         <div class="client-company">
-                            CEO, AbcD Network
+                            <?php echo  CHtml::link('Havana and Tropicana ',Yii::app()->createUrl('tours/view',array('id'=>14))) ;?>
                         </div>
                     </div>
                     <div class="client-image hidden-xs">
-                        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/2_002.jpg', 'client',array("class"=>"img-circle"));?>
+                        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/ricarda.jpg', 'client',array("class"=>"img-circle"));?>
                     </div>
                 </div>
             </div>
@@ -215,26 +216,26 @@ $this->pageTitle=Yii::app()->name;
             <div class="panel-heading">
                 <h3 class="panel-title">Testimonial</h3>
             </div>
-            <div class="panel-body">
+            <div class="panel-body" style="height: 327px;">
                 <div class="message">
-                    “Called days. Image kind beginning have. Herb set kind herb.
-                    Wherein saying third was, every land moveth also bearing hath bring had
-                    give god gathered behold open cattle after a, from third male subdue
-                    multiply divided void cattle winged. Herb set kind herb. multiply
-                    divided void cattle winged. Herb set kind herb.”
+                    “  We enjoyed excellent email communication with Gloria while making plans for
+                    our vacation, which resulted in a tour customized for our interests. We were
+                    completely impressed by the level of organization and perfectly detailed plans
+                    sent to us before departure, and this resulted in our vacation to Cuba being one
+                    of the best we've ever had. We would definitely recommend Cubaoutings to anyone wishing to visit Cuba. .  ”
                 </div>
                 <div class="client">
                     <div class="quote yellow-text">
                         <i class="icon-comments"></i>
                     </div>
                     <div class="client-info">
-                        <a href="" class="client-name">Frank Willian</a>
+                        <a href="" class="client-name">Phyllis Stewart</a>
                         <div class="client-company">
-                            CEO, AbcD Network
+                            <?php echo  CHtml::link('Three cities tour',Yii::app()->createUrl('tours/view',array('id'=>13))) ;?>
                         </div>
                     </div>
                     <div class="client-image hidden-xs">
-                        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/3_002.jpg', 'client',array("class"=>"img-circle"));?>
+                        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/phyllis.jpg', 'client',array("class"=>"img-circle"));?>
                     </div>
                 </div>
             </div>

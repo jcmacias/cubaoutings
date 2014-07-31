@@ -6185,12 +6185,13 @@ input:focus {
 }
 /*About page*/
 .about-content{
-    height: 719px;
+    height: 600px;
     /*padding: 9em 0 2em;*/
     /*text-align: center;*/
     background-image: url("../../../images/pic_portada/fondo.jpg");
     /*background-size: cover;*/
     /*background: no-repeat:x space:;*/
     margin-top: -49px;
+    background-repeat: no-repeat;
 }
 

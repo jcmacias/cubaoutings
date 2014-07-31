@@ -42,6 +42,7 @@ class Photo extends CActiveRecord
 			array('name, direction, description, tours_id, place_id', 'required'),
 			array('tours_id, place_id', 'numerical', 'integerOnly'=>true),
 			array('name, direction', 'length', 'max'=>100),
+            array('direction','file', 'allowEmpty'=>false, 'types'=>'jpg,jpeg,gif,png'),
 			array('principal', 'length', 'max'=>11),
 			array('time_create, time_update', 'safe'),
 			// The following rule is used by search().
