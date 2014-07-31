@@ -19,12 +19,12 @@ $this->breadcrumbs=array(
     </h6>
 
 </div>
-    <div class="row" style="padding-left: 169px;">
-        <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/about.jpg', 'Cuba',array('class'=>'img-rounded','style'=>'width:843px;padding-top:-102px;'));?>
-    </div>
-    <hr class="featurette-divider">
+<!--    <div class="row" style="padding-left: 169px;">-->
+<!--        --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/about.jpg', 'Cuba',array('class'=>'img-rounded','style'=>'width:843px;padding-top:-102px;'));?>
+<!--    </div>-->
+<!--    <hr class="featurette-divider">-->
     <div class="row">
-        <div class="col-lg-10" style="padding-left: 260px;">
+        <div class="col-lg-7" style="/*padding-left: 260px;*/">
 
             <p>
                 <b>CubaOutings</b> was created about a year ago. Our idea is to show people from all over the world our country, which is constantly changing. That is why we are formed by a very carefully selected group of tour guides and drivers that have been working in the tourism business for years. The group is headed by Gloria Machado Leon who graduated from the University of Matanzas, nowadays working as a translator on Radio26 Redaction, the provincial Radio Station in Matanzas and Felix Michel Navarro who also graduated from the same university and has been working as a tour guide for  12 years.
@@ -44,6 +44,9 @@ $this->breadcrumbs=array(
             <p>
                 Lastly, and above all, we will be here ready to give you a hand and organize any interesting or exciting activity that could feel your time in Cuba with pleasure.
             </p>
+        </div>
+        <div class="about-content col-lg-5">
+
         </div>
 
     </div>
