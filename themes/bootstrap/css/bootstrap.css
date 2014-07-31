@@ -6183,4 +6183,14 @@ input:focus {
     background: #000;
     opacity: 0.77;
 }
+/*About page*/
+.about-content{
+    height: 719px;
+    /*padding: 9em 0 2em;*/
+    /*text-align: center;*/
+    background-image: url("../../../images/pic_portada/fondo.jpg");
+    /*background-size: cover;*/
+    /*background: no-repeat:x space:;*/
+    margin-top: -49px;
+}
 
