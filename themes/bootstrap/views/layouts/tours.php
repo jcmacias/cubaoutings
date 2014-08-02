@@ -117,7 +117,7 @@
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Interesting places</h3>
                                 </div>
-                                <div class="panel-body">
+                                <div class="panel-body" style="padding-left: 25px;">
                                     <?php
                                     $dataProvider = Photo::getPhotosToursData($tours_id);
 

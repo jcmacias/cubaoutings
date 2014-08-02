@@ -97,7 +97,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'cubaoutings@gmail.com',
-        'paginado_places'=>6,
+        'paginado_places'=>9,
         'host'=>'smpt.gmail.com',
         'password'=>'youpassword',
 	),

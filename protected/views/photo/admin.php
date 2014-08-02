@@ -61,10 +61,12 @@ $this->widget('zii.widgets.grid.CGridView', array(
         array(
             'type'=>'html',
             'name'=>'direction',
-            //'value'=>'CHtml::image("../images/$data->direction","",array("style"=>"width:25px;height:25px;"))'
             'value'=>'CHtml::image(Yii::app()->baseUrl."/images/$data->direction","",array("class"=>"img-rounded","style"=>"width:100px;"))'
 
         ),
+        array(
+            'name' => 'tours.name',
+         ),
         //'description',
 		'time_create',
 		//'time_update',

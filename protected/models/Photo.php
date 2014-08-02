@@ -39,10 +39,11 @@ class Photo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, direction, description, tours_id, place_id', 'required'),
+			array('name,direction,description, tours_id, place_id', 'required'),
+            //array('direction','required','on'=>'create'),
 			array('tours_id, place_id', 'numerical', 'integerOnly'=>true),
 			array('name, direction', 'length', 'max'=>100),
-            array('direction','file', 'allowEmpty'=>false, 'types'=>'jpg,jpeg,gif,png'),
+            array('direction','file', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png','on'=>'update'),
 			array('principal', 'length', 'max'=>11),
 			array('time_create, time_update', 'safe'),
 			// The following rule is used by search().

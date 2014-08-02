@@ -73,6 +73,7 @@ class PhotoController extends Controller
             $namephoto = $model->tours_id;
             $uploadedFile = CUploadedFile::getInstance($model,'direction');
             $fileName = "{$namephoto}-{$uploadedFile}";
+            $fileName=str_replace(' ','-',$fileName);
             $model->direction = $fileName;
 			if($model->save()){
                 if(!empty($uploadedFile))  // checkeamos si el archivo subido esta seteado o no
@@ -125,6 +126,7 @@ class PhotoController extends Controller
                 $fileName = $model->direction;
             }else{
                 $fileName = "{$namephoto}-{$uploadedFile}";
+                $fileName=str_replace(' ','-',$fileName);
             }
             $model->direction = $fileName;
             if($model->save()){

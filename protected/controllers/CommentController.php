@@ -73,6 +73,7 @@ class CommentController extends Controller
             $namephoto = $model->name_owner;
             $uploadedFile = CUploadedFile::getInstance($model,'photo_owner');
             $fileName = "{$namephoto}-{$uploadedFile}";
+            $fileName=str_replace(' ','-',$fileName);
             $model->photo_owner = $fileName;
             if($model->save()){
                 if(!empty($uploadedFile))  // checkeamos si el archivo subido esta seteado o no
