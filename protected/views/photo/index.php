@@ -32,7 +32,7 @@ $this->menu=array(
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        Some images of Cuba.
+        <?php echo Yii::t('app','Some images of Cuba.'); ?>
     </h6>
 </div>
 <ul role="tablist" class="nav nav-tabs" id="myTab">

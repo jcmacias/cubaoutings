@@ -97,11 +97,11 @@ if($photos){?>
     </div>
 </div>
     <?php }?>
-<h2 class="dark-text" style="text-align: center"><?php echo $model->name; ?></h2>
+<h2 class="dark-text" style="text-align: center"><?php echo Yii::t('app',$model->name); ?></h2>
 
     <hr class="featurette-divider">
 
-<?php echo $model->description;?><br>
+<?php echo Yii::t('app',$model->description);?><br>
 <div class=" pull-right">
     <?php
     $this->widget('application.extensions.sharebox.EShareBox', array(

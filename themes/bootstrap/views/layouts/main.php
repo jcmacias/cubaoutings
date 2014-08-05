@@ -69,7 +69,7 @@ Yii::app()->clientscript
                     'htmlOptions' => array( 'class' =>'nav navbar-nav' ),
                     'items'=>array(
                         array('label'=>Yii::t('app','Home'), 'url'=>array('/site/index')),
-                        array('label'=>Yii::t('app','About'), 'url'=>array('/site/page', 'view'=>'about'), 'visible'=>Yii::app()->user->isGuest),
+                        array('label'=>Yii::t('app','About us'), 'url'=>array('/site/page', 'view'=>'about'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Contact'), 'url'=>array('/site/contact'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>Yii::t('app','Tours'), 'url'=>array('/tours/index')),
                         array('label'=>Yii::t('app','Photos'), 'url'=>array('/photo/index')),
@@ -84,9 +84,9 @@ Yii::app()->clientscript
                     ),
                    )); ?>
 
-<!--                <ul class="nav navbar-nav navbar-right">-->
-<!--                    <li>--><?php //$this->widget('application.extensions.ELangPick.ELangPick', array('pickerType' => 'dropdown', )); ?><!--</li>-->
-<!--                </ul>-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><?php $this->widget('application.extensions.ELangPick.ELangPick', array('pickerType' => 'dropdown', )); ?></li>
+                </ul>
             </div>
         </div>
     </div>	<!-- mainmenu -->
@@ -108,7 +108,7 @@ Yii::app()->clientscript
         <div class="col-lg-3">
             <!--<div id="footer">-->
                 Copyright &copy; <?php echo date('Y'); ?> by Cubaoutings.<br/>
-                All Rights Reserved.<br/>
+                <?php echo Yii::t('app','All Rights Reserved.')?><br/>
                 <?php //echo Yii::powered(); ?>
             <!--</div><!-- footer -->
         </div>

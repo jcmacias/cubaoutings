@@ -32,7 +32,7 @@ $this->menu=array(
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-       The best place to enjoy your stay.
+      <?php echo Yii::t('app','The best place to enjoy your stay.');?>
     </h6>
 </div>
 <div class="col-lg-12">

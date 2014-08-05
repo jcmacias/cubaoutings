@@ -21,8 +21,8 @@ $photos=Photo::model()->getPhotosToursPrincipal($data->id);
         ?>
         <div class="caption">
             <div class="preview" style="max-height: 150px; overflow: hidden;">
-                <h4><?php echo $data->name ?></h4>
-                <p><?php echo $data->preview;?> </p>
+                <h4><?php echo Yii::t('app',$data->name); ?></h4>
+                <p><?php echo Yii::t('app',$data->preview);?> </p>
             </div>
             <p>
                 <?php echo CHtml::link("Ver mas", array('view', 'id'=>$data->id),array('class'=>"btn  btn-primary" )); ?>

@@ -32,7 +32,7 @@ $this->menu=array(
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-       Your opinion means a lot to us.
+       <?php echo Yii::t('app','Your opinion means a lot to us.');?>
     </h6>
 </div>
 

@@ -19,7 +19,7 @@
 
         <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
         <h6>
-            Keep in touch. You are our commitment.
+            <?php echo Yii::t('app','Keep in touch. You are our commitment.')?>
         </h6>
     </div>
     <div class="row">

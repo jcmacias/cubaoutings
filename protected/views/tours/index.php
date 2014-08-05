@@ -28,11 +28,11 @@ $this->menu=array(
 <div class="section-header" id="contact">
 
     <!-- SECTION TITLE -->
-    <h2 class="dark-text">Tours</h2>
+    <h2 class="dark-text"><?php echo Yii::t('app','Tours'); ?></h2>
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        Just tell us your choices and we will do the rest.
+        <?php echo Yii::t('app','Just tell us your choices and we will do the rest.');?>
     </h6>
 </div>
 

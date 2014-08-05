@@ -21,13 +21,13 @@ $this->pageTitle=Yii::app()->name;
 
         <div class="row">
             <div class="col-lg-12">
-                <h1>"The best way to explore Cuba."</h1>
+                <h1>"<?php echo Yii::t('app','The best way to explore Cuba.');?>"</h1>
 
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <div style="background-color: rgba(0, 0, 0, 0.4);" class="well sponsor">
                             <a target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'treehouse']);" href="#">
-                                <h4 style="margin-bottom: 0.4em;">Find us on Tripadvisor</h4>
+                                <h4 style="margin-bottom: 0.4em;"><?php echo Yii::t('app','Find us on Tripadvisor'); ?></h4>
                                 <div class="clearfix">
 
                             </a>
@@ -88,11 +88,11 @@ $this->pageTitle=Yii::app()->name;
     <div class="section-header" >
 
          <!-- SECTION TITLE -->
-         <h2 class="dark-text">Tours</h2>
+         <h2 class="dark-text"><?php echo Yii::t('app','Tours');?></h2>
 
          <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
         <h6>
-            Just tell us your choices and we will do the rest.
+            <?php echo Yii::t('app','Just tell us your choices and we will do the rest.');?>
         </h6>
     </div>
 <div class="tour-list">
@@ -141,11 +141,11 @@ $this->pageTitle=Yii::app()->name;
 <div class="section-header">
 
     <!-- SECTION TITLE -->
-    <h2 class="dark-text">Testimonials</h2>
+    <h2 class="dark-text"><?php echo Yii::t('app','Testimonials');?></h2>
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-        People are very happy with our work. Get to know their opinion.
+        <?php echo Yii::t('app','People are very happy with our work. Get to know their opinion.');?>
     </h6>
 </div>
 
@@ -153,7 +153,7 @@ $this->pageTitle=Yii::app()->name;
     <div class="col-sm-4">
         <div class="panel panel-warning">
             <div class="panel-heading">
-                <h3 class="panel-title">Testimonial</h3>
+                <h3 class="panel-title"><?php echo Yii::t('app','Testimonials');?></h3>
             </div>
             <div class="panel-body">
                 <div class="message">
@@ -184,7 +184,7 @@ $this->pageTitle=Yii::app()->name;
     <div class="col-sm-4">
         <div class="panel panel-success">
             <div class="panel-heading">
-                <h3 class="panel-title">Testimonial</h3>
+                <h3 class="panel-title"><?php echo Yii::t('app','Testimonials');?></h3>
             </div>
             <div class="panel-body">
                 <div class="message">
@@ -214,7 +214,7 @@ $this->pageTitle=Yii::app()->name;
     <div class="col-sm-4">
         <div class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title">Testimonial</h3>
+                <h3 class="panel-title"><?php echo Yii::t('app','Testimonials');?></h3>
             </div>
             <div class="panel-body" style="height: 327px;">
                 <div class="message">
@@ -248,11 +248,11 @@ $this->pageTitle=Yii::app()->name;
 <div class="section-header">
 
     <!-- SECTION TITLE -->
-    <h2 class="dark-text">Pictures</h2>
+    <h2 class="dark-text"><?php echo Yii::t('app','Photos')?></h2>
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
-       Some images of Cuba.
+        <?php echo Yii::t('app','Some images of Cuba.'); ?>
     </h6>
 </div>
 <div class="tour-list">
