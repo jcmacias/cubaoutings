@@ -101,7 +101,7 @@ $this->pageTitle=Yii::app()->name;
             <div class="thumbnail">
                 <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/trinidad.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
-                    <h3>Trinidad & Cienfuegos</h3>
+                    <h3><?php echo Yii::t('app','Trinidad & Cienfuegos ');?></h3>
                     <p>Get a ride through the green country side to visit the best two cities of the central part of Cuba. They are so perfectly preserved that we can see the features of a Spanish colonization on its very architecture.</p>
                     <p>
                         <a class="btn btn-primary" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>11));?>"><?php echo Yii::t('app','Read More');?></a>
@@ -113,7 +113,7 @@ $this->pageTitle=Yii::app()->name;
             <div class="thumbnail">
                 <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/nacional.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
-                    <h3>Havana Day tour</h3>
+                    <h3><?php echo Yii::t('app','Havana day tour');?></h3>
                     <p>Havana, the largest city in the Caribbean, is the Cuba's political, cultural and economic center, and populated by over two million people. Havana suffered little or no damage during the wars and revolutions of the past 200 years... </p>
                     <p>
                         <a class="btn btn-primary" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>8));?>"><?php echo Yii::t('app','Read More');?></a>
@@ -125,8 +125,8 @@ $this->pageTitle=Yii::app()->name;
             <div class="thumbnail">
                 <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/guama4.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
-                    <h3>Guama & the Bay of Pigs</h3>
-                    <p>Guamá with its singular Taino village, a sort of tropical Venice; the beaches of Playa Larga and Playa Girón, emblematic historical places and Salinas de Brito, where two routes of migratory birds converge.</p>
+                    <h3><?php echo Yii::t('app','Guama and the Bay of Pigs');?></h3>
+                    <p>Guamá with its singular Taino village, a sort of tropical Venice; the beaches of Playa Larga and Playa Girón, emblematic historical places and Salinas de Brito...</p>
                     <p>
                         <a class="btn btn-primary" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>12));?>"><?php echo Yii::t('app','Read More');?></a>
                     </p>
@@ -171,7 +171,7 @@ $this->pageTitle=Yii::app()->name;
                     <div class="client-info">
                         <a href="" class="client-name">Mary & Larry</a>
                         <div class="client-company">
-                            <?php echo  CHtml::link('Havana and the cannon shot',Yii::app()->createUrl('tours/view',array('id'=>15))) ;?>
+                            <?php echo  CHtml::link(Yii::t('app','Havana and the cannon shot'),Yii::app()->createUrl('tours/view',array('id'=>15))) ;?>
                         </div>
                     </div>
                     <div class="client-image hidden-xs">
@@ -201,7 +201,7 @@ $this->pageTitle=Yii::app()->name;
                     <div class="client-info">
                         <a href="" class="client-name">Ricarda & Leonard</a>
                         <div class="client-company">
-                            <?php echo  CHtml::link('Havana and Tropicana ',Yii::app()->createUrl('tours/view',array('id'=>14))) ;?>
+                            <?php echo  CHtml::link(Yii::t('app','Havana & Tropicana '),Yii::app()->createUrl('tours/view',array('id'=>14))) ;?>
                         </div>
                     </div>
                     <div class="client-image hidden-xs">
@@ -231,7 +231,7 @@ $this->pageTitle=Yii::app()->name;
                     <div class="client-info">
                         <a href="" class="client-name">Phyllis Stewart</a>
                         <div class="client-company">
-                            <?php echo  CHtml::link('Three cities tour',Yii::app()->createUrl('tours/view',array('id'=>13))) ;?>
+                            <?php echo  CHtml::link(Yii::t('app','Three cities tour'),Yii::app()->createUrl('tours/view',array('id'=>13))) ;?>
                         </div>
                     </div>
                     <div class="client-image hidden-xs">

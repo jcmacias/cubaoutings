@@ -50,7 +50,7 @@ $photos=Photo::model()->getPhotosToursPrincipal($data->id);
                     ?> </p>
             </div>
             <p>
-                <?php echo CHtml::link("Ver mas", array('view', 'id'=>$data->id),array('class'=>"btn  btn-primary" )); ?>
+                <?php echo CHtml::link(Yii::t('app','Read More'), array('view', 'id'=>$data->id),array('class'=>"btn  btn-primary" )); ?>
             </p>
         </div>
     </div>

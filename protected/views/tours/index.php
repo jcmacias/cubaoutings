@@ -12,14 +12,14 @@ $this->menu=array(
 );
 }else{
     $this->menu=array(
-        array('label'=>'Havana day tour','url'=>array('view','id'=>8)),
-        array('label'=>'Trinidad & Cienfuegos','url'=>array('view','id'=>11)),
-        array('label'=>'Matanzas, Cárdenas, & Varadero','url'=>array('view','id'=>7)),
-        array('label'=>'Havana & Tropicana ','url'=>array('view','id'=>14)),
-        array('label'=>'Three cities tour','url'=>array('view','id'=>13)),
-        array('label'=>'Guama & the Bay of Pigs ','url'=>array('view','id'=>12)),
-        array('label'=>'Havana & the cannon shot','url'=>array('view','id'=>15)),
-        array('label'=>'Transfers','url'=>array('transfer')),
+        array('label'=>Yii::t('app','Havana day tour'),'url'=>array('view','id'=>8)),
+        array('label'=>Yii::t('app','Trinidad & Cienfuegos '),'url'=>array('view','id'=>11)),
+        array('label'=>Yii::t('app','Matanzas, Cárdenas, & Varadero'),'url'=>array('view','id'=>7)),
+        array('label'=>Yii::t('app','Havana & Tropicana '),'url'=>array('view','id'=>14)),
+        array('label'=>Yii::t('app','Three cities tour'),'url'=>array('view','id'=>13)),
+        array('label'=>Yii::t('app','Guama and the Bay of Pigs'),'url'=>array('view','id'=>12)),
+        array('label'=>Yii::t('app','Havana and the cannon shot'),'url'=>array('view','id'=>15)),
+        array('label'=>Yii::t('app','Transfers'),'url'=>array('transfer')),
     );
 }
 ?>

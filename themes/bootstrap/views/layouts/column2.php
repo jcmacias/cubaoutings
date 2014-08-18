@@ -10,7 +10,7 @@
         <div class="col-lg-3 top_sidebar">
             <div id="sidebar">
             <?php
-            if(!Yii::app()->user->isGuest){$title='Operations';}else{$title='Tours';}
+            if(!Yii::app()->user->isGuest){$title='Operations';}else{$title=Yii::t('app','Tours');}
                 $this->beginWidget('zii.widgets.CPortlet', array(
                     'title'=>$title,
                     //'htmlOptions'=>array('class'=>'sidebar_header'),

@@ -198,6 +198,12 @@ class ToursController extends Controller
 		}
 	}
     public function actionTransfer(){
-        $this->render('transfer');
+        if(Yii::app()->getLanguage()=='en'){
+            $this->render('transfer');
+        }
+        if(Yii::app()->getLanguage()=='fr'){
+            $this->render('transfer_fr');
+        }
+
     }
 }
