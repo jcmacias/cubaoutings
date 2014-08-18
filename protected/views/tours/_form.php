@@ -50,20 +50,67 @@
         </div>
 
 	</div>
+    <hr class="featurette-divider">
+    <h2>French Translations</h2>
 
-	<!--<div class="row">
-		<?php /*echo $form->labelEx($model,'time_create'); ?>
-		<?php echo $form->textField($model,'time_create'); ?>
-		<?php echo $form->error($model,'time_create'); ?>
-	</div>
+    <div class="row">
+        <div class="col-lg-6">
+            <?php echo $form->labelEx($model,'preview_fr'); ?>
+            <?php echo $form->textArea($model,'preview_fr',array('class'=>'preview-name form-control','maxlength' => 150)); ?>
+            <?php echo $form->error($model,'preview_fr',array('class'=>'label label-danger')); ?>
+        </div>
+    </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'time_update'); ?>
-		<?php echo $form->textField($model,'time_update'); ?>
-		<?php echo $form->error($model,'time_update'); */?>
-	</div>-->
+    <div class="row">
+        <div class="col-lg-12">
+            <?php echo $form->labelEx($model,'description_fr'); ?>
+            <?php //echo $form->textArea($model,'description',array('class'=>'tour-description form-control')); ?>
+            <?php $this->widget('application.extensions.eckeditor.ECKEditor', array(
+                'model'=>$model,
+                'attribute'=>'description_fr',
+                'config' => array(
+                    'toolbar'=>array(
+                        array( 'Source', '-', 'Bold', 'Italic', 'Underline', 'Strike' ),
+                        array('Link', 'Unlink', 'Anchor' ) ,
+                    ),
+                ),
+            )); ?>
+            <?php echo $form->error($model,'description_fr',array('class'=>'label label-danger')); ?>
+        </div>
 
-	<div class="row buttons">
+    </div>
+    <hr class="featurette-divider">
+    <h2>Spanish Translations</h2>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <?php echo $form->labelEx($model,'preview_es'); ?>
+            <?php echo $form->textArea($model,'preview_es',array('class'=>'preview-name form-control','maxlength' => 150)); ?>
+            <?php echo $form->error($model,'preview_es',array('class'=>'label label-danger')); ?>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <?php echo $form->labelEx($model,'description_es'); ?>
+            <?php //echo $form->textArea($model,'description',array('class'=>'tour-description form-control')); ?>
+            <?php $this->widget('application.extensions.eckeditor.ECKEditor', array(
+                'model'=>$model,
+                'attribute'=>'description_es',
+                'config' => array(
+                    'toolbar'=>array(
+                        array( 'Source', '-', 'Bold', 'Italic', 'Underline', 'Strike' ),
+                        array('Link', 'Unlink', 'Anchor' ) ,
+                    ),
+                ),
+            )); ?>
+            <?php echo $form->error($model,'description_es',array('class'=>'label label-danger')); ?>
+        </div>
+
+    </div>
+
+
+    <div class="row buttons">
         <div class="col-lg-12" style="margin-top: 8px;">
 		    <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-md pull-right')); ?>
         </div>

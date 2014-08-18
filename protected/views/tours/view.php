@@ -101,7 +101,32 @@ if($photos){?>
 
     <hr class="featurette-divider">
 
-<?php echo Yii::t('app',$model->description);?><br>
+<?php
+if(Yii::app()->getLanguage() == 'en'){
+    echo $model->description;
+}
+if(Yii::app()->getLanguage() == 'fr'){
+    if($model->description_fr != null)
+    {
+        echo $model->description_fr;
+    }else{
+        echo '<div class="alert alert-dismissable alert-danger">
+             <strong>We Sorry!</strong> French translation not found for this tour.
+            </div>';
+        }
+}
+if(Yii::app()->getLanguage() == 'es'){
+    if($model->description_es != null)
+    {
+        echo $model->description_es;
+    }else{
+            echo '<div class="alert alert-dismissable alert-danger">
+             <strong>We Sorry!</strong> Spanish translation not found for this tour.
+            </div>';
+    }
+}
+
+?><br>
 <div class=" pull-right">
     <?php
     $this->widget('application.extensions.sharebox.EShareBox', array(

@@ -6,12 +6,7 @@
  * The followings are the available columns in table 'tours':
  * @property integer $id
  * @property string $name
- * @property string $preview
- * @property string $preview_fr
- * @property string $preview_es
  * @property string $description
- * @property string $description_fr
- * @property string $description_es
  * @property string $time_create
  * @property string $time_update
  */
@@ -33,13 +28,15 @@ class Tours extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, preview, description', 'required'),
+			array('name, description,preview', 'required'),
 			array('name', 'length', 'max'=>100),
-			array('preview, preview_fr, preview_es', 'length', 'max'=>150),
-			array('description_fr, description_es, time_create, time_update', 'safe'),
+            array('preview', 'length', 'max'=>150),
+            array('preview', 'length', 'min'=>100),
+			//array('description', 'length', 'max'=>250),
+			array('time_create, time_update', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, preview, preview_fr, preview_es, description, description_fr, description_es, time_create, time_update', 'safe', 'on'=>'search'),
+			array('id, name,preview, description, time_create, time_update', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,13 +59,9 @@ class Tours extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'preview' => 'Preview',
-			'preview_fr' => 'Preview Fr',
-			'preview_es' => 'Preview Es',
+			'name' => 'Tour name',
+            'preview'=>'Preview',
 			'description' => 'Description',
-			'description_fr' => 'Description Fr',
-			'description_es' => 'Description Es',
 			'time_create' => 'Time Create',
 			'time_update' => 'Time Update',
 		);
@@ -94,12 +87,7 @@ class Tours extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('preview',$this->preview,true);
-		$criteria->compare('preview_fr',$this->preview_fr,true);
-		$criteria->compare('preview_es',$this->preview_es,true);
 		$criteria->compare('description',$this->description,true);
-		$criteria->compare('description_fr',$this->description_fr,true);
-		$criteria->compare('description_es',$this->description_es,true);
 		$criteria->compare('time_create',$this->time_create,true);
 		$criteria->compare('time_update',$this->time_update,true);
 

@@ -22,7 +22,32 @@ $photos=Photo::model()->getPhotosToursPrincipal($data->id);
         <div class="caption">
             <div class="preview" style="max-height: 150px; overflow: hidden;">
                 <h4><?php echo Yii::t('app',$data->name); ?></h4>
-                <p><?php echo Yii::t('app',$data->preview);?> </p>
+                <p><?php
+                    if(Yii::app()->getLanguage() == 'en'){
+                        echo $data->preview;
+                    }
+                    if(Yii::app()->getLanguage() == 'fr'){
+                        if($data->preview_fr != null)
+                        {
+                            echo $data->preview_fr;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                            <strong>We Sorry!</strong> French translation not found for this tour.
+                            </div>';
+                        }
+                    }
+                    if(Yii::app()->getLanguage() == 'es'){
+                        if($data->preview_es != null)
+                        {
+                            echo $data->preview_es;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                            <strong>We Sorry!</strong> Spanish translation not found for this tour.
+                            </div>';
+                        }
+                    }
+
+                    ?> </p>
             </div>
             <p>
                 <?php echo CHtml::link("Ver mas", array('view', 'id'=>$data->id),array('class'=>"btn  btn-primary" )); ?>
