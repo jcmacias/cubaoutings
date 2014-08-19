@@ -89,6 +89,42 @@
         </div>
 	</div>
 
+    <div class="row">
+        <div class="col-lg-12">
+            <?php echo $form->labelEx($model,'description_fr'); ?>
+            <?php //echo $form->textArea($model,'description',array('class'=>'photo_description form-control')); ?>
+            <?php $this->widget('application.extensions.eckeditor.ECKEditor', array(
+                'model'=>$model,
+                'attribute'=>'description_fr',
+                'config' => array(
+                    'toolbar'=>array(
+                        array( 'Source', '-', 'Bold', 'Italic', 'Underline', 'Strike' ),
+                        array('Link', 'Unlink', 'Anchor' ) ,
+                    ),
+                ),
+            )); ?>
+            <?php echo $form->error($model,'description_fr',array('class'=>'label label-danger')); ?>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <?php echo $form->labelEx($model,'description_es'); ?>
+            <?php //echo $form->textArea($model,'description',array('class'=>'photo_description form-control')); ?>
+            <?php $this->widget('application.extensions.eckeditor.ECKEditor', array(
+                'model'=>$model,
+                'attribute'=>'description_es',
+                'config' => array(
+                    'toolbar'=>array(
+                        array( 'Source', '-', 'Bold', 'Italic', 'Underline', 'Strike' ),
+                        array('Link', 'Unlink', 'Anchor' ) ,
+                    ),
+                ),
+            )); ?>
+            <?php echo $form->error($model,'description_es',array('class'=>'label label-danger')); ?>
+        </div>
+    </div>
+
 	<!--<div class="row">
 		<?php /*echo $form->labelEx($model,'time_create'); ?>
 		<?php echo $form->textField($model,'time_create'); ?>

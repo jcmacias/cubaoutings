@@ -117,7 +117,15 @@
 <?php
 $datos=Offer::model()->GetOffer();
 if($datos!=null ){
-    $message='<table><td>'.CHtml::image(Yii::app()->baseUrl . '/images/offer_image/'.$datos[0]->imagen, 'Cuba',array('class'=>'img-circle','style'=>'width:70px;')).'</td><td><p style="padding-left:7px">'.$datos[0]->message.'</p></td></table>';
+    if(Yii::app()->getLanguage() == 'en'){
+        $message='<table><td>'.CHtml::image(Yii::app()->baseUrl . '/images/offer_image/'.$datos[0]->imagen, 'Cuba',array('class'=>'img-circle','style'=>'width:70px;')).'</td><td><p style="padding-left:7px">'.$datos[0]->message.'</p></td></table>';
+    }
+    if(Yii::app()->getLanguage() == 'fr'){
+        $message='<table><td>'.CHtml::image(Yii::app()->baseUrl . '/images/offer_image/'.$datos[0]->imagen, 'Cuba',array('class'=>'img-circle','style'=>'width:70px;')).'</td><td><p style="padding-left:7px">'.$datos[0]->message_fr.'</p></td></table>';
+    }
+    if(Yii::app()->getLanguage() == 'es'){
+        $message='<table><td>'.CHtml::image(Yii::app()->baseUrl . '/images/offer_image/'.$datos[0]->imagen, 'Cuba',array('class'=>'img-circle','style'=>'width:70px;')).'</td><td><p style="padding-left:7px">'.$datos[0]->message_es.'</p></td></table>';
+    }
 //echo '<pre>';
 //print_r($message[0]->message);
 //echo '</pre>';die;

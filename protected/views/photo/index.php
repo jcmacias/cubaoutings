@@ -42,10 +42,10 @@ $this->menu=array(
     for($i=0;$i<count($arrayTours);$i++){
         if($i==0){
             ?>
-            <li class="active"><a data-toggle="tab" role="tab" href="#<?php echo $arrayTours[$i]->id;?>"><?php echo $arrayTours[$i]->name;?></a></li>
+            <li class="active"><a data-toggle="tab" role="tab" href="#<?php echo $arrayTours[$i]->id;?>"><?php echo Yii::t('app',$arrayTours[$i]->name);?></a></li>
         <?php
         }else{?>
-            <li class=""><a data-toggle="tab" role="tab" href="#<?php echo $arrayTours[$i]->id;?>"><?php echo $arrayTours[$i]->name;?></a></li>
+            <li class=""><a data-toggle="tab" role="tab" href="#<?php echo $arrayTours[$i]->id;?>"><?php echo Yii::t('app',$arrayTours[$i]->name);?></a></li>
         <?php
         }
     }
