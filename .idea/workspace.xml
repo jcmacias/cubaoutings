@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="803be841-6bca-459c-b86d-4cbcb760f749" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\cubaouting\protected\messages\ru\yii.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\cubaouting\protected\messages\ru\zii.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ToursController.php" afterPath="$PROJECT_DIR$/protected/controllers/ToursController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/tours/_view.php" afterPath="$PROJECT_DIR$/protected/views/tours/_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/layouts/accommodations.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/layouts/accommodations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/messages/fr/app.php" afterPath="$PROJECT_DIR$/protected/messages/fr/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/layouts/column2.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/layouts/column2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/accommodations/index.php" afterPath="$PROJECT_DIR$/protected/views/accommodations/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/comment/index.php" afterPath="$PROJECT_DIR$/protected/views/comment/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/photo/index.php" afterPath="$PROJECT_DIR$/protected/views/photo/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/tours/index.php" afterPath="$PROJECT_DIR$/protected/views/tours/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/site/index.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/site/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/views/layouts/tours.php" afterPath="$PROJECT_DIR$/themes/bootstrap/views/layouts/tours.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/tours/view.php" afterPath="$PROJECT_DIR$/protected/views/tours/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="803be841-6bca-459c-b86d-4cbcb760f749" name="Default" comment="" />
     <ignored path="cubaouting.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -502,6 +486,52 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="24cad880-5d70-4128-8772-72e60a30b178">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="511cb4f5-cabc-4efd-a77a-ea2140dcadb3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="53154da6-c9c4-4216-89b2-00fbf8148e7d">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="7366f767-f1f5-4597-a6d4-404ab6f155aa">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="78862d61-a253-4708-a239-d5fa9bc384ca">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="d4499fd5-4f80-4b3d-be7f-f5e95a4b7d4b">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
   <component name="RunManager" selected="PHP Script.column2.php">
     <configuration default="false" name="column2.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/themes/bootstrap/views/layouts/column2.php">
       <method />
@@ -556,7 +586,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
