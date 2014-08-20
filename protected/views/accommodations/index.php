@@ -50,6 +50,13 @@ $this->menu=array(
 </div>
 
 <?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+    'dataProvider'=>$dataProvider,
+    'itemView'=>'_view',
+    'template'=>'{summary}{items} {pager}',
+    'pagerCssClass'=>'CLinkPager pull-right',
+    'pager'=>array(
+        'header' => '',
+        'htmlOptions'=>array('class'=>'pagination pagination-sm',),
+    ),
+));
+?>

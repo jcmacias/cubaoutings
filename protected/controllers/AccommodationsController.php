@@ -146,7 +146,11 @@ class AccommodationsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Accommodations');
+		$dataProvider=new CActiveDataProvider('Accommodations',array(
+            'pagination' => array(
+                'pageSize'=> 9
+            ),
+        ));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

@@ -27,24 +27,26 @@ $this->breadcrumbs=array(
         <div class="col-lg-7" style="/*padding-left: 260px;*/">
 
             <p>
-                <b>CubaOutings</b> was created about a year ago. Our idea is to show people from all over the world our country, which is constantly changing. That is why we are formed by a very carefully selected group of tour guides and drivers that have been working in the tourism business for years. The group is headed by Gloria Machado Leon who graduated from the University of Matanzas, nowadays working as a translator on Radio26 Redaction, the provincial Radio Station in Matanzas and Felix Michel Navarro who also graduated from the same university and has been working as a tour guide for  12 years.
+                <b>CubaOutings</b> is a tours company based in Cuba that mainly develops personalized sightseeing tours and excursions from Varadero to Havana and the rest of the Cuban historical or natural sites. Since 2012, We show people from all over the world our beautiful country with its constant changes. With CubaOutings, you have the opportunity to know Cuba as a local, which is the best way to explore Cuba. We give you the chance to create your own program, or just let us show you our country. We have developed a group of tours covering the whole western part of Cuba, but a range of products and services can be offered to tailor to your particular requirements.
             </p>
             <p>
-                After this economic opening for Cuban private enterprises in 2010, you have the opportunity to know Cuba as a local. We give you the chance to create your own program, or just let us show you our country. Based on my experience as a tour guide for 12 years I have developed a group tours that cover the whole western part of Cuba. Havana would be our main course, but we will happy to show you any place you may desire to visit.
+                <b>Mission Statement:</b>
+                 We are a team of excellent tourism professionals ready to satisfy your needs regarding personalized tours to interesting places throughout Cuba with a quality service, safety, comfort, while promoting responsible tourism in the respect of environment, as well as cultural and religious differences.
             </p>
             <p>
-                We have achieved a great reputation for the service we provide. We have excellent young tour guides with a vast knowledge, either of the language or any other topic, such as history, politics, cigars, rum, coffee or anything that would be worth to know when you are not a local.
+                <b>Meet our team:</b>
+                CubaOutings’ team consists of a very carefully selected group of tour guides and drivers that have been working in the tourism business for years. Our team is headed by Gloria Machado León and Felix Michel Navarro, both graduated from the University of Matanzas with vast experience and a favourable image in the tourism industry. We only employ fully qualified tour guides with vast knowledge, either of the language or any other topic, such as history, politics, cigars, rum, coffee or anything that would be worth knowing.
             </p>
             <p>
-                We have comfortable and air conditioned cars of different sizes. We also give the possibility to go in classic cars, to feel like being back in the 50s. All this cars are certified by the State Insurance Company to guarantee security and efficiency.
+                <b>Our Service:</b>
+                We strive to make your outing in Cuba more than just a "vacation", by making every step of your adventure authentic and life-changing.
+                Our team has achieved a great reputation for the services we provide. Now our clients have the opportunity to experience a personalized travel around Cuba. We can make specialized programs to meet your needs, whether you are independent travelers, couples or groups.<br>
+                We have comfortable and air conditioned cars of different sizes. We also give the possibility to go in classic cars, and feel like being back in the 50s. All these cars are certified by the State Insurance Company to guarantee security and efficiency.<br>
+                We also assure you all the support needed when traveling. We offer transfers from /to any city or airport. We can arrange home stay accommodations in most of the cities. They are by far the best accommodations in Cuba when it comes to providing an authentic interactive experience. Our accommodations are selected for their cleanliness, comfort, convenient location, safety, local atmosphere, and customer service.<br>
+                Lastly, and above all, here are we, ready to give you a hand and organize any interesting and exciting activity that could fill your time in Cuba with pleasure.
+                <b>Book it now!!!!</b>
             </p>
-            <p>
-                We also wish to give you all the support you need when traveling. We offer transfers to any city or airport.  We can arrange your stay in private homes, that we highly recommend since you will have the opportunity to feel like a local family.
-            </p>
-            <p>
-                Lastly, and above all, we will be here ready to give you a hand and organize any interesting or exciting activity that could feel your time in Cuba with pleasure.
-            </p>
-        </div>
+         </div>
         <div class="about-content col-lg-5">
 
         </div>
