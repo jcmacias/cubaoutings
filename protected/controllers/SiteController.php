@@ -58,28 +58,31 @@ class SiteController extends Controller
 
 			if($model->validate())
 			{
+			    $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
+				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
+//				$headers="From: $name <{$model->email}>\r\n".
+//					"Reply-To: {$model->email}\r\n".
+//					"MIME-Version: 1.0\r\n".
+//					"Content-Type: text/plain; charset=UTF-8";
                 $mail = new JPhpMailer;
                 $mail->IsSMTP();
                 $mail->Host = Yii::app()->params['host'];
+                $mail->SMTPSecure = "ssl";
+                $mail->Port = '465';
                 $mail->SMTPAuth = true;
                 $mail->Username = Yii::app()->params['adminEmail'];
                 $mail->Password = Yii::app()->params['password'];
-                $mail->SetFrom($model->email, $model->name);
-                $mail->Subject = $model->subject;
+                $mail->SetFrom($model->email, $name);
+                $mail->Subject = $subject;
                 $mail->AltBody = $model->body;
-                //$mail->MsgHTML('<h1>JUST A TEST!</h1>');
-                //$mail->AddAddress('john.doe@otherdomain.com', 'John Doe');
+                $mail->MsgHTML($model->body);
+                $mail->AddAddress(Yii::app()->params['adminEmail'], Yii::app()->name);
                 $mail->Send();
 
 
 
 
-//                $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-//				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-//				$headers="From: $name <{$model->email}>\r\n".
-//					"Reply-To: {$model->email}\r\n".
-//					"MIME-Version: 1.0\r\n".
-//					"Content-Type: text/plain; charset=UTF-8";
+
 //
 //				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
 				Yii::app()->user->setFlash('contact','<div class="alert alert-dismissable alert-success">

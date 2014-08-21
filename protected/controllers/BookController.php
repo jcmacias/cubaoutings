@@ -190,12 +190,16 @@ class BookController extends Controller
         $mail = new JPhpMailer;
         $mail->IsSMTP();
         $mail->Host = Yii::app()->params['host'];
+        $mail->SMTPSecure = "ssl";
+        $mail->Port = '465';
         $mail->SMTPAuth = true;
         $mail->Username = Yii::app()->params['adminEmail'];
         $mail->Password = Yii::app()->params['password'];
-        $mail->SetFrom(Yii::app()->params['adminEmail'], 'cubaoutings');
-        $mail->Subject = "Booking";
+        $mail->SetFrom($email, Yii::app()->name);
+        $mail->Subject = "Booking Tour";
         $mail->AltBody = $email." ".$question;
+        $mail->MsgHTML($question);
+        $mail->AddAddress(Yii::app()->params['adminEmail'], Yii::app()->name);
         $mail->Send();
         /**
         Descomentar para ver si envia el email..

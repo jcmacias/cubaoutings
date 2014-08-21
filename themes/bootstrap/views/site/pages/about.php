@@ -25,7 +25,7 @@ $this->breadcrumbs=array(
 <!--    <hr class="featurette-divider">-->
     <div class="row">
         <div class="col-lg-7" style="/*padding-left: 260px;*/">
-
+        <?php if(Yii::app()->getLanguage()=='en'){ ?>
             <p>
                 <b>CubaOutings</b> is a tours company based in Cuba that mainly develops personalized sightseeing tours and excursions from Varadero to Havana and the rest of the Cuban historical or natural sites. Since 2012, We show people from all over the world our beautiful country with its constant changes. With CubaOutings, you have the opportunity to know Cuba as a local, which is the best way to explore Cuba. We give you the chance to create your own program, or just let us show you our country. We have developed a group of tours covering the whole western part of Cuba, but a range of products and services can be offered to tailor to your particular requirements.
             </p>
@@ -46,45 +46,35 @@ $this->breadcrumbs=array(
                 Lastly, and above all, here are we, ready to give you a hand and organize any interesting and exciting activity that could fill your time in Cuba with pleasure.
                 <b>Book it now!!!!</b>
             </p>
+
+        <?php }
+         if (Yii::app()->getLanguage()=='fr'){
+        ?>
+            <p>
+                <b>CubaOutings</b> est un groupe d’organisation de circuits basé à Cuba et qui développe principalement des visites guidées et des excursions personnalisées de Varadero à La Havane, ainsi qu’à travers le reste des sites historiques ou naturels de Cuba. Depuis 2012, nous montrons aux gens de toute part dans le monde notre beau pays avec ses changements constants. Avec CubaOutings, vous avez la possibilité de connaître Cuba comme vous si vous étiez d’ici ; meilleure façon d'explorer Cuba. Nous vous offrons la possibilité de créer votre propre programme, ou tout simplement laissez-nous vous montrer notre pays. Nous disposons d’une panoplie de circuits couvrant toute la zone occidentale de Cuba, et même temps, nous nous plions à vos exigences au cas où vous auriez de préférences particulières en modification à nos offres.
+            </p>
+            <p>
+                <b>Notre Mission</b>
+                Nous sommes une équipe d’excellents professionnels du tourisme disposés à satisfaire vos besoins en matière de visite guidée personnalisée de sites touristiques à travers Cuba avec un service de qualité, garantie de sécurité, de confort, tout en promouvant un tourisme responsable dans le respect de l’environnement, des différences culturelles et religieuses.
+            </p>
+            <p>
+                <b>Rencontrez notre équipe:</b>
+                CubaOutings se compose d'un groupe très soigneusement sélectionné de guides touristiques et de chauffeurs ayant fait leur preuve dans le secteur touristique durant des années.En tête de l’équipe se trouvent Gloria Machado León et Felix Michel Navarro, tous deux des spécialistes dotés d’un très bon bagage et jouissant d’une bonne image. Nous n'employons que des guides qualifiés avec de vastes connaissances, aussi bien de la langue que de tout autre sujet : l'histoire, la politique, les cigares, le rhum, le café ou toute autre information utile.
+            </p>
+            <p>
+                <b>Notre Service:</b>
+                Nous nous efforçons de faire de vos sorties à Cuba plus que de simples «vacances» en les rendant en en des aventures authentiques qui vous marque positivement.<br>
+                Notre équipe a acquis une grande réputation pour le service que nous offrons. Maintenant, nos clients ont la possibilité de découvrir un Voyage personnalisé à travers Cuba. Nous pouvons élaborer des programmes spécialisés pour répondre à vos besoins, que vous soyez des voyageurs indépendants, des couples ou des groupes.<br>
+                Nous disposons de voitures confortables et climatisées de différentes tailles. Nous vous donnons également la possibilité d'aller dans les voitures classiques, et vous donner la sensation de faire un tour vers les années 50. Tous ces véhicules sont certifiés parla Société d'assurance publique pour garantir leur sécurité et l'efficacité.<br>
+                Nous vous assurons également tout le soutien nécessaire pour votre voyage. Nous offrons le transfert depuis/à toute ville ou aéroport. Nous pouvons organiser de l’hébergement dans des maisons de séjour sur notre chemin durant l’excursion. C‘est d’ailleurs le meilleur type d’hébergement à Cuba quand il s'agit de faire vivre une authentique et interactive expérience. Nos logements sont sélectionnés de par leur propreté, leur confort, leur emplacement idéal, leur sécurité, l'atmosphère locale, et le service à la clientèle.<br>
+                Enfin, et surtout, nous voici, prêts,  à vous donner un coup de main et à organiser une activité intéressante et passionnante qui pourrait galvaniser de plaisir votre séjourà Cuba.
+                <b>Réservez dès maintenant!!!!</b>
+            </p>
+
+        <?php }?>
          </div>
         <div class="about-content col-lg-5">
 
         </div>
 
     </div>
-<!--    <div class="row">-->
-<!--        <div class="col-lg-4">-->
-<!--            <div class="about-info ">-->
-<!--                <div class="quote-about">-->
-<!--                    <i class="icon-home"></i>-->
-<!--                </div>-->
-<!--                <div class="about-text">-->
-<!--                    <h6>ALOJAMIENTO</h6>-->
-<!--                    <p class="text">Brindamos ofertas de alojamiento en todo el pais</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col-lg-4">-->
-<!--            <div class="about-info ">-->
-<!--                <div class="quote-about">-->
-<!--                    <i class="icon-picture green-text"></i>-->
-<!--                </div>-->
-<!--                <div class="about-text">-->
-<!--                    <h6>GALERIAS</h6>-->
-<!--                    <p class="text">Brindamos ofertas de alojamiento en todo el pais</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col-lg-4">-->
-<!--            <div class="about-info ">-->
-<!--                <div class="quote-about blue-text">-->
-<!--                    <i class="icon-plane"></i>-->
-<!--                </div>-->
-<!--                <div class="about-text">-->
-<!--                    <h6>RECORIDOS</h6>-->
-<!--                    <p class="text">Brindamos ofertas de viaje en todo el pais</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <hr class="featurette-divider">-->
