@@ -3,19 +3,324 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-<!--EJEMPLO UNO-->
-<!--<div class="jumbotron">
-    <div class="container">
-        <h1>Hello, world!</h1>
+<!--<div id="fullpage">-->
+<!--    <div class="section active" id="section0">-->
+<!--        <div class="splash">-->
+<!--            <div class="container">-->
+<!---->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-12">-->
+<!--                        <h1>"--><?php //echo Yii::t('app','The best way to explore Cuba.');?><!--"</h1>-->
+<!---->
+<!--                        <div class="row">-->
+<!--                            <div class="col-md-6 col-md-offset-3">-->
+<!--                                <div style="background-color: rgba(0, 0, 0, 0.4);" class="well sponsor">-->
+<!--                                    <a target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'treehouse']);" href="#">-->
+<!--                                        <h4 style="margin-bottom: 0.4em;">--><?php //echo Yii::t('app','Find us on Tripadvisor'); ?><!--</h4>-->
+<!--                                        <div class="clearfix">-->
+<!---->
+<!--                                    </a>-->
+<!--                                    <p>--><?// echo Yii::t('app','Share this site with your friends');?><!--</p>-->
+<!--                                    <p>--><?php
+//                                        $this->widget('application.extensions.sharebox.EShareBox', array(
+//                                            // url to share, required.
+//                                            'url' => $this->createAbsoluteUrl('site/index'),
+//
+//                                            // A title to describe your link, required.
+//                                            // Some services will ignore this value.
+//                                            'title'=> 'Cubaoutings the best choice to explore Cuba !!',
+//
+//                                            // Size of the icons to display, in pixels.
+//                                            // Default is 24px, available sizes : 16, 24, 32, 48.
+//                                            'iconSize' => 32,
+//
+//                                            // Whether to animate the links.
+//                                            // Default is true
+//                                            //'animate' => false,
+//
+//                                            // Social networks to include, excluding all others.
+//                                            // The exclude filter is still run.
+//                                            //'include' => array('technorati', 'digg'),
+//
+//                                            // Social networks to exclude from display.
+//                                            // By default none are excluded.
+//                                            'exclude' => array('technorati', 'digg','reddit','newsvine','stumbleupon','delicious'),
+//
+//                                            // Use your own icons! Note that you will need to have
+//                                            // a subfolder of the appropriate icons sizes.
+//                                            // ie: /myimages/social/16px /myimages/social/24px ...
+//                                            //'iconPath' => '/myimages/social',
+//
+//                                            // HTML options for the UL element.
+//                                            //'ulHtmlOptions' => array('class' => 'myCustomUlClass'),
+//
+//                                            // HTML options for all the LI elements.
+//                                            //'liHtmlOptions' => array('class' => 'myCustomLiClass'),
+//                                        ));?><!--</p>-->
+<!--                                </div>-->
+<!---->
+<!--<!--                                <div class="splash-down">-->-->
+<!--<!--                                    <a href="#section1"><i class="icon-download"></i></a>-->-->
+<!--<!--                                </div>-->-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!---->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--    <div class="section" id="section1">-->
+<!--<!--        <hr class="featurette-divider">-->-->
+<!--        <div class="container"  id="trabajos">-->
+<!--            <!-- SECTION WORKS -->-->
+<!--            <div class="section-header" style="margin-top: 45px">-->
+<!---->
+<!--                <!-- SECTION TITLE -->-->
+<!--                <h2 class="dark-text" style="margin-bottom: 5px">--><?php //echo Yii::t('app','Tours');?><!--</h2>-->
+<!---->
+<!--                <!-- SHORT DESCRIPTION ABOUT THE SECTION -->-->
+<!--<!--                <h6>-->-->
+<!--<!--                    -->--><?php ////echo Yii::t('app','Just tell us your choices and we will do the rest.');?>
+<!--<!--                </h6>-->-->
+<!--            </div>-->
+<!--            <div class="tour-list">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="thumbnail">-->
+<!--                            --><?php //echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/trinidad.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
+<!--                            <div class="caption">-->
+<!--                                <h3>--><?php //echo Yii::t('app','Trinidad & Cienfuegos ');?><!--</h3>-->
+<!--                                <p>Get a ride through the green country side to visit the best two cities of the central part of Cuba. They are so perfectly preserved that we can see the features of a Spanish colonization on its very architecture.</p>-->
+<!--                                <p>-->
+<!--                                    <a class="btn btn-primary" href="--><?php //echo Yii::app()->createUrl('tours/view',array('id'=>11));?><!--">--><?php //echo Yii::t('app','Read More');?><!--</a>-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="thumbnail">-->
+<!--                            --><?php //echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/nacional.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
+<!--                            <div class="caption">-->
+<!--                                <h3>--><?php //echo Yii::t('app','Havana day tour');?><!--</h3>-->
+<!--                                <p>Havana, the largest city in the Caribbean, is the Cuba's political, cultural and economic center, and populated by over two million people. Havana suffered little or no damage during the wars and revolutions of the past 200 years... </p>-->
+<!--                                <p>-->
+<!--                                    <a class="btn btn-primary" href="--><?php //echo Yii::app()->createUrl('tours/view',array('id'=>8));?><!--">--><?php //echo Yii::t('app','Read More');?><!--</a>-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="thumbnail">-->
+<!--                            --><?php //echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/guama4.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
+<!--                            <div class="caption">-->
+<!--                                <h3>--><?php //echo Yii::t('app','Guama and the Bay of Pigs');?><!--</h3>-->
+<!--                                <p>Guamá with its singular Taino village, a sort of tropical Venice; the beaches of Playa Larga and Playa Girón, emblematic historical places and Salinas de Brito...</p>-->
+<!--                                <p>-->
+<!--                                    <a class="btn btn-primary" style="margin-top: 20px;" href="--><?php //echo Yii::app()->createUrl('tours/view',array('id'=>12));?><!--">--><?php //echo Yii::t('app','Read More');?><!--</a>-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--    </div>-->
+<!--<div class="section" id="section2">-->
+<!--    <div class="container"  id="trabajos">-->
+<!--    <!-- SECTION TESTIMONIOS -->-->
+<!--    <div class="section-header" style="margin-top: 80px">-->
+<!---->
+<!--        <!-- SECTION TITLE -->-->
+<!--        <h2 class="dark-text">--><?php //echo Yii::t('app','Testimonials');?><!--</h2>-->
+<!---->
+<!--        <!-- SHORT DESCRIPTION ABOUT THE SECTION -->-->
+<!--        <h6>-->
+<!--            --><?php //echo Yii::t('app','People are very happy with our work. Get to know their opinion.');?>
+<!--        </h6>-->
+<!--    </div>-->
+<!---->
+<!--    <div class="row">-->
+<!--        <div class="col-sm-4">-->
+<!--            <div class="panel panel-warning">-->
+<!--                <div class="panel-heading">-->
+<!--                    <h3 class="panel-title">--><?php //echo Yii::t('app','Testimonials');?><!--</h3>-->
+<!--                </div>-->
+<!--                <div class="panel-body">-->
+<!--                    <div class="message">-->
+<!--                        “Gloria, Just wanted to let you know what a wonderful time we had in our tour to Havana.-->
+<!--                        It was due to you, and your excellent planning, recommendations and knowledge. Thank you for-->
+<!--                        all you did for us. The Cañonazo at 9.00pm was absolutely wonderful. What a beautiful-->
+<!--                        tradition! The weather was great, and we learned a lot about Cuba. I think you have a corner-->
+<!--                        on the market for what you do. I know you worked real hard on this.-->
+<!--                        So give yourself a pat on the back. Thank you. ”-->
+<!--                    </div>-->
+<!--                    <div class="client">-->
+<!--                        <div class="quote green-text">-->
+<!--                            <i class="icon-comments"></i>-->
+<!--                        </div>-->
+<!--                        <div class="client-info">-->
+<!--                            <a href="" class="client-name">Mary & Larry</a>-->
+<!--                            <div class="client-company">-->
+<!--                                --><?php //echo  CHtml::link(Yii::t('app','Havana and the cannon shot'),Yii::app()->createUrl('tours/view',array('id'=>15))) ;?>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="client-image hidden-xs">-->
+<!--                            --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/mary.jpg', 'client',array("class"=>"img-circle"));?>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-sm-4">-->
+<!--            <div class="panel panel-success">-->
+<!--                <div class="panel-heading">-->
+<!--                    <h3 class="panel-title">--><?php //echo Yii::t('app','Testimonials');?><!--</h3>-->
+<!--                </div>-->
+<!--                <div class="panel-body">-->
+<!--                    <div class="message">-->
+<!--                        “Hi Felix! Well, we’re back home and getting our clocks back adjusted to this side of the world.-->
+<!--                        I wanted to take a minute and THANK YOU FOR EVERYTHING! FOR SHOWING US YOUR BEAUTIFUL COUNTRY.-->
+<!--                        Our Honeymoon was pretty spectacular and I know it would not have been what it was without your help. The service-->
+<!--                        was first class all the way and everything we expected and more.-->
+<!--                        Our Sincere Thanks and we look forward to future business with you! ”-->
+<!--                    </div>-->
+<!--                    <div class="client">-->
+<!--                        <div class="quote blue-text">-->
+<!--                            <i class=" icon-comments"></i>-->
+<!--                        </div>-->
+<!--                        <div class="client-info">-->
+<!--                            <a href="" class="client-name">Ricarda & Leonard</a>-->
+<!--                            <div class="client-company">-->
+<!--                                --><?php //echo  CHtml::link(Yii::t('app','Havana & Tropicana '),Yii::app()->createUrl('tours/view',array('id'=>14))) ;?>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="client-image hidden-xs">-->
+<!--                            --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/ricarda.jpg', 'client',array("class"=>"img-circle"));?>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-sm-4">-->
+<!--            <div class="panel panel-info">-->
+<!--                <div class="panel-heading">-->
+<!--                    <h3 class="panel-title">--><?php //echo Yii::t('app','Testimonials');?><!--</h3>-->
+<!--                </div>-->
+<!--                <div class="panel-body" style="height: 327px;">-->
+<!--                    <div class="message">-->
+<!--                        “  We enjoyed excellent email communication with Gloria while making plans for-->
+<!--                        our vacation, which resulted in a tour customized for our interests. We were-->
+<!--                        completely impressed by the level of organization and perfectly detailed plans-->
+<!--                        sent to us before departure, and this resulted in our vacation to Cuba being one-->
+<!--                        of the best we've ever had. We would definitely recommend Cubaoutings to anyone wishing to visit Cuba. .  ”-->
+<!--                    </div>-->
+<!--                    <div class="client">-->
+<!--                        <div class="quote yellow-text">-->
+<!--                            <i class="icon-comments"></i>-->
+<!--                        </div>-->
+<!--                        <div class="client-info">-->
+<!--                            <a href="" class="client-name">Phyllis Stewart</a>-->
+<!--                            <div class="client-company">-->
+<!--                                --><?php //echo  CHtml::link(Yii::t('app','Three cities tour'),Yii::app()->createUrl('tours/view',array('id'=>13))) ;?>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="client-image hidden-xs">-->
+<!--                            --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_comments/phyllis.jpg', 'client',array("class"=>"img-circle"));?>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="section" id="section3">-->
+<!--    <div class="container">-->
+<!--    <!--SECTION PORTOFOLIO -->-->
+<!--    <div class="section-header" style="margin-top: 45px">-->
+<!---->
+<!--        <!-- SECTION TITLE -->-->
+<!--        <h2 class="dark-text">--><?php //echo Yii::t('app','Photos')?><!--</h2>-->
+<!---->
+<!--        <!-- SHORT DESCRIPTION ABOUT THE SECTION -->-->
+<!--<!--        <h6>-->-->
+<!--<!--            -->--><?php ////echo Yii::t('app','Some images of Cuba.'); ?>
+<!--<!--        </h6>-->-->
+<!--    </div>-->
+<!--    <div class="tour-list">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-4">-->
+<!--                <div class="thumbnail">-->
+<!--                    --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/guama.jpg', 'guama',array("style"=>"height: 180px; width: 100%;",'class'=>'img-rounded'));?>
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4">-->
+<!--                <div class="thumbnail">-->
+<!--                    --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/capitolio.jpg', 'capitolio',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4">-->
+<!--                <div class="thumbnail">-->
+<!--                    --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg', 'cienfuegos_parque_jose_marti',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-4">-->
+<!--                <div class="thumbnail">-->
+<!--                    --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/plaza-revolucion.jpg', 'plaza-revolucion',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4">-->
+<!--                <div class="thumbnail">-->
+<!--                    --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg', 'Centro_historico_de_Trinidad',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4">-->
+<!--                <div class="thumbnail">-->
+<!--                    --><?php //echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/che_plaza_revolucion.jpg', 'che_plaza_revolucion',array("style"=>"height: 180px; width: 100%;cursor: pointer;",'class'=>'img-rounded'));?>
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--    </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<!--    <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>-->-->
+<!--<!--    <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>-->-->
+<!--</div>-->
+<!---->
+<!---->
+<!---->
+<!---->
 
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the
-            hero unit and three supporting pieces of content. Use it as a starting point to create something more
-            unique.</p>
 
-        <p><a class="btn btn-primary btn-lg">Learn more »</a></p>
-    </div>
-</div>-->
-<!--EJEMPLO UNO-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="splash">
     <div class="container">
 

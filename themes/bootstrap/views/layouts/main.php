@@ -5,6 +5,10 @@ Yii::app()->clientscript
 ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/carousel.js', CClientScript::POS_END )
 ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootswatch.js', CClientScript::POS_END )
 ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/tab.js', CClientScript::POS_END )
+->registerScriptFile( Yii::app()->theme->baseUrl . '/nicescroll/jquery.nicescroll.js', CClientScript::POS_END )
+/*->registerScriptFile( Yii::app()->theme->baseUrl . '/fullPage/jquery.fullPage.js', CClientScript::POS_END )
+->registerScriptFile( Yii::app()->theme->baseUrl . '/fullPage/vendors/jquery.easings.min.js', CClientScript::POS_END )
+->registerScriptFile( Yii::app()->theme->baseUrl . '/fullPage/vendors/jquery.slimscroll.min.js', CClientScript::POS_END )
 ->registerCoreScript( 'jquery' )
 // use it when you need it!
 /*
@@ -31,6 +35,7 @@ Yii::app()->clientscript
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.css" media="screen, projection" />
+<!--    <link rel="stylesheet" type="text/css" href="--><?php //echo Yii::app()->theme->baseUrl; ?><!--/fullPage/jquery.fullPage.css" media="screen, projection" />-->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/font-awesome.css" media="screen, projection" />
     <!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.min.css" media="screen, projection" />-->
 	<!-- blueprint CSS framework -->
@@ -131,5 +136,28 @@ $('a[href*=#]:not([href=#])').click(function() {
   });
 "
 );?>
+<?php //Yii::app()->clientScript->registerScript('fullpage',"
+//    $('#fullpage').fullpage({
+//    //sectionsColor: ['#G2G2G2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+////    sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', 'FFFFFF', '#FFFFFF']
+//    //scrollOverflow: true
+//    });
+//"
+//);?>
+<?php Yii::app()->clientScript->registerScript('nicescroll',"
+ var nice = false;
+
+$(document).ready(function() {
+nice = $('html').niceScroll();
+});
+
+var obj = window;//$(window);
+
+console.log(obj.length);
+console.log('selector' in obj);
+
+"
+);?>
+
 </body>
 </html>

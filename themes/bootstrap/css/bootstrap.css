@@ -4420,7 +4420,8 @@ a.thumbnail.active {
   border-color: #18bc9c;
 }
 .thumbnail .caption {
-  padding: 9px;
+  /*padding: 9px;*/
+  padding: 9px 9px 0 9px;
   color: #2c3e50;
 }
 .alert {
@@ -6000,7 +6001,7 @@ input:focus {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 670px;
+    height: 620px;
     padding: 9em 0 2em;
     text-align: center;
     color: #FFFFFF;
@@ -6010,10 +6011,11 @@ input:focus {
 }
 .section-header {
     text-align: center;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
+    padding-bottom: 2px;
 }
 .section-header h2 {
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
     line-height: 40px;
     position: relative;
     display: inline-block;
@@ -6205,4 +6207,5 @@ input:focus {
     margin-top: -49px;
     background-repeat: no-repeat;
 }
+
 
