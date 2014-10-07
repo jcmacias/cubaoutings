@@ -37,7 +37,7 @@ class Comment extends CActiveRecord
 			array('likes, dislike, tours_id', 'numerical', 'integerOnly'=>true),
 			array('name_owner, email_owner, photo_owner', 'length', 'max'=>100),
             array('photo_owner','file', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png'),
-			array('text', 'length', 'max'=>500),
+			array('text', 'length', 'max'=>1000),
 			array('time_create, time_update', 'safe'),
             array('email_owner','email'),
             // The following rule is used by search().
