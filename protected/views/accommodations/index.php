@@ -28,13 +28,14 @@ $this->menu=array(
 <div class="section-header" id="contact">
 
     <!-- SECTION TITLE -->
-    <h2 class="dark-text">Accommodations</h2>
+    <h2 class="dark-text"><?php echo Yii::t('app','Accommodations');?></h2>
 
     <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
     <h6>
       <?php echo Yii::t('app','The best place to enjoy your stay.');?>
     </h6>
 </div>
+<?php if(Yii::app()->getLanguage()=='en'){ ?>
 <div class="col-lg-12">
     <strong><p>Stay in a private house.</p></strong>
     <p>When you stay in a private house in Cuba you can say you know the local culture and gain some advantages.</p>
@@ -48,7 +49,21 @@ $this->menu=array(
 
     <hr class="featurette-divider">
 </div>
+<?php } if(Yii::app()->getLanguage()=='fr'){ ?>
+<div class="col-lg-12">
+    <strong><p>En logeant dans une maison particulière à Cuba.</p></strong>
+    <p>Vous pouvez vous vanter de connaître la culture local, car vous y gagner des avantages.</p>
+    <div style="padding-left: 12px;">
+        <p><i class="icon-ok"></i>  Il y a des maisons particulières disponibles dans toutes les villes que vous visiterez (Varadero, Matanzas, Havane, Trinidad, Cienfuegos, Viñales, etc).</p>
+        <p><i class="icon-ok"></i>  Vous pouvez vous installer au coeur de la ville pour être au contact de la culture local.</p>
+        <p><i class="icon-ok"></i>  Vous pouvez choisir tout type de chambre selon le nombre de visiteurs que vous êtes.</p>
+        <p><i class="icon-ok"></i>  Nous vous garantissons la privacité; toute fois, vous pouvez échanger avec une famille cubaine tout comme si vous étiez de l'endroit.</p>
+        <p><i class="icon-ok"></i>  Les prix sont abordables et varient suivant la saison (à hauteur de 30.00 à 70.00 Pesos convertibles).</p>
+    </div>
 
+    <hr class="featurette-divider">
+</div>
+<?php }?>
 <?php $this->widget('zii.widgets.CListView', array(
     'dataProvider'=>$dataProvider,
     'itemView'=>'_view',

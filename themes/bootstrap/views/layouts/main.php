@@ -136,14 +136,6 @@ $('a[href*=#]:not([href=#])').click(function() {
   });
 "
 );?>
-<?php //Yii::app()->clientScript->registerScript('fullpage',"
-//    $('#fullpage').fullpage({
-//    //sectionsColor: ['#G2G2G2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
-////    sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', 'FFFFFF', '#FFFFFF']
-//    //scrollOverflow: true
-//    });
-//"
-//);?>
 <?php Yii::app()->clientScript->registerScript('nicescroll',"
  var nice = false;
 
