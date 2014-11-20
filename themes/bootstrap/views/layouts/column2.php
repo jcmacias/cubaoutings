@@ -13,7 +13,7 @@
             if(!Yii::app()->user->isGuest){$title='Operations';}else{$title=Yii::t('app','Tours');}
                 $this->beginWidget('zii.widgets.CPortlet', array(
                     'title'=>$title,
-                    //'htmlOptions'=>array('class'=>'sidebar_header'),
+
                 ));
                 $this->widget('zii.widgets.CMenu', array(
                     'items'=>$this->menu,
@@ -21,6 +21,28 @@
                 ));
                $this->endWidget();
             ?>
+<!--            --><?php
+//            $this->widget('application.extensions.fb-likebox.FBLikeBox', array(
+//                'lang' => 'en_US', // optional (default: en_US)
+//                'username' => 'cubaoutings', // required facebook username
+//                'height' => 600, // optional height of like box (default: 63)
+//                'width' => 250, // optional width of like box (default: 300)
+//                'show_faces' => true, // optional true|false (default: true)
+//                'color_scheme' => 'light', // optional light|dark (default: light)
+//                'show_stream' => true, // optional true|false (default: true)
+//                'show_border' => true, // optional true|false (default: true)
+//                'show_header' => false, // optional true|false (default: true)
+//            ));
+//            ?>
+<!--                --><?php //$this->widget('application.extensions.fbLikeBox.fbLikeBox', array(
+//
+//                ));?>
+               <? $this->beginWidget('zii.widgets.CPortlet', array(
+                   'title'=>Yii::t('app','Follow us on Facebook'),
+                ));?>
+                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fcubaoutings&amp;width=259&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:259px; height:258px;" allowTransparency="true"></iframe>
+               <?php $this->endWidget();?>
+
 
             </div><!-- sidebar -->
         </div>

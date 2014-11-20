@@ -6142,6 +6142,7 @@ input:focus {
     border: 1px solid;
     border-color: #2C3E50 ;
     border-radius:4px;
+    margin-bottom: 10px;
 
 }
 .operations{
@@ -6199,6 +6200,9 @@ input:focus {
     /*background: no-repeat:x space:;*/
     margin-top: -49px;
     background-repeat: no-repeat;
+}
+.facebook{
+    margin-top: 10px;
 }
 
 

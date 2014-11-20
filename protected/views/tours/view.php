@@ -131,7 +131,7 @@ if(Yii::app()->getLanguage() == 'es'){
     <?php
     $this->widget('application.extensions.sharebox.EShareBox', array(
         // url to share, required.
-        'url' => $this->createAbsoluteUrl('tour/view',array('id'=>$model->id)),
+        'url' => $this->createAbsoluteUrl('tours/view',array('id'=>$model->id)),
 
         // A title to describe your link, required.
         // Some services will ignore this value.
@@ -172,7 +172,7 @@ if(Yii::app()->getLanguage() == 'es'){
         <div class="col-sm-12">
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Comentarios</h3>
+                    <h3 class="panel-title"><?php echo Yii::t('app','Testimonials');?></h3>
                 </div>
                <div class="panel-body">
                    <div class="col-lg-12">

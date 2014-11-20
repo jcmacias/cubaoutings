@@ -50,3 +50,21 @@ $this->menu=array(
         'htmlOptions'=>array('class'=>'pagination pagination-sm',),
     ),
 )); ?>
+<?php //$this->widget('application.extensions.fb-comment.FBComment', array(
+//    'url' => 'http://cubaoutings.com', // required site url
+//    'posts' => 4, // optional no. of posts (default: 10)
+//    'width' => 850 // optional width of comment box (default: 470)
+//));?>
+<?php
+//$this->widget('application.extensions.fb-likebox.FBLikeBox', array(
+//'lang' => 'en_US', // optional (default: en_US)
+//'username' => 'cubaoutings', // required facebook username
+//'height' => 600, // optional height of like box (default: 63)
+//'width' => 850, // optional width of like box (default: 300)
+//'show_faces' => true, // optional true|false (default: true)
+//'color_scheme' => 'light', // optional light|dark (default: light)
+//'show_stream' => true, // optional true|false (default: true)
+//'show_border' => true, // optional true|false (default: true)
+//'show_header' => false, // optional true|false (default: true)
+//));
+//?>

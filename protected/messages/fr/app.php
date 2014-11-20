@@ -66,4 +66,5 @@ return array (
     'People are very happy with our work. Get to know their opinion.'=>'Nos clients s’en vont toujours satisfaits; voyez leurs impressions.' ,
     'All Rights Reserved.'=>'Tous Droits Réservés.',
     'Transfers'=>'Transferts',
+    'Follow us on Facebook'=>'Rejoignez-nous sur Facebook',
     );

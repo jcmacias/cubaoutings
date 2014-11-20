@@ -89,7 +89,11 @@ $this->pageTitle=Yii::app()->name;
                 <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/trinidad.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
                     <h3><?php echo Yii::t('app','Trinidad & Cienfuegos ');?></h3>
+                    <?php if(Yii::app()->getLanguage() == 'en'){?>
                     <p>Get a ride through the green country side to visit the best two cities of the central part of Cuba. They are so perfectly preserved that we can see the features of a Spanish colonization on its very architecture.</p>
+                    <?php }if(Yii::app()->getLanguage() == 'fr'){?>
+                    <p>Effectuez une balade à travers la campagne verdoyante et visiter les deux meilleures villes de la région centrale de Cuba. Elles sont si parfaitement conservées qu’on peut y voir encore les traits caractéristiques de la colonisation espagnole dans leur architecture.</p>
+                    <?php }?>
                     <p>
                         <a class="btn btn-primary" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>11));?>"><?php echo Yii::t('app','Read More');?></a>
                     </p>
@@ -101,7 +105,11 @@ $this->pageTitle=Yii::app()->name;
                 <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/nacional.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
                     <h3><?php echo Yii::t('app','Havana day tour');?></h3>
+                    <?php if(Yii::app()->getLanguage() == 'en'){?>
                     <p>Havana, the largest city in the Caribbean, is the Cuba's political, cultural and economic center, and populated by over two million people. Havana suffered little or no damage during the wars and revolutions of the past 200 years... </p>
+                    <?php }if(Yii::app()->getLanguage() == 'fr'){?>
+                    <p>La Havane, la plus grande villedes Caraïbes, est le centre politique, culturel et économique de Cuba, et se trouve peuplée par plus de deux millions de personnes. La Havane a subi peu ou zéro dommage pendant les guerres et les révolutions des 200 dernières... </p>
+                    <?php }?>
                     <p>
                         <a class="btn btn-primary" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>8));?>"><?php echo Yii::t('app','Read More');?></a>
                     </p>
@@ -113,10 +121,20 @@ $this->pageTitle=Yii::app()->name;
                 <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/guama4.jpg', 'alt 1',array("style"=>"height: 230px; width: 100%;",'class'=>'img-rounded'));?>
                 <div class="caption">
                     <h3><?php echo Yii::t('app','Guama and the Bay of Pigs');?></h3>
-                    <p>Guamá with its singular Taino village, a sort of tropical Venice; the beaches of Playa Larga and Playa Girón, emblematic historical places and Salinas de Brito...</p>
-                    <p>
-                        <a class="btn btn-primary" style="margin-top: 20px;" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>12));?>"><?php echo Yii::t('app','Read More');?></a>
-                    </p>
+<!--                    <p>Guamá with its singular Taino village, a sort of tropical Venice; the beaches of Playa Larga and Playa Girón, emblematic historical places and Salinas de Brito...</p>-->
+                    <?php if(Yii::app()->getLanguage() == 'en'){?>
+                    <p>The Southern part of Matanzas province is an excellent place to spend the day enjoying the country side. Zapata peninsula is the Cuba’s most important wetland area and deservedly declared National Park.</p>
+                        <p>
+                            <a class="btn btn-primary" " href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>12));?>"><?php echo Yii::t('app','Read More');?></a>
+                        </p>
+                    <?php }?>
+                    <?php if(Yii::app()->getLanguage() == 'fr'){?>
+                    <p>La zone sud de la province de Matanzas est un excellent endroit pour passer la journée et profiter de la campagne. La Municipalité de Zapata est la zone humide la plus importante de Cuba et a été déclarée à juste titreParc National.</p>
+                        <p>
+                            <a class="btn btn-primary" style="margin-top: -7px;" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>12));?>"><?php echo Yii::t('app','Read More');?></a>
+                        </p>
+                    <?php }?>
+
                 </div>
             </div>
         </div>
