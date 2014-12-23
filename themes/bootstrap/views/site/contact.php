@@ -107,6 +107,7 @@
             <div class="row">
                 <label class="pull-left">Emails</label><br>
                 <ul class="pull-left">
+                    <li>info@cubaoutings.com</li>
                     <li>cubaoutings@gmail.com</li>
                 </ul>
             </div>
