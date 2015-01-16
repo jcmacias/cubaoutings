@@ -93,6 +93,8 @@ $this->pageTitle=Yii::app()->name;
                     <p>Get a ride through the green country side to visit the best two cities of the central part of Cuba. They are so perfectly preserved that we can see the features of a Spanish colonization on its very architecture.</p>
                     <?php }if(Yii::app()->getLanguage() == 'fr'){?>
                     <p>Effectuez une balade à travers la campagne verdoyante et visiter les deux meilleures villes de la région centrale de Cuba. Elles sont si parfaitement conservées qu’on peut y voir encore les traits caractéristiques de la colonisation espagnole dans leur architecture.</p>
+                    <?php }if(Yii::app()->getLanguage() == 'es'){?>
+                        <p>Recorra todo el campo verde para visitar las dos más interesantes ciudades de la región central de Cuba. Son tan perfectamente conservadas que aun muestran elementos típicos de la arquitectura colonial española.</p>
                     <?php }?>
                     <p>
                         <a class="btn btn-primary" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>11));?>"><?php echo Yii::t('app','Read More');?></a>
@@ -109,7 +111,10 @@ $this->pageTitle=Yii::app()->name;
                     <p>Havana, the largest city in the Caribbean, is the Cuba's political, cultural and economic center, and populated by over two million people. Havana suffered little or no damage during the wars and revolutions of the past 200 years... </p>
                     <?php }if(Yii::app()->getLanguage() == 'fr'){?>
                     <p>La Havane, la plus grande villedes Caraïbes, est le centre politique, culturel et économique de Cuba, et se trouve peuplée par plus de deux millions de personnes. La Havane a subi peu ou zéro dommage pendant les guerres et les révolutions des 200 dernières... </p>
+                    <?php }if(Yii::app()->getLanguage() == 'es'){?>
+                        <p>La Habana, la mayor ciudad del Caribe, es la capital económica, política y cultural de Cuba, y cuenta con una población de dos millones de habitantes. La Habana no sufrió prácticamente ningún daño durante las guerras y revoluciones... </p>
                     <?php }?>
+
                     <p>
                         <a class="btn btn-primary" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>8));?>"><?php echo Yii::t('app','Read More');?></a>
                     </p>
@@ -130,6 +135,12 @@ $this->pageTitle=Yii::app()->name;
                     <?php }?>
                     <?php if(Yii::app()->getLanguage() == 'fr'){?>
                     <p>La zone sud de la province de Matanzas est un excellent endroit pour passer la journée et profiter de la campagne. La Municipalité de Zapata est la zone humide la plus importante de Cuba et a été déclarée à juste titreParc National.</p>
+                        <p>
+                            <a class="btn btn-primary" style="margin-top: -7px;" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>12));?>"><?php echo Yii::t('app','Read More');?></a>
+                        </p>
+                    <?php }?>
+                    <?php if(Yii::app()->getLanguage() == 'es'){?>
+                        <p>La zone sud de la province de Matanzas est un excellent endroit pour passer la journée et profiter de la campagne. La Municipalité de Zapata est la zone humide la plus importante de Cuba et a été déclarée à juste titreParc National.</p>
                         <p>
                             <a class="btn btn-primary" style="margin-top: -7px;" href="<?php echo Yii::app()->createUrl('tours/view',array('id'=>12));?>"><?php echo Yii::t('app','Read More');?></a>
                         </p>
