@@ -8,6 +8,8 @@
  * @property string $message
  * @property string $message_fr
  * @property string $message_es
+ * @property string $message_it
+ * @property string $message_ru
  * @property string $imagen
  * @property string $create_time
  */
@@ -30,12 +32,12 @@ class Offer extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('message', 'required'),
-			array('message, message_fr, message_es, imagen', 'length', 'max'=>100),
+			array('message, message_fr, message_es, message_it, message_ru, imagen', 'length', 'max'=>100),
             array('imagen','file', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png'),
 			array('create_time', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, message, message_fr, message_es, imagen, create_time', 'safe', 'on'=>'search'),
+			array('id, message, message_fr, message_es, message_it, message_ru, imagen, create_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,6 +62,8 @@ class Offer extends CActiveRecord
 			'message' => 'Message',
 			'message_fr' => 'Message Fr',
 			'message_es' => 'Message Es',
+            'message_it' => 'Message It',
+            'message_ru' => 'Message Ru',
 			'imagen' => 'Imagen',
 			'create_time' => 'Create Time',
 		);
@@ -87,6 +91,8 @@ class Offer extends CActiveRecord
 		$criteria->compare('message',$this->message,true);
 		$criteria->compare('message_fr',$this->message_fr,true);
 		$criteria->compare('message_es',$this->message_es,true);
+        $criteria->compare('message_it',$this->message_it,true);
+        $criteria->compare('message_ru',$this->message_ru,true);
 		$criteria->compare('imagen',$this->imagen,true);
 		$criteria->compare('create_time',$this->create_time,true);
 

@@ -50,7 +50,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'pax',
 		'date',
 		'time_create',
-		'accommodations_id',
+//		'accommodations_id',
 		array(
 			'class'=>'CButtonColumn',
 		),

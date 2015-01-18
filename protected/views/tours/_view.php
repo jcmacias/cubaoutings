@@ -46,6 +46,25 @@ $photos=Photo::model()->getPhotosToursPrincipal($data->id);
                             </div>';
                         }
                     }
+                    if(Yii::app()->getLanguage() == 'it'){
+                        if($data->preview_it != null)
+                        {
+                            echo $data->preview_it;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                            <strong>We Sorry!</strong> Italian translation not found for this tour.
+                            </div>';
+                        }
+                    }if(Yii::app()->getLanguage() == 'ru'){
+                        if($data->preview_ru != null)
+                        {
+                            echo $data->preview_ru;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                            <strong>We Sorry!</strong> Russian translation not found for this tour.
+                            </div>';
+                        }
+                    }
 
                     ?> </p>
             </div>

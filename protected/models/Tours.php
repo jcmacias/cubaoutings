@@ -9,9 +9,13 @@
  * @property string $preview
  * @property string $preview_fr
  * @property string $preview_es
+ * @property string $preview_it
+ * @property string $preview_ru
  * @property string $description
  * @property string $description_fr
  * @property string $description_es
+ * @property string $description_it
+ * @property string $description_ru
  * @property string $time_create
  * @property string $time_update
  */
@@ -35,11 +39,11 @@ class Tours extends CActiveRecord
 		return array(
 			array('name, preview, description', 'required'),
 			array('name', 'length', 'max'=>100),
-			array('preview, preview_fr, preview_es', 'length', 'max'=>150),
-			array('description_fr, description_es, time_create, time_update', 'safe'),
+			array('preview, preview_fr, preview_es, preview_it, preview_ru', 'length', 'max'=>150),
+			array('description_fr, description_es,description_it, description_ru, time_create, time_update', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, preview, preview_fr, preview_es, description, description_fr, description_es, time_create, time_update', 'safe', 'on'=>'search'),
+			array('id, name, preview, preview_fr, preview_es, preview_it, preview_ru, description, description_fr, description_es,description_it, description_ru, time_create, time_update', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,9 +70,13 @@ class Tours extends CActiveRecord
 			'preview' => 'Preview',
 			'preview_fr' => 'Preview Fr',
 			'preview_es' => 'Preview Es',
-			'description' => 'Description',
+            'preview_it' => 'Preview It',
+            'preview_ru' => 'Preview Ru',
+            'description' => 'Description',
 			'description_fr' => 'Description Fr',
 			'description_es' => 'Description Es',
+            'description_It' => 'Description It',
+            'description_ru' => 'Description Ru',
 			'time_create' => 'Time Create',
 			'time_update' => 'Time Update',
 		);
@@ -97,9 +105,13 @@ class Tours extends CActiveRecord
 		$criteria->compare('preview',$this->preview,true);
 		$criteria->compare('preview_fr',$this->preview_fr,true);
 		$criteria->compare('preview_es',$this->preview_es,true);
+        $criteria->compare('preview_it',$this->preview_it,true);
+        $criteria->compare('preview_ru',$this->preview_ru,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('description_fr',$this->description_fr,true);
 		$criteria->compare('description_es',$this->description_es,true);
+        $criteria->compare('description_it',$this->description_it,true);
+        $criteria->compare('description_ru',$this->description_ru,true);
 		$criteria->compare('time_create',$this->time_create,true);
 		$criteria->compare('time_update',$this->time_update,true);
 

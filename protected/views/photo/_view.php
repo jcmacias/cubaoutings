@@ -28,8 +28,8 @@
                             echo $data->description_fr;
                         }else{
                             echo '<div class="alert alert-dismissable alert-danger">
-             <strong>We Sorry!</strong> French translation not found for this photo.
-            </div>';
+                                     <strong>We Sorry!</strong> French translation not found for this photo.
+                                    </div>';
                         }
                     }
                     if(Yii::app()->getLanguage() == 'es'){
@@ -38,8 +38,28 @@
                             echo $data->description_es;
                         }else{
                             echo '<div class="alert alert-dismissable alert-danger">
-             <strong>We Sorry!</strong> Spanish translation not found for this photo.
-            </div>';
+                                    <strong>We Sorry!</strong> Spanish translation not found for this photo.
+                                    </div>';
+                        }
+                    }
+                    if(Yii::app()->getLanguage() == 'it'){
+                        if($data->description_it != null)
+                        {
+                            echo $data->description_it;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                                    <strong>We Sorry!</strong> Italian translation not found for this photo.
+                                  </div>';
+                        }
+                    }
+                    if(Yii::app()->getLanguage() == 'ru'){
+                        if($data->description_ru != null)
+                        {
+                            echo $data->description_ru;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                                    <strong>We Sorry!</strong> Russian translation not found for this photo.
+                                   </div>';
                         }
                     }
 

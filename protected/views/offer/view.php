@@ -39,6 +39,10 @@ $this->menu=array(
 	'attributes'=>array(
 		'id',
 		'message',
+        'message_fr',
+        'message_es',
+        'message_it',
+        'message_ru',
 		'imagen',
 		'create_time',
 	),

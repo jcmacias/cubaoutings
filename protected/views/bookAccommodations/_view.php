@@ -9,14 +9,14 @@
     <div class="col-sm-12">
         <div class="panel panel-success">
             <div class="panel-heading">
-                <h3 class="panel-title"><?php echo "Book"." "."#".$data->id;?></h3>
+                <h3 class="panel-title"><?php echo "Book accommodations"." "."#".$data->id;?></h3>
             </div>
             <div class="panel-body">
                 <?php $this->widget('zii.widgets.CDetailView', array(
                     'data'=>$data,
                     'attributes'=>array(
                         'email_owner',
-                        'accommodations.name',
+//                        'accommodations.name',
                         'pax',
                         'date',
                         'time_create',

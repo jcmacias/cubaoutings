@@ -25,7 +25,52 @@
             </div>
             <div class="modal-body">
                 <?php echo CHtml::image(Yii::app()->baseUrl . '/images/'.$data->direction, $data->name,array("style"=>"height: 180px, width: 100%",'class'=>'img-rounded img-responsive'));?>
-                <div class="details"><?php echo $data->description;?></div>
+                <div class="details"><?php
+                    if(Yii::app()->getLanguage() == 'en'){
+                        echo $data->description;
+                    }
+                    if(Yii::app()->getLanguage() == 'fr'){
+                        if($data->description_fr != null)
+                        {
+                            echo $data->description_fr;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                                     <strong>We Sorry!</strong> French translation not found for this photo.
+                                    </div>';
+                        }
+                    }
+                    if(Yii::app()->getLanguage() == 'es'){
+                        if($data->description_es != null)
+                        {
+                            echo $data->description_es;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                                    <strong>We Sorry!</strong> Spanish translation not found for this photo.
+                                    </div>';
+                        }
+                    }
+                    if(Yii::app()->getLanguage() == 'it'){
+                        if($data->description_it != null)
+                        {
+                            echo $data->description_it;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                                    <strong>We Sorry!</strong> Italian translation not found for this photo.
+                                  </div>';
+                        }
+                    }
+                    if(Yii::app()->getLanguage() == 'ru'){
+                        if($data->description_ru != null)
+                        {
+                            echo $data->description_ru;
+                        }else{
+                            echo '<div class="alert alert-dismissable alert-danger">
+                                    <strong>We Sorry!</strong> Russian translation not found for this photo.
+                                   </div>';
+                        }
+                    }
+
+                    ?></div>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

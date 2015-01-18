@@ -125,6 +125,26 @@ if(Yii::app()->getLanguage() == 'es'){
             </div>';
     }
 }
+if(Yii::app()->getLanguage() == 'it'){
+    if($model->description_it != null)
+    {
+        echo $model->description_it;
+    }else{
+        echo '<div class="alert alert-dismissable alert-danger">
+             <strong>We Sorry!</strong> Italian translation not found for this tour.
+            </div>';
+    }
+}
+if(Yii::app()->getLanguage() == 'ru'){
+    if($model->description_ru != null)
+    {
+        echo $model->description_ru;
+    }else{
+        echo '<div class="alert alert-dismissable alert-danger">
+             <strong>We Sorry!</strong> Russian translation not found for this tour.
+            </div>';
+    }
+}
 
 ?><br>
 <div class=" pull-right">

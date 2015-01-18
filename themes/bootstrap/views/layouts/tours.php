@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 <?php }?>
-                <? $this->beginWidget('zii.widgets.CPortlet', array(
+                <?php $this->beginWidget('zii.widgets.CPortlet', array(
                     'title'=>Yii::t('app','Follow us on Facebook'),
                 ));?>
                 <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fcubaoutings&amp;width=259&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:259px; height:258px;" allowTransparency="true"></iframe>
@@ -159,6 +159,12 @@ if($datos!=null ){
     }
     if(Yii::app()->getLanguage() == 'es'){
         $message='<table><td>'.CHtml::image(Yii::app()->baseUrl . '/images/offer_image/'.$datos[0]->imagen, 'Cuba',array('class'=>'img-circle','style'=>'width:70px;')).'</td><td><p style="padding-left:7px">'.$datos[0]->message_es.'</p></td></table>';
+    }
+    if(Yii::app()->getLanguage() == 'it'){
+        $message='<table><td>'.CHtml::image(Yii::app()->baseUrl . '/images/offer_image/'.$datos[0]->imagen, 'Cuba',array('class'=>'img-circle','style'=>'width:70px;')).'</td><td><p style="padding-left:7px">'.$datos[0]->message_it.'</p></td></table>';
+    }
+    if(Yii::app()->getLanguage() == 'ru'){
+        $message='<table><td>'.CHtml::image(Yii::app()->baseUrl . '/images/offer_image/'.$datos[0]->imagen, 'Cuba',array('class'=>'img-circle','style'=>'width:70px;')).'</td><td><p style="padding-left:7px">'.$datos[0]->message_ru.'</p></td></table>';
     }
    if(Yii::app()->user->isGuest  ){
         $this->widget('application.extensions.PNotify.PNotify',array(

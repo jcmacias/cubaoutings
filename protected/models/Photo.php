@@ -11,6 +11,8 @@
  * @property string $description
  * @property string $description_fr
  * @property string $description_es
+ * @property string $description_it
+ * @property string $description_ru
  * @property string $time_create
  * @property string $time_update
  * @property integer $tours_id
@@ -46,10 +48,10 @@ class Photo extends CActiveRecord
 			array('name, direction', 'length', 'max'=>100),
             array('direction','file', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png','on'=>'update'),
 			array('principal', 'length', 'max'=>11),
-			array('description_fr, description_es, time_create, time_update', 'safe'),
+			array('description_fr, description_es,description_it, description_ru, time_create, time_update', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, direction, principal, description, description_fr, description_es, time_create, time_update, tours_id, place_id', 'safe', 'on'=>'search'),
+			array('id, name, direction, principal, description, description_fr, description_es, description_it, description_ru, time_create, time_update, tours_id, place_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -79,6 +81,8 @@ class Photo extends CActiveRecord
 			'description' => 'Description',
 			'description_fr' => 'Description Fr',
 			'description_es' => 'Description Es',
+            'description_it' => 'Description It',
+            'description_ru' => 'Description Ru',
 			'time_create' => 'Time Create',
 			'time_update' => 'Time Update',
 			'tours_id' => 'Tours',
@@ -111,6 +115,8 @@ class Photo extends CActiveRecord
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('description_fr',$this->description_fr,true);
 		$criteria->compare('description_es',$this->description_es,true);
+        $criteria->compare('description_it',$this->description_it,true);
+        $criteria->compare('description_ru',$this->description_ru,true);
 		$criteria->compare('time_create',$this->time_create,true);
 		$criteria->compare('time_update',$this->time_update,true);
 		$criteria->compare('tours_id',$this->tours_id);

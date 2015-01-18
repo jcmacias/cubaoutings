@@ -108,6 +108,64 @@
         </div>
 
     </div>
+    <hr class="featurette-divider">
+    <h2>Italian Translations</h2>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <?php echo $form->labelEx($model,'preview_it'); ?>
+            <?php echo $form->textArea($model,'preview_it',array('class'=>'preview-name form-control','maxlength' => 150)); ?>
+            <?php echo $form->error($model,'preview_it',array('class'=>'label label-danger')); ?>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <?php echo $form->labelEx($model,'description_it'); ?>
+            <?php //echo $form->textArea($model,'description',array('class'=>'tour-description form-control')); ?>
+            <?php $this->widget('application.extensions.eckeditor.ECKEditor', array(
+                'model'=>$model,
+                'attribute'=>'description_it',
+                'config' => array(
+                    'toolbar'=>array(
+                        array( 'Source', '-', 'Bold', 'Italic', 'Underline', 'Strike' ),
+                        array('Link', 'Unlink', 'Anchor' ) ,
+                    ),
+                ),
+            )); ?>
+            <?php echo $form->error($model,'description_it',array('class'=>'label label-danger')); ?>
+        </div>
+
+    </div>
+    <hr class="featurette-divider">
+    <h2>Russian Translations</h2>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <?php echo $form->labelEx($model,'preview_ru'); ?>
+            <?php echo $form->textArea($model,'preview_ru',array('class'=>'preview-name form-control','maxlength' => 150)); ?>
+            <?php echo $form->error($model,'preview_ru',array('class'=>'label label-danger')); ?>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <?php echo $form->labelEx($model,'description_ru'); ?>
+            <?php //echo $form->textArea($model,'description',array('class'=>'tour-description form-control')); ?>
+            <?php $this->widget('application.extensions.eckeditor.ECKEditor', array(
+                'model'=>$model,
+                'attribute'=>'description_ru',
+                'config' => array(
+                    'toolbar'=>array(
+                        array( 'Source', '-', 'Bold', 'Italic', 'Underline', 'Strike' ),
+                        array('Link', 'Unlink', 'Anchor' ) ,
+                    ),
+                ),
+            )); ?>
+            <?php echo $form->error($model,'description_ru',array('class'=>'label label-danger')); ?>
+        </div>
+
+    </div>
 
 
     <div class="row buttons">

@@ -52,6 +52,20 @@
             <?php echo $form->error($model,'message_es',array('class'=>'label label-danger')); ?>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <?php echo $form->labelEx($model,'message_it'); ?>
+            <?php echo $form->textField($model,'message_it',array('class'=>'message form-control')); ?>
+            <?php echo $form->error($model,'message_it',array('class'=>'label label-danger')); ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <?php echo $form->labelEx($model,'message_ru'); ?>
+            <?php echo $form->textField($model,'message_ru',array('class'=>'message form-control')); ?>
+            <?php echo $form->error($model,'message_ru',array('class'=>'label label-danger')); ?>
+        </div>
+    </div>
 	<div class="row buttons">
         <div class="col-lg-8 "style="margin-top: 8px;">
 		    <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-md pull-left')); ?>
