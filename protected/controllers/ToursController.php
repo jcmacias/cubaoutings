@@ -204,6 +204,8 @@ class ToursController extends Controller
         if(Yii::app()->getLanguage()=='fr'){
             $this->render('transfer_fr');
         }
-
+		if(Yii::app()->getLanguage()=='it'){
+			$this->render('transfer_it');
+		}
     }
 }

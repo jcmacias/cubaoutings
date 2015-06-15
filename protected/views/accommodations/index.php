@@ -63,6 +63,20 @@ $this->menu=array(
 
     <hr class="featurette-divider">
 </div>
+<?php } if(Yii::app()->getLanguage()=='it'){ ?>
+    <div class="col-lg-12">
+        <strong><p>Alloggio in un’abitazione privata.</p></strong>
+        <p>Quando soggiornerete in un’abitazione privata a Cuba potrete dire di conoscere la cultura del posto ed avere numerosi vantaggi.</p>
+        <div style="padding-left: 12px;">
+            <p><i class="icon-ok"></i>  Ci sono disponibilità di abitazioni in tutte le città che vorrete visitare (Varadero, Matanzas, Avana, Trinidad, Cienfuegos, Viñales, ecc).</p>
+            <p><i class="icon-ok"></i>  Potrete soggiornare nel cuore delle città per vivere la locale cultura.</p>
+            <p><i class="icon-ok"></i>  Potrete scegliere le dimensioni delle stanze in corrispondenza del numero degli ospiti.</p>
+            <p><i class="icon-ok"></i>  Noi garantiremo la vostra privicy, lasciandovi comunque interagire con famiglie cubane come se foste parte di loro.</p>
+            <p><i class="icon-ok"></i>  Avrete prezzi competitivi che varieranno a seconda della stagione (da 30,00 fino a 70,00).</p>
+        </div>
+
+        <hr class="featurette-divider">
+    </div>
 <?php }?>
 <?php $this->widget('zii.widgets.CListView', array(
     'dataProvider'=>$dataProvider,
