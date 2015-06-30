@@ -13,16 +13,7 @@ $this->pageTitle = Yii::app()->name;
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <div style="background-color: rgba(0, 0, 0, 0.4);" class="well sponsor">
-                            <a target="_blank" rel="nofollow"
-                               onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'treehouse']);" href="#">
-                                <h4 style="margin-bottom: 0.4em;"><?php echo Yii::t('app', 'Find us on Tripadvisor'); ?></h4>
-
-                                <div class="clearfix">
-
-                            </a>
-
-                            <p><? echo Yii::t('app', 'Share this site with your friends'); ?></p>
-
+                            <p><?php echo Yii::t('app', 'Share this site with your friends'); ?></p>
                             <p><?php
                                 $this->widget('application.extensions.sharebox.EShareBox', array(
                                     // url to share, required.
@@ -59,11 +50,12 @@ $this->pageTitle = Yii::app()->name;
                                     // HTML options for all the LI elements.
                                     //'liHtmlOptions' => array('class' => 'myCustomLiClass'),
                                 )); ?></p>
+                            <div class="splash-down">
+                                <a href="#trabajos"><i class="icon-download"></i></a>
+                            </div>
                         </div>
 
-                        <div class="splash-down">
-                            <a href="#trabajos"><i class="icon-download"></i></a>
-                        </div>
+
                     </div>
                 </div>
 

@@ -114,6 +114,11 @@ class EShareBox extends CWidget
 			'title' => 'Bookmark on Newsvine',
 			'name' => 'Newsvine',
 		),
+		'tripadvisor' => array(
+			'url' => 'http://www.tripadvisor.es/Attraction_Review-d7297007',
+			'title' => 'Find us on Tripadvisor',
+			'name' => 'Tripadvisor',
+		),
 			/*
 			  'email' => array(
 			  'url' => 'http://mysite.com/sendEmail?url={url}&title={title}',
