@@ -119,6 +119,16 @@ class EShareBox extends CWidget
 			'title' => 'Find us on Tripadvisor',
 			'name' => 'Tripadvisor',
 		),
+		'instagram' => array(
+			'url' => '#',
+			'title' => 'Find us on Instagram',
+			'name' => 'Instagram',
+		),
+		'pinterest' => array(
+			'url' => '#',
+			'title' => 'Find us on Pinterest',
+			'name' => 'Pinterest',
+		),
 			/*
 			  'email' => array(
 			  'url' => 'http://mysite.com/sendEmail?url={url}&title={title}',
