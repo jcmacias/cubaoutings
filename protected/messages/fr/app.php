@@ -67,4 +67,6 @@ return array (
     'All Rights Reserved.'=>'Tous Droits Réservés.',
     'Transfers'=>'Transferts',
     'Follow us on Facebook'=>'Rejoignez-nous sur Facebook',
+    'Book tour'=>'Réserver',
+    'Create'=>'Créer',
     );

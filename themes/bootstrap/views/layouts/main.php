@@ -6,28 +6,9 @@ Yii::app()->clientscript
 ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootswatch.js', CClientScript::POS_END )
 ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/tab.js', CClientScript::POS_END )
 ->registerScriptFile( Yii::app()->theme->baseUrl . '/nicescroll/jquery.nicescroll.js', CClientScript::POS_END )
-/*->registerScriptFile( Yii::app()->theme->baseUrl . '/fullPage/jquery.fullPage.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/fullPage/vendors/jquery.easings.min.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/fullPage/vendors/jquery.slimscroll.min.js', CClientScript::POS_END )
-->registerCoreScript( 'jquery' )
-// use it when you need it!
-/*
-->registerCssFile( Yii::app()->theme->baseUrl . '/css/bootstrap.css' )
-->registerCssFile( Yii::app()->theme->baseUrl . '/css/bootstrap-responsive.css' )
-->registerCoreScript( 'jquery' )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-transition.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-alert.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-modal.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-dropdown.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-scrollspy.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-tab.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-tooltip.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-popover.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-button.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-collapse.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-carousel.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap-typeahead.js', CClientScript::POS_END )
-*/
+->registerScriptFile( Yii::app()->theme->baseUrl . '/photoswipe/photoswipe.min.js', CClientScript::POS_END )
+->registerScriptFile( Yii::app()->theme->baseUrl . '/photoswipe/photoswipe-ui-default.min.js', CClientScript::POS_END )
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -48,6 +29,8 @@ Yii::app()->clientscript
 
 	<!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />-->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/photoswipe/photoswipe.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/photoswipe/default-skin/default-skin.css" media="screen, projection" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>

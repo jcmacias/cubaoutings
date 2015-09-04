@@ -70,4 +70,6 @@ return array (
     'All Rights Reserved.'=>'Todos los derechos reservados',
     'Transfers'=>'Transfers',
     'Follow us on Facebook'=>'S&iacute;guenos en Facebook',
+    'Book tour'=>'Reservar',
+    'Create'=>'Crear',
     );

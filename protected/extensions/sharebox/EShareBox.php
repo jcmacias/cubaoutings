@@ -120,12 +120,12 @@ class EShareBox extends CWidget
 			'name' => 'Tripadvisor',
 		),
 		'instagram' => array(
-			'url' => '#',
+			'url' => 'https://instagram.com/cubaoutings/',
 			'title' => 'Find us on Instagram',
 			'name' => 'Instagram',
 		),
 		'pinterest' => array(
-			'url' => '#',
+			'url' => 'https://www.pinterest.com/cubaoutings/',
 			'title' => 'Find us on Pinterest',
 			'name' => 'Pinterest',
 		),

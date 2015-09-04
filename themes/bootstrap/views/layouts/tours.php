@@ -26,7 +26,7 @@
                       <div class="col-sm-12">
                         <div class="panel panel-danger">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Book tour</h3>
+                                <h3 class="panel-title"><?php echo Yii::t('app','Book tour'); ?></h3>
                             </div>
                             <div class="panel-body">
                                 <div class="form">
@@ -99,7 +99,7 @@
 
                                    <div class="row buttons">
                                         <div class="col-lg-12" style="margin-top: 8px;">
-                                            <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-md pull-right')); ?>
+                                            <?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('app','Create') : Yii::t('app','Save'),array('class'=>'btn btn-success btn-md pull-right')); ?>
                                         </div>
                                     </div>
 
