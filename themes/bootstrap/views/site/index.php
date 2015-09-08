@@ -14,6 +14,7 @@ $this->pageTitle = Yii::app()->name;
                     <div class="col-md-6 col-md-offset-3">
                         <div style="background-color: rgba(0, 0, 0, 0.4);" class="well sponsor">
                             <p><?php echo Yii::t('app', 'Share this site with your friends'); ?></p>
+
                             <p><?php
                                 $this->widget('application.extensions.sharebox.EShareBox', array(
                                     // url to share, required.
@@ -50,6 +51,7 @@ $this->pageTitle = Yii::app()->name;
                                     // HTML options for all the LI elements.
                                     //'liHtmlOptions' => array('class' => 'myCustomLiClass'),
                                 )); ?></p>
+
                             <div class="splash-down">
                                 <a href="#trabajos"><i class="icon-download"></i></a>
                             </div>
@@ -321,40 +323,143 @@ $this->pageTitle = Yii::app()->name;
         </h6>
     </div>
     <div class="tour-list">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="thumbnail">
-                    <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/guama.jpg', 'guama', array("style" => "height: 180px; width: 100%;", 'class' => 'img-rounded')); ?>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="thumbnail">
-                    <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/capitolio.jpg', 'capitolio', array("style" => "height: 180px; width: 100%;cursor: pointer;", 'class' => 'img-rounded')); ?>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="thumbnail">
-                    <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg', 'cienfuegos_parque_jose_marti', array("style" => "height: 180px; width: 100%;cursor: pointer;", 'class' => 'img-rounded')); ?>
-                </div>
-            </div>
+        <div class="gamma-container gamma-loading" id="gamma-container">
+
+            <ul class="gamma-gallery">
+                <li>
+                    <div data-alt="img01" data-description="<h3>Plaza de La Revolución</h3>" data-max-width="1800"
+                         data-max-height="2400">
+                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/plaza2.jpg' ?>"
+                             data-min-width="300"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/plaza2.jpg' ?>"
+                             data-min-width="200"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/plaza2.jpg' ?>"
+                             data-min-width="140"></div>
+                        <!--<div data-src="images/xsmall/1.jpg"></div>
+                        <noscript>
+                            <img src="images/xsmall/1.jpg" alt="img01"/>
+                        </noscript>-->
+                    </div>
+                </li>
+                <li>
+                    <div  data-alt="img01" data-description="<h3>Hotel Ambos Mundos</h3>" data-max-width="1800"
+                         data-max-height="2400">
+                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/ambos-mundos.jpg' ?>"
+                             data-min-width="300"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/ambos-mundos.jpg' ?>"
+                             data-min-width="200"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/ambos-mundos.jpg' ?>"
+                             data-min-width="140"></div>
+                        <!--<div data-src="images/xsmall/1.jpg"></div>
+                        <noscript>
+                            <img src="images/xsmall/1.jpg" alt="img01"/>
+                        </noscript>-->
+                    </div>
+                </li>
+                <li>
+                    <div data-alt="img01" data-description="<h3>Trinidad</h3>" data-max-width="1800"
+                         data-max-height="2400">
+                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg' ?>"
+                             data-min-width="300"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg' ?>"
+                             data-min-width="200"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg' ?>"
+                             data-min-width="140"></div>
+                        <!--<div data-src="images/xsmall/1.jpg"></div>
+                        <noscript>
+                            <img src="images/xsmall/1.jpg" alt="img01"/>
+                        </noscript>-->
+                    </div>
+                </li>
+
+                <li>
+                    <div data-alt="img01" data-description="<h3>Ciénaga de Zapata</h3>" data-max-width="1800"
+                         data-max-height="2400">
+                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+                        <div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+                        <div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/guama.jpg' ?>"
+                             data-min-width="300"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/guama.jpg' ?>"
+                             data-min-width="200"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/guama.jpg' ?>"
+                             data-min-width="140"></div>
+                        <!--<div data-src="images/xsmall/1.jpg"></div>
+                        <noscript>
+                            <img src="images/xsmall/1.jpg" alt="img01"/>
+                        </noscript>-->
+                    </div>
+                </li>
+
+                <li>
+                    <div data-alt="img01" data-description="<h3>Parque José Martí</h3>" data-max-width="1800"
+                         data-max-height="2400">
+                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg' ?>"
+                             data-min-width="300"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg' ?>"
+                             data-min-width="200"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg' ?>"
+                             data-min-width="140"></div>
+                        <!--<div data-src="images/xsmall/1.jpg"></div>
+                        <noscript>
+                            <img src="images/xsmall/1.jpg" alt="img01"/>
+                        </noscript>-->
+                    </div>
+                </li>
+                <li>
+                    <div data-alt="img01" data-description="<h3>Capitolio de la Habana</h3>" data-max-width="1800"
+                         data-max-height="2400">
+                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/capitolio.jpg' ?>"
+                             data-min-width="300"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/capitolio.jpg' ?>"
+                             data-min-width="200"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/capitolio.jpg' ?>"
+                             data-min-width="140"></div>
+                        <!--<div data-src="images/xsmall/1.jpg"></div>
+                        <noscript>
+                            <img src="images/xsmall/1.jpg" alt="img01"/>
+                        </noscript>-->
+                    </div>
+                </li>
+                <li>
+                    <div data-alt="img01" data-description="<h3>Plaza del Ché</h3>" data-max-width="1800"
+                         data-max-height="2400">
+                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/che_plaza_revolucion.jpg' ?>"
+                             data-min-width="300"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/che_plaza_revolucion.jpg' ?>"
+                             data-min-width="200"></div>
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/che_plaza_revolucion.jpg' ?>"
+                             data-min-width="140"></div>
+                        <!--<div data-src="images/xsmall/1.jpg"></div>
+                        <noscript>
+                            <img src="images/xsmall/1.jpg" alt="img01"/>
+                        </noscript>-->
+                    </div>
+                </li>
+
+            </ul>
+            <div class="gamma-overlay"></div>
+
         </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="thumbnail">
-                    <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/plaza-revolucion.jpg', 'plaza-revolucion', array("style" => "height: 180px; width: 100%;cursor: pointer;", 'class' => 'img-rounded')); ?>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="thumbnail">
-                    <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg', 'Centro_historico_de_Trinidad', array("style" => "height: 180px; width: 100%;cursor: pointer;", 'class' => 'img-rounded')); ?>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="thumbnail">
-                    <?php echo CHtml::image(Yii::app()->baseUrl . '/images/pic_portada/che_plaza_revolucion.jpg', 'che_plaza_revolucion', array("style" => "height: 180px; width: 100%;cursor: pointer;", 'class' => 'img-rounded')); ?>
-                </div>
-            </div>
-        </div>
+
 
     </div>
 
@@ -407,74 +512,34 @@ $this->pageTitle = Yii::app()->name;
 
     })
 
+    $(function () {
+
+        var GammaSettings = {
+            // order is important!
+            viewport: [{
+                width: 1200,
+                columns: 5
+            }, {
+                width: 900,
+                columns: 4
+            }, {
+                width: 500,
+                columns: 3
+            }, {
+                width: 320,
+                columns: 2
+            }, {
+                width: 0,
+                columns: 2
+            }]
+        };
+
+        Gamma.init(GammaSettings);
+
+    });
+
 
 </script>
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides.
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
 
 
 

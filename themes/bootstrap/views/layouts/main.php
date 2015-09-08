@@ -1,15 +1,4 @@
 <?php /* @var $this Controller */ ?>
-<?php
-Yii::app()->clientscript
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/carousel.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootswatch.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/js/tab.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/nicescroll/jquery.nicescroll.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/photoswipe/photoswipe.min.js', CClientScript::POS_END )
-->registerScriptFile( Yii::app()->theme->baseUrl . '/photoswipe/photoswipe-ui-default.min.js', CClientScript::POS_END )
-
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -29,8 +18,11 @@ Yii::app()->clientscript
 
 	<!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />-->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/photoswipe/photoswipe.css" media="screen, projection" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/photoswipe/default-skin/default-skin.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/GammaGallery/css/style.css"/>
+
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/GammaGallery/js/modernizr.custom.70736.js"></script>
+    <noscript>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/GammaGallery/css/noJS.css"/></noscript>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -134,6 +126,19 @@ console.log('selector' in obj);
 
 "
 );?>
+<?php
+Yii::app()->clientscript
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootstrap.js', CClientScript::POS_END )
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/carousel.js', CClientScript::POS_END )
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/bootswatch.js', CClientScript::POS_END )
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/js/tab.js', CClientScript::POS_END )
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/nicescroll/jquery.nicescroll.js', CClientScript::POS_END )
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/GammaGallery/js/jquery.masonry.min.js', CClientScript::POS_END )
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/GammaGallery/js/jquery.history.js', CClientScript::POS_END )
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/GammaGallery/js/js-url.min.js', CClientScript::POS_END )
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/GammaGallery/js/jquerypp.custom.js', CClientScript::POS_END )
+    ->registerScriptFile( Yii::app()->theme->baseUrl . '/GammaGallery/js/gamma.js', CClientScript::POS_END )
 
+?>
 </body>
 </html>
