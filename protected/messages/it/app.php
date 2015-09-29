@@ -52,7 +52,7 @@ return array (
     'Matanzas, Cárdenas, & Varadero'=>'Matanzas, Cárdenas, & Varadero',
     'Havana day tour'=>"Un giorno all'Avana",
     'Trinidad & Cienfuegos '=>'Trinidad & Cienfuegos ',
-    'Three cities tour'=>'Le tre città',
+    'Three cities tour'=>'La gitta delle tre città',
     'Guama and the Bay of Pigs' => 'Guama e la Baia dei Maiali',
     'Havana & Tropicana '=>"L'Avana e Tropicana",
     'Havana and the cannon shot'=>"L'Avana e la cannonata",
@@ -66,7 +66,7 @@ return array (
     'People are very happy with our work. Get to know their opinion.'=>'Nos clients s’en vont toujours satisfaits; voyez leurs impressions.' ,
     'All Rights Reserved.'=>'Tous Droits Réservés.',
     'Transfers'=>'Trasferimenti',
-    'Follow us on Facebook'=>'Rejoignez-nous sur Facebook',
+    'Follow us on Facebook'=>'Seguici su Facebook',
     'Book tour'=>'Prenotare',
     'Create'=>'Creare'
     );
