@@ -5038,7 +5038,7 @@ a.list-group-item-danger.active:focus {
 }
 .well {
   min-height: 20px;
-  padding: 40px;
+  padding: 10px;
   margin-bottom: 20px;
   background-color: #ecf0f1;
   border: 1px solid transparent;
@@ -5989,15 +5989,16 @@ input:focus {
     line-height: 30px;
 }
 .splash {
-    background: url("../../img/url.jpg") no-repeat center center fixed;
+    background: url("../../img/back4.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 720px;
+    height: 800px;
     padding: 9em 0 2em;
     text-align: center;
     color: #FFFFFF;
+
 }
 .splash-down {
     font-size: 30px;

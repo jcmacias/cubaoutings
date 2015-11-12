@@ -140,6 +140,31 @@ Yii::app()->clientscript
     ->registerScriptFile( Yii::app()->theme->baseUrl . '/GammaGallery/js/gamma.js', CClientScript::POS_END )
 
 ?>
+<?php Yii::app()->clientScript->registerScript('splash',"
+ $(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(../../img/url.jpg)'
+  , 'url(../../img/back1.jpg)'
+  , 'url(../../img/back2.jpg)'
+  , 'url(../../img/back3.jpg)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 1000);
+
+header.css('background-image', backgrounds[0]);
+});
+
+"
+);?>
 <script type="text/javascript">
     $(function () {
 
@@ -167,5 +192,6 @@ Yii::app()->clientscript
 
     });
 </script>
+
 </body>
 </html>

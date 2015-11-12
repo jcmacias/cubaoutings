@@ -8,11 +8,12 @@ $this->pageTitle = Yii::app()->name;
 
         <div class="row">
             <div class="col-lg-12">
-                <h1>"<?php echo Yii::t('app', 'The best way to explore Cuba.'); ?>"</h1>
+
 
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <div style="background-color: rgba(0, 0, 0, 0.4);" class="well sponsor">
+                            <h3>"<?php echo Yii::t('app', 'The best way to explore Cuba.'); ?>"</h3>
                             <p><?php echo Yii::t('app', 'Share this site with your friends'); ?></p>
 
                             <p><?php
@@ -327,16 +328,16 @@ $this->pageTitle = Yii::app()->name;
 
             <ul class="gamma-gallery">
                 <li>
-                    <div data-alt="img01" data-description="<h3>Plaza de La Revolución</h3>" data-max-width="1800"
+                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Havana day tour')?></h3>" data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
 				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/plaza2.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/gran_teatro_capitolio.jpg' ?>"
                              data-min-width="300"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/plaza2.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/gran_teatro_capitolio.jpg' ?>"
                              data-min-width="200"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/plaza2.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/gran_teatro_capitolio.jpg' ?>"
                              data-min-width="140"></div>
                         <!--<div data-src="images/xsmall/1.jpg"></div>
                         <noscript>
@@ -345,7 +346,7 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </li>
                 <li>
-                    <div  data-alt="img01" data-description="<h3>Hotel Ambos Mundos</h3>" data-max-width="1800"
+                    <div  data-alt="img01" data-description="<h3><?php echo Yii::t('app','Havana & Tropicana')?></h3>" data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
@@ -363,7 +364,7 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </li>
                 <li>
-                    <div data-alt="img01" data-description="<h3>Trinidad</h3>" data-max-width="1800"
+                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Trinidad & Cienfuegos')?></h3>" data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
@@ -382,16 +383,16 @@ $this->pageTitle = Yii::app()->name;
                 </li>
 
                 <li>
-                    <div data-alt="img01" data-description="<h3>Ciénaga de Zapata</h3>" data-max-width="1800"
+                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Guama and the Bay of Pigs')?></h3>" data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
                         <div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
                         <div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/guama.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/guama2.jpg' ?>"
                              data-min-width="300"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/guama.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/guama2.jpg' ?>"
                              data-min-width="200"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/guama.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/guama2.jpg' ?>"
                              data-min-width="140"></div>
                         <!--<div data-src="images/xsmall/1.jpg"></div>
                         <noscript>
@@ -401,7 +402,7 @@ $this->pageTitle = Yii::app()->name;
                 </li>
 
                 <li>
-                    <div data-alt="img01" data-description="<h3>Parque José Martí</h3>" data-max-width="1800"
+                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Trinidad & Cienfuegos')?></h3>" data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
@@ -419,16 +420,16 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </li>
                 <li>
-                    <div data-alt="img01" data-description="<h3>Capitolio de la Habana</h3>" data-max-width="1800"
+                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Matanzas, Cárdenas, & Varadero')?></h3>" data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
 				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/capitolio.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/matanzas1.jpg' ?>"
                              data-min-width="300"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/capitolio.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/matanzas1.jpg' ?>"
                              data-min-width="200"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/capitolio.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/matanzas1.jpg' ?>"
                              data-min-width="140"></div>
                         <!--<div data-src="images/xsmall/1.jpg"></div>
                         <noscript>
@@ -437,16 +438,16 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </li>
                 <li>
-                    <div data-alt="img01" data-description="<h3>Plaza del Ché</h3>" data-max-width="1800"
+                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Havana and the cannon shot')?></h3>" data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
 				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/che_plaza_revolucion.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/canonazo1.jpg' ?>"
                              data-min-width="300"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/che_plaza_revolucion.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/canonazo1.jpg' ?>"
                              data-min-width="200"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/che_plaza_revolucion.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/canonazo1.jpg' ?>"
                              data-min-width="140"></div>
                         <!--<div data-src="images/xsmall/1.jpg"></div>
                         <noscript>
@@ -482,64 +483,7 @@ $this->pageTitle = Yii::app()->name;
 //$('.navbar .navbar-default .navbar-fixed-top').hide;
 //");
 ?>
-<script type="text/javascript">
-    $(document).ready(function () {
 
-        $('.thumbnail img').on('click', function () {
-            var src = $(this).attr('src');
-            var img = '<img src="' + src + '" class="img-responsive"/>';
-            $('#myModal .modal-body').html(img);
-//            //Start of new code
-//            var index = $(this).parent('div').index();
-//            var html = '';
-//            html += img;
-//            html += '<div style="height:25px;clear:both;display:block;">';
-//            html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
-//            html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
-//            html += '</div>';
-//            //End of new code
-            $('#myModal').modal();
-        });
-
-//        $('#myModal').on('shown.bs.modal', function(){
-////                $('#myModal .modal-body').html(img);
-//        });
-
-        $('#myModal').on('hidden.bs.modal', function () {
-            $('#myModal .modal-body').html('');
-        });
-
-
-    })
-
-//    $(function () {
-//
-//        var GammaSettings = {
-//            // order is important!
-//            viewport: [{
-//                width: 1200,
-//                columns: 5
-//            }, {
-//                width: 900,
-//                columns: 4
-//            }, {
-//                width: 500,
-//                columns: 3
-//            }, {
-//                width: 320,
-//                columns: 2
-//            }, {
-//                width: 0,
-//                columns: 2
-//            }]
-//        };
-//
-//        Gamma.init(GammaSettings);
-//
-//    });
-
-
-</script>
 
 
 
