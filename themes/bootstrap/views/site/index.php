@@ -67,7 +67,7 @@ $this->pageTitle = Yii::app()->name;
     </div>
 
 </div>
-</div>
+
 <div class="container" id="trabajos">
     <hr class="featurette-divider">
     <!-- SECTION WORKS -->

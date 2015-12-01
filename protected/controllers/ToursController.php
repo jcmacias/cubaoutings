@@ -149,7 +149,9 @@ class ToursController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Tours');
+		$dependecy = new CDbCacheDependency('SELECT COUNT(id) FROM Tours');
+		$dataProvider = new CActiveDataProvider(Tours::model()->cache(3600*24,$dependecy));
+//		$dataProvider=new CActiveDataProvider('Tours');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

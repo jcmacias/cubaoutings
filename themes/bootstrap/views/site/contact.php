@@ -15,7 +15,7 @@
     <div class="section-header" id="contact">
 
         <!-- SECTION TITLE -->
-        <h2 class="dark-text">Contact</h2>
+        <h2 class="dark-text"><?php echo Yii::t('app','Contact')?></h2>
 
         <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
         <h6>
@@ -55,7 +55,7 @@
         </div>-->
                 <div class="row">
                     <div class="col-lg-4 col-sm-4">
-                        <?php echo $form->labelEx($model,'name'); ?>
+                        <?php echo $form->labelEx($model,Yii::t('app','Name')); ?>
                         <?php echo $form->textField($model,'name',array('class'=>'contact-name form-control')); ?>
                         <?php echo $form->error($model,'name',array('class'=>'label label-danger')); ?>
                     </div>
@@ -67,13 +67,13 @@
                     </div>
 
                     <div class="col-lg-4 col-sm-4">
-                        <?php echo $form->labelEx($model,'subject'); ?>
+                        <?php echo $form->labelEx($model,Yii::t('app','subject')); ?>
                         <?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128,'class'=>'contact-subject form-control')); ?>
                         <?php echo $form->error($model,'subject',array('class'=>'label label-danger')); ?>
                     </div>
 
                     <div class="col-md-12">
-                        <?php echo $form->labelEx($model,'body'); ?>
+                        <?php echo $form->labelEx($model,Yii::t('app','body')); ?>
                         <?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50,'class'=>'contact-body form-control')); ?>
                         <?php echo $form->error($model,'body',array('class'=>'label label-danger')); ?>
                     </div>
@@ -92,7 +92,7 @@
             <?php endif; */?>
 
                         <div class="contact-buttons">
-                            <?php echo CHtml::submitButton('Submit',array('class'=>'btn btn-success btn-lg pull-right')); ?>
+                            <?php echo CHtml::submitButton(Yii::t('app','Submit'),array('class'=>'btn btn-success btn-lg pull-right')); ?>
                         </div>
 
                     <?php $this->endWidget(); ?>
@@ -112,13 +112,13 @@
                 </ul>
             </div>
             <div class="row">
-                <label class="pull-left">Facebook contacts</label><br>
+                <label class="pull-left"><?php echo Yii::t('app','Facebook contacts')?></label><br>
                 <ul class="pull-left">
                     <li>gloria.machadoleon@facebook.com</li>
                 </ul>
             </div>
             <div class="row">
-                <label class="pull-left">Cellphones</label><br/>
+                <label class="pull-left"><?php echo Yii::t('app','Cellphones')?></label><br/>
                 <ul class="pull-left">
                  <li>+53 52812117</li>
                  <li>+53 52480858</li>

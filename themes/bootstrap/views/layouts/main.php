@@ -142,13 +142,12 @@ Yii::app()->clientscript
 ?>
 <?php Yii::app()->clientScript->registerScript('splash',"
  $(document).ready(function(){
-var header = $('body');
+var header = $('.splash');
 
 var backgrounds = new Array(
-    'url(../../img/url.jpg)'
-  , 'url(../../img/back1.jpg)'
-  , 'url(../../img/back2.jpg)'
-  , 'url(../../img/back3.jpg)'
+    'url(/img/back4.jpg)'
+  , 'url(/img/back5.jpg)'
+  , 'url(/img/back6.jpg)'
 );
 
 var current = 0;
@@ -158,7 +157,7 @@ function nextBackground() {
     current = current % backgrounds.length;
     header.css('background-image', backgrounds[current]);
 }
-setInterval(nextBackground, 1000);
+setInterval(nextBackground, 4000);
 
 header.css('background-image', backgrounds[0]);
 });

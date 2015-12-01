@@ -26,7 +26,7 @@
                       <div class="col-sm-12">
                         <div class="panel panel-danger">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Book Accommodations</h3>
+                                <h3 class="panel-title"><?php echo Yii::t('app','Book Accommodations')?></h3>
                             </div>
                             <div class="panel-body">
                                 <div class="form">
@@ -47,12 +47,12 @@
                                         'action'=>Yii::app()->createUrl('bookAccommodations/create'),
                                     )); $model=new BookAccommodations();?>
 
-                                    <p class="note">Fields with <span class="required">*</span> are required.</p>
+                                    <p class="note"><?php echo Yii::t('app','Fields with <span class="required">*</span> are required.')?></p>
 
                                     <?php //echo $form->errorSummary($model); ?>
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <?php echo $form->labelEx($model,'email_owner'); ?>
+                                            <?php echo $form->labelEx($model,Yii::t('app','Email Owner')); ?>
                                             <?php echo $form->textField($model,'email_owner',array('class'=>'book_email_owner form-control')); ?>
                                             <?php echo $form->error($model,'email_owner',array('class'=>'label label-danger')); ?>
                                         </div>
@@ -60,7 +60,7 @@
 
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <?php echo $form->labelEx($model,'question'); ?>
+                                            <?php echo $form->labelEx($model,Yii::t('app','Question')); ?>
                                             <?php echo $form->textArea($model,'question',array('class'=>'question form-control')); ?>
                                             <?php echo $form->error($model,'question',array('class'=>'label label-danger')); ?>
                                         </div>
@@ -68,7 +68,7 @@
 
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <?php echo $form->labelEx($model,'PAX'); ?>
+                                            <?php echo $form->labelEx($model,Yii::t('app','Pax')); ?>
                                             <?php echo $form->textField($model,'pax',array('class'=>'book_email_owner form-control')); ?>
                                             <?php echo $form->error($model,'pax',array('class'=>'label label-danger')); ?>
                                         </div>
@@ -76,7 +76,7 @@
 
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <?php echo $form->labelEx($model,'date'); ?>
+                                            <?php echo $form->labelEx($model,Yii::t('app','Date')); ?>
 <!--                                            --><?php //echo $form->textField($model,'date_book',array('class'=>'book_email_owner form-control')); ?>
                                             <?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
                                                 'model' => $model,
@@ -97,7 +97,7 @@
 
                                     <div class="row buttons">
                                         <div class="col-lg-12" style="margin-top: 8px;">
-                                            <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-md pull-right')); ?>
+                                            <?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('app','Create') : 'Save',array('class'=>'btn btn-success btn-md pull-right')); ?>
                                         </div>
                                     </div>
 

@@ -11,7 +11,7 @@
     <div class="section-header" id="contact">
 
         <!-- SECTION TITLE -->
-        <h2 class="dark-text">About Cubaoutings</h2>
+        <h2 class="dark-text"> <?php echo Yii::t('app', 'About Cubaoutings'); ?></h2>
 
         <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
         <h6>

@@ -163,7 +163,8 @@ class PhotoController extends Controller
      */
     public function actionIndex()
     {
-        $dataProvider = new CActiveDataProvider('Photo');
+        $dependecy = new CDbCacheDependency('SELECT COUNT(id) FROM photo');
+        $dataProvider = new CActiveDataProvider(Photo::model()->cache(3600*24,$dependecy));
         $dataProvider->setPagination(false);
 //        $arrayTours = Yii::app()->cache->get('tours');
 //        if ($arrayTours === false) {
