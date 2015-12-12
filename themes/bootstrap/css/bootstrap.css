@@ -5989,10 +5989,15 @@ input:focus {
     line-height: 30px;
 }
 .splash {
-    background: url("../../img/back4.jpg") no-repeat center center fixed;
+    /*background: url("../../img/back4.jpg") no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+  transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -webkit-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
     background-size: cover;
     height: 800px;
     padding: 9em 0 2em;
