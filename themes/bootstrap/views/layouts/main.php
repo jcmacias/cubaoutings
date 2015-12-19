@@ -7,8 +7,8 @@
     <meta name="description"
           content="CubaOutings is a tours company based in Cuba that mainly develops personalized sightseeing tours and excursions from Varadero to Havana and the rest of the Cuban historical or natural sites."/>
     <meta name="language" content="en"/>
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.css"
-          media="screen, projection"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.css"  media="screen, projection"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/ajustes.css" media="screen, projection"/>
     <!--    <link rel="stylesheet" type="text/css" href="-->
     <?php //echo Yii::app()->theme->baseUrl; ?><!--/fullPage/jquery.fullPage.css" media="screen, projection" />-->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/font-awesome.css"
@@ -186,7 +186,7 @@ function nextBackground() {
  });
 
  }
-setInterval(nextBackground, 4000);
+setInterval(nextBackground, 36000);
 
 header.css('background-image', backgrounds[0]);
 });
