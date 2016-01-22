@@ -111,32 +111,38 @@
                     </div>
                  </div>
 <!--                Bloque de places con su informacion-->
-                    <div class="row" >
-                        <div class="col-sm-12">
-                            <div class="panel panel-info">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Interesting places</h3>
-                                </div>
-                                <div class="panel-body" style="padding-left: 25px;">
-                                    <?php
-                                    $dataProvider = Photo::getPhotosToursData($tours_id);
-
-                                    $this->widget('zii.widgets.CListView', array(
-                                        'dataProvider'=>$dataProvider,
-                                        'itemView'=>'//site/_view_places',
-                                        'id'=>'places',
-                                        'template'=>'{items} {pager}',
-                                        'pagerCssClass'=>'CLinkPager pull-right',
-                                        'pager'=>array(
-                                            'header' => '',
-                                            'htmlOptions'=>array('class'=>'pagination pagination-sm',),
-                                        ),
-                                    ));
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!--                    <div class="row" >-->
+<!--                        <div class="col-sm-12">-->
+<!--                            <div class="panel panel-info">-->
+<!--                                <div class="panel-heading">-->
+<!--                                    <h3 class="panel-title">Interesting places</h3>-->
+<!--                                </div>-->
+<!--                                <div class="panel-body" style="padding-left: 25px;">-->
+<!--                                    --><?php
+//                                    $dataProvider = Photo::getPhotosToursData($tours_id);
+//
+//                                    $this->widget('zii.widgets.CListView', array(
+//                                        'id' => 'gamma-container',
+//                                        'dataProvider'=>$dataProvider,
+//                                        'itemsTagName' => 'ul',
+//                                        'itemsCssClass' => 'gamma-gallery',
+//                                        'itemView'=>'//site/_view_places',
+////                                        'id'=>'places',
+//                                        'template' => "{items}\n<div class='gamma-overlay'></div>",
+////                                        'pagerCssClass'=>'CLinkPager pull-right',
+////                                        'pager'=>array(
+////                                            'header' => '',
+////                                            'htmlOptions'=>array('class'=>'pagination pagination-sm',),
+////                                        ),
+//                                        'htmlOptions' => array(
+//                                            'class' => 'gamma-container gamma-loading'
+//                                        )
+//                                    ));
+//                                    ?>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 <?php }?>
                 <?php $this->beginWidget('zii.widgets.CPortlet', array(
                     'title'=>Yii::t('app','Follow us on Facebook'),

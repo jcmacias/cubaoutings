@@ -8,6 +8,7 @@
           content="CubaOutings is a tours company based in Cuba that mainly develops personalized sightseeing tours and excursions from Varadero to Havana and the rest of the Cuban historical or natural sites."/>
     <meta name="language" content="en"/>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.css"  media="screen, projection"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/Animate.css"  media="screen, projection"/>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/ajustes.css" media="screen, projection"/>
     <!--    <link rel="stylesheet" type="text/css" href="-->
     <?php //echo Yii::app()->theme->baseUrl; ?><!--/fullPage/jquery.fullPage.css" media="screen, projection" />-->
@@ -26,11 +27,14 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/GammaGallery/css/style.css"/>
 
     <script src="<?php echo Yii::app()->theme->baseUrl; ?>/GammaGallery/js/modernizr.custom.70736.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/wow/wow.min.js"></script>
     <noscript>
         <link rel="stylesheet" type="text/css"
               href="<?php echo Yii::app()->theme->baseUrl; ?>/GammaGallery/css/noJS.css"/>
     </noscript>
-
+    <script>
+        new WOW().init();
+    </script>
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -150,6 +154,7 @@ Yii::app()->clientscript
     ->registerScriptFile(Yii::app()->theme->baseUrl . '/GammaGallery/js/jquerypp.custom.js', CClientScript::POS_END)
     ->registerScriptFile(Yii::app()->theme->baseUrl . '/GammaGallery/js/gamma.js', CClientScript::POS_END)
     ->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jquery.transit.min.js', CClientScript::POS_END)
+//    ->registerScriptFile(Yii::app()->theme->baseUrl . '/wow/wow.min.js', CClientScript::POS_END)
 //    ->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jquery.transition.min.js', CClientScript::POS_END)
 
 
@@ -220,6 +225,5 @@ header.css('background-image', backgrounds[0]);
 
     });
 </script>
-
 </body>
 </html>

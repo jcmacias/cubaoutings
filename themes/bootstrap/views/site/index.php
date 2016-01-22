@@ -83,7 +83,7 @@ $this->pageTitle = Yii::app()->name;
     </div>
     <div class="tour-list">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 wow slideInLeft">
                 <div class="thumbnail">
                     <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/trinidad.jpg', 'alt 1', array("style" => "height: 230px; width: 100%;", 'class' => 'img-rounded')); ?>
                     <div class="caption">
@@ -116,7 +116,7 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 wow slideInUp">
                 <div class="thumbnail">
                     <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/nacional.jpg', 'alt 1', array("style" => "height: 230px; width: 100%;", 'class' => 'img-rounded')); ?>
                     <div class="caption">
@@ -149,7 +149,7 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 wow slideInRight">
                 <div class="thumbnail">
                     <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/guama4.jpg', 'alt 1', array("style" => "height: 230px; width: 100%;", 'class' => 'img-rounded')); ?>
                     <div class="caption">
@@ -196,6 +196,9 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </div>
             </div>
+            <div class="col-md-12 wow fadeInUpBig">
+                <?php echo CHtml::image(Yii::app()->theme->baseUrl . '/../img/promo.jpg', 'alt 1', array("style" => "width: 100%;", 'class' => 'img-rounded')); ?>
+            </div>
         </div>
 
     </div>
@@ -213,7 +216,7 @@ $this->pageTitle = Yii::app()->name;
     </div>
 
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 wow slideInLeft">
             <div class="panel panel-warning">
                 <div class="panel-heading">
                     <h3 class="panel-title"><?php echo Yii::t('app', 'Testimonials'); ?></h3>
@@ -245,7 +248,7 @@ $this->pageTitle = Yii::app()->name;
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 wow slideInUp">
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title"><?php echo Yii::t('app', 'Testimonials'); ?></h3>
@@ -277,7 +280,7 @@ $this->pageTitle = Yii::app()->name;
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 wow slideInRight">
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h3 class="panel-title"><?php echo Yii::t('app', 'Testimonials'); ?></h3>
@@ -323,7 +326,7 @@ $this->pageTitle = Yii::app()->name;
             <?php echo Yii::t('app', 'Some images of Cuba.'); ?>
         </h6>
     </div>
-    <div class="tour-list">
+    <div class="tour-list wow flipInX">
         <div class="gamma-container gamma-loading" id="gamma-container">
 
             <ul class="gamma-gallery">
