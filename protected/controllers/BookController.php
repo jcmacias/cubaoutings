@@ -73,7 +73,7 @@ class BookController extends Controller
             $model->tours_id=$id;
 
 			if($model->save()){
-                //$this->sendEmail($model->email_owner,$model->question);
+                $this->sendEmail($model->email_owner,$model->question);
                 $this->redirect(array('view','id'=>$model->id));
             }
             else{
@@ -187,28 +187,29 @@ class BookController extends Controller
 		}
 	}
     public function sendEmail($email,$question){
-        $subject='=?UTF-8?B?'.base64_encode('Book Tour').'?=';
-        $headers="From: $email>\r\n".
-            "Reply-To: {$email}\r\n".
-            "MIME-Version: 1.0\r\n".
-            "Content-Type: text/plain; charset=UTF-8";
-
-        mail(Yii::app()->params['adminEmail'],$subject,$question,$headers);
-        $this->refresh();
-//        $mail = new JPhpMailer;
-//        $mail->IsSMTP();
-//        $mail->Host = Yii::app()->params['host'];
-//        $mail->SMTPSecure = "ssl";
-//        $mail->Port = '465';
-//        $mail->SMTPAuth = true;
-//        $mail->Username = Yii::app()->params['adminEmail'];
-//        $mail->Password = Yii::app()->params['password'];
-//        $mail->SetFrom($email, Yii::app()->name);
-//        $mail->Subject = "Booking Tour";
-//        $mail->AltBody = $email." ".$question;
-//        $mail->MsgHTML($question);
-//        $mail->AddAddress(Yii::app()->params['adminEmail'], Yii::app()->name);
-//        $mail->Send();
+//        $subject='=?UTF-8?B?'.base64_encode('Book Tour').'?=';
+//        $headers="From: $email>\r\n".
+//            "Reply-To: {$email}\r\n".
+//            "MIME-Version: 1.0\r\n".
+//            "Content-Type: text/plain; charset=UTF-8";
+//
+//        mail(Yii::app()->params['adminEmail'],$subject,$question,$headers);
+//        $this->refresh();
+        $mail = new JPhpMailer;
+        $mail->IsSMTP();
+        $mail->Host = Yii::app()->params['host'];
+        $mail->SMTPSecure = "ssl";
+        $mail->Port = '465';
+        $mail->SMTPAuth = true;
+        $mail->Username = Yii::app()->params['adminEmail'];
+        $mail->Password = Yii::app()->params['password'];
+        $mail->SetFrom($email, Yii::app()->name);
+        $mail->Subject = "Booking Tour";
+        $mail->AltBody = $email." ".$question;
+        $mail->MsgHTML($question);
+        $mail->AddAddress(Yii::app()->params['adminEmail'], Yii::app()->name);
+        $mail->Send();
+		$this->refresh();
         /**
         Descomentar para ver si envia el email..
          */

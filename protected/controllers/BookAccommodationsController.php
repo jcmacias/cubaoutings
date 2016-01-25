@@ -179,28 +179,29 @@ class BookAccommodationsController extends Controller
     public function sendEmail($email,$question){
 
 
-        $subject='=?UTF-8?B?'.base64_encode('Book Accommodation').'?=';
-        $headers="From: $email>\r\n".
-            "Reply-To: {$email}\r\n".
-            "MIME-Version: 1.0\r\n".
-            "Content-Type: text/plain; charset=UTF-8";
-
-        mail(Yii::app()->params['adminEmail'],$subject,$question,$headers);
-        $this->refresh();
-//        $mail = new JPhpMailer;
-//        $mail->IsSMTP();
-//        $mail->Host = Yii::app()->params['host'];
-//        $mail->SMTPSecure = "ssl";
-//        $mail->Port = '465';
-//        $mail->SMTPAuth = true;
-//        $mail->Username = Yii::app()->params['adminEmail'];
-//        $mail->Password = Yii::app()->params['password'];
-//        $mail->SetFrom($email, Yii::app()->name);
-//        $mail->Subject = "Booking";
-//        $mail->AltBody = $email." ".$question;
-//        $mail->MsgHTML($question);
-//        $mail->AddAddress(Yii::app()->params['adminEmail'], Yii::app()->name);
-//        $mail->Send();
+//        $subject='=?UTF-8?B?'.base64_encode('Book Accommodation').'?=';
+//        $headers="From: $email>\r\n".
+//            "Reply-To: {$email}\r\n".
+//            "MIME-Version: 1.0\r\n".
+//            "Content-Type: text/plain; charset=UTF-8";
+//
+//        mail(Yii::app()->params['adminEmail'],$subject,$question,$headers);
+//        $this->refresh();
+        $mail = new JPhpMailer;
+        $mail->IsSMTP();
+        $mail->Host = Yii::app()->params['host'];
+        $mail->SMTPSecure = "ssl";
+        $mail->Port = '465';
+        $mail->SMTPAuth = true;
+        $mail->Username = Yii::app()->params['adminEmail'];
+        $mail->Password = Yii::app()->params['password'];
+        $mail->SetFrom($email, Yii::app()->name);
+        $mail->Subject = "Book Accommodation";
+        $mail->AltBody = $email." ".$question;
+        $mail->MsgHTML($question);
+        $mail->AddAddress(Yii::app()->params['adminEmail'], Yii::app()->name);
+        $mail->Send();
+		$this->refresh();
         /**
         Descomentar para ver si envia el email..
          */
