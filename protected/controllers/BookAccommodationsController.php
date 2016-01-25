@@ -71,17 +71,18 @@ class BookAccommodationsController extends Controller
 		{
 			$model->attributes=$_POST['BookAccommodations'];
 			if($model->save()){
-                $this->sendEmail($model->email_owner,$model->question);
+                
                 $this->redirect(array('view','id'=>$model->id));
+				$this->sendEmail($model->email_owner,$model->question);
             }
 
 		}else{
             //$model->getErrors($model->attributes);
         }
 
-		$this->render('create',array(
+		/*$this->render('create',array(
 			'model'=>$model,
-		));
+		));*/
 	}
 
 	/**
@@ -179,15 +180,15 @@ class BookAccommodationsController extends Controller
     public function sendEmail($email,$question){
 
 
-//        $subject='=?UTF-8?B?'.base64_encode('Book Accommodation').'?=';
-//        $headers="From: $email>\r\n".
-//            "Reply-To: {$email}\r\n".
-//            "MIME-Version: 1.0\r\n".
-//            "Content-Type: text/plain; charset=UTF-8";
-//
-//        mail(Yii::app()->params['adminEmail'],$subject,$question,$headers);
-//        $this->refresh();
-        $mail = new JPhpMailer;
+        $subject='=?UTF-8?B?'.base64_encode('Book Accommodation').'?=';
+        $headers="From: $email>\r\n".
+            "Reply-To: {$email}\r\n".
+            "MIME-Version: 1.0\r\n".
+            "Content-Type: text/plain; charset=UTF-8";
+
+        mail(Yii::app()->params['adminEmail'],$subject,$question,$headers);
+        $this->refresh();
+        /*$mail = new JPhpMailer;
         $mail->IsSMTP();
         $mail->Host = Yii::app()->params['host'];
         $mail->SMTPSecure = "ssl";
@@ -201,7 +202,7 @@ class BookAccommodationsController extends Controller
         $mail->MsgHTML($question);
         $mail->AddAddress(Yii::app()->params['adminEmail'], Yii::app()->name);
         $mail->Send();
-		$this->refresh();
+		$this->refresh();*/
         /**
         Descomentar para ver si envia el email..
          */
