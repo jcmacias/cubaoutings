@@ -14,6 +14,7 @@ $this->pageTitle = Yii::app()->name;
                     <div class="col-md-6 col-md-offset-3">
                         <div style="background-color: rgba(0, 0, 0, 0.4);" class="well sponsor">
                             <h3>"<?php echo Yii::t('app', 'The best way to explore Cuba.'); ?>"</h3>
+
                             <p><?php echo Yii::t('app', 'Share this site with your friends'); ?></p>
 
                             <p><?php
@@ -175,9 +176,9 @@ $this->pageTitle = Yii::app()->name;
                             </p>
                         <?php } ?>
                         <?php if (Yii::app()->getLanguage() == 'es') { ?>
-                            <p>La zone sud de la province de Matanzas est un excellent endroit pour passer la journée et
-                                profiter de la campagne. La Municipalité de Zapata est la zone humide la plus importante
-                                de Cuba et a été déclarée à juste titreParc National.</p>
+                            <p>La parte sur de la provincia de Matanzas es un excelente lugar para pasar el día y
+                                disfrutar del entorno rural. La Península de Zapata es uno de los más importantes
+                                humedales de latinoamerica.</p>
                             <p>
                                 <a class="btn btn-primary" style="margin-top: -7px;"
                                    href="<?php echo Yii::app()->createUrl('tours/view', array('id' => 12)); ?>"><?php echo Yii::t('app', 'Read More'); ?></a>
@@ -331,16 +332,39 @@ $this->pageTitle = Yii::app()->name;
 
             <ul class="gamma-gallery">
                 <li>
-                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Havana day tour')?></h3>" data-max-width="1800"
+                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app', 'Havana day tour') ?></h3>"
+                         data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
 				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/gran_teatro_capitolio.jpg' ?>"
+                        <div
+                            data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/gran_teatro_capitolio.jpg' ?>"
+                            data-min-width="300"></div>
+                        <div
+                            data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/gran_teatro_capitolio.jpg' ?>"
+                            data-min-width="200"></div>
+                        <div
+                            data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/gran_teatro_capitolio.jpg' ?>"
+                            data-min-width="140"></div>
+                        <!--<div data-src="images/xsmall/1.jpg"></div>
+                        <noscript>
+                            <img src="images/xsmall/1.jpg" alt="img01"/>
+                        </noscript>-->
+                    </div>
+                </li>
+                <li>
+                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app', 'Havana & Tropicana') ?></h3>"
+                         data-max-width="1800"
+                         data-max-height="2400">
+                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/ambos-mundos.jpg' ?>"
                              data-min-width="300"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/gran_teatro_capitolio.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/ambos-mundos.jpg' ?>"
                              data-min-width="200"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/gran_teatro_capitolio.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/ambos-mundos.jpg' ?>"
                              data-min-width="140"></div>
                         <!--<div data-src="images/xsmall/1.jpg"></div>
                         <noscript>
@@ -349,35 +373,22 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </li>
                 <li>
-                    <div  data-alt="img01" data-description="<h3><?php echo Yii::t('app','Havana & Tropicana')?></h3>" data-max-width="1800"
+                    <div data-alt="img01"
+                         data-description="<h3><?php echo Yii::t('app', 'Trinidad & Cienfuegos') ?></h3>"
+                         data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
 				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/ambos-mundos.jpg' ?>"
-                             data-min-width="300"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/ambos-mundos.jpg' ?>"
-                             data-min-width="200"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/ambos-mundos.jpg' ?>"
-                             data-min-width="140"></div>
-                        <!--<div data-src="images/xsmall/1.jpg"></div>
-                        <noscript>
-                            <img src="images/xsmall/1.jpg" alt="img01"/>
-                        </noscript>-->
-                    </div>
-                </li>
-                <li>
-                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Trinidad & Cienfuegos')?></h3>" data-max-width="1800"
-                         data-max-height="2400">
-                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
-				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
-				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg' ?>"
-                             data-min-width="300"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg' ?>"
-                             data-min-width="200"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg' ?>"
-                             data-min-width="140"></div>
+                        <div
+                            data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg' ?>"
+                            data-min-width="300"></div>
+                        <div
+                            data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg' ?>"
+                            data-min-width="200"></div>
+                        <div
+                            data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/Centro_historico_de_Trinidad.jpg' ?>"
+                            data-min-width="140"></div>
                         <!--<div data-src="images/xsmall/1.jpg"></div>
                         <noscript>
                             <img src="images/xsmall/1.jpg" alt="img01"/>
@@ -386,7 +397,9 @@ $this->pageTitle = Yii::app()->name;
                 </li>
 
                 <li>
-                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Guama and the Bay of Pigs')?></h3>" data-max-width="1800"
+                    <div data-alt="img01"
+                         data-description="<h3><?php echo Yii::t('app', 'Guama and the Bay of Pigs') ?></h3>"
+                         data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
                         <div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
@@ -405,16 +418,41 @@ $this->pageTitle = Yii::app()->name;
                 </li>
 
                 <li>
-                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Trinidad & Cienfuegos')?></h3>" data-max-width="1800"
+                    <div data-alt="img01"
+                         data-description="<h3><?php echo Yii::t('app', 'Trinidad & Cienfuegos') ?></h3>"
+                         data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
 				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg' ?>"
+                        <div
+                            data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg' ?>"
+                            data-min-width="300"></div>
+                        <div
+                            data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg' ?>"
+                            data-min-width="200"></div>
+                        <div
+                            data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg' ?>"
+                            data-min-width="140"></div>
+                        <!--<div data-src="images/xsmall/1.jpg"></div>
+                        <noscript>
+                            <img src="images/xsmall/1.jpg" alt="img01"/>
+                        </noscript>-->
+                    </div>
+                </li>
+                <li>
+                    <div data-alt="img01"
+                         data-description="<h3><?php echo Yii::t('app', 'Matanzas, Cárdenas, & Varadero') ?></h3>"
+                         data-max-width="1800"
+                         data-max-height="2400">
+                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/matanzas1.jpg' ?>"
                              data-min-width="300"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/matanzas1.jpg' ?>"
                              data-min-width="200"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/cienfuegos_parque_jose_marti.jpg' ?>"
+                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/matanzas1.jpg' ?>"
                              data-min-width="140"></div>
                         <!--<div data-src="images/xsmall/1.jpg"></div>
                         <noscript>
@@ -423,25 +461,9 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </li>
                 <li>
-                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Matanzas, Cárdenas, & Varadero')?></h3>" data-max-width="1800"
-                         data-max-height="2400">
-                        <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
-				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
-				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>-->
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/matanzas1.jpg' ?>"
-                             data-min-width="300"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/matanzas1.jpg' ?>"
-                             data-min-width="200"></div>
-                        <div data-src="<?php echo Yii::app()->baseUrl . '/images/pic_portada/matanzas1.jpg' ?>"
-                             data-min-width="140"></div>
-                        <!--<div data-src="images/xsmall/1.jpg"></div>
-                        <noscript>
-                            <img src="images/xsmall/1.jpg" alt="img01"/>
-                        </noscript>-->
-                    </div>
-                </li>
-                <li>
-                    <div data-alt="img01" data-description="<h3><?php echo Yii::t('app','Havana and the cannon shot')?></h3>" data-max-width="1800"
+                    <div data-alt="img01"
+                         data-description="<h3><?php echo Yii::t('app', 'Havana and the cannon shot') ?></h3>"
+                         data-max-width="1800"
                          data-max-height="2400">
                         <!--<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
 				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>

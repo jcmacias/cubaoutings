@@ -48,13 +48,13 @@
                                         'action'=>Yii::app()->createUrl('book/create',array('id'=>$tours_id)),
                                     )); $model=new Book();?>
 
-                                    <p class="note">Fields with <span class="required">*</span> are required.</p>
+<!--                                    <p class="note">Fields with <span class="required">*</span> are required.</p>-->
 
                                     <?php //echo $form->errorSummary($model); ?>
 
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <?php echo $form->labelEx($model,'email_owner'); ?>
+                                            <?php echo $form->labelEx($model, Yii::t('app','email_owner')); ?>
                                             <?php echo $form->textField($model,'email_owner',array('class'=>'book_email_owner form-control')); ?>
                                             <?php echo $form->error($model,'email_owner',array('class'=>'label label-danger')); ?>
                                         </div>
@@ -70,7 +70,7 @@
 
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <?php echo $form->labelEx($model,'date_book'); ?>
+                                            <?php echo $form->labelEx($model,Yii::t('app','date_book')); ?>
 <!--                                            --><?php //echo $form->textField($model,'date_book',array('class'=>'book_email_owner form-control')); ?>
                                             <?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
                                                 'model' => $model,
@@ -91,7 +91,7 @@
 
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <?php echo $form->labelEx($model,'question'); ?>
+                                            <?php echo $form->labelEx($model,Yii::t('app','question')); ?>
                                             <?php echo $form->textArea($model,'question',array('class'=>'book_question form-control')); ?>
                                             <?php echo $form->error($model,'question',array('class'=>'label label-danger')); ?>
                                         </div>
